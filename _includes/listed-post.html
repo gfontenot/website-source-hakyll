@@ -1,0 +1,8 @@
+<div class="post">
+	<h2><a href="{{ post.ur }}">{{ post.title }}</a></h2>
+	<div class="body">{{ post.content }}</div>
+	<div class="breaker"></div>
+	<postamble datetime="{{ post.date | date: "%Y-%m-%d" }}">
+		&mdash;{{ post.date | date: "%b %d, %Y" }}
+	</postamble>
+</div>
