@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Wishboard (A work in progress)
+name: Wishboard (A work in progress)
+type: post
 
 ---
 I love [pinboard][]. Love, love, love. So I wrote a little [Sinatra][] app that allows you to tag any bookmark with "want", and have it displayed as a sorta-pretty wishlist with tags and filtering.
