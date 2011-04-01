@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
     });
 
     $('#twitter').mouseout(function() {
-        $('#hover-text').text("On the Web:");
+        $('#hover-text').text("Around the Web:");
     });
 
     $('#facebook').mouseover(function() {
@@ -14,7 +14,7 @@ jQuery(document).ready(function($) {
     });
 
     $('#facebook').mouseout(function() {
-        $('#hover-text').text("On the Web:");
+        $('#hover-text').text("Around the Web:");
     });
 
     $('#github').mouseover(function() {
@@ -22,7 +22,7 @@ jQuery(document).ready(function($) {
     });
 
     $('#github').mouseout(function() {
-        $('#hover-text').text("On the Web:");
+        $('#hover-text').text("Around the Web:");
     });
 
     $('#instagram').mouseover(function() {
@@ -30,6 +30,6 @@ jQuery(document).ready(function($) {
     });
 
     $('#instagram').mouseout(function() {
-        $('#hover-text').text("On the Web:");
+        $('#hover-text').text("Around the Web:");
     });
 });

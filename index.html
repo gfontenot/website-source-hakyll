@@ -3,8 +3,6 @@ layout: main
 title: "Gordon Fontenot"
 ---
 
-<div class="content">
-	{% for post in site.posts limit:10 %}
-	{% include listed-post.html %}
-	{% endfor %}
-</div>
+{% for post in site.posts limit:10 %}
+{% include listed-post.html %}
+{% endfor %}
