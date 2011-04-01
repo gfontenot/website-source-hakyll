@@ -1,0 +1,26 @@
+---
+layout: main
+title: Gordon Fontenot - About
+---
+
+Gordon can be contacted easily [on Twitter][twitter], or just as easily <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#103;&#111;&#114;&#100;&#111;&#110;&#46;&#102;&#111;&#110;&#116;&#101;&#110;&#111;&#116;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;'>&#118;&#105;&#97;&#32;&#101;&#109;&#97;&#105;&#108;</a>.
+
+For the past 2 years, Gordon has been working at [WheelsTV][] as a full-time editor. He currently works as Senior Editor on [Autotrader.com][]'s proprietary car reviews, which can be seen on Autotrader's site, as well as on their [YouTube channel][AT-YouTube]. In the past, he has been in charge of editing WheelsTV's various products, including [1:00 on ONE][WTV-1on1] and helping develop and produce WheelsTV's Previously Owned Vehicle Reviews, or [POV][WTV-POV]. He has also worked extensively designing motion graphics for various projects, and occasionally steps in as the resident code-monkey.
+
+Gordon has also been employed by [Boston University Center For Digital Imaging Arts][BUCDIA] off and on for the better part of 6 years. Initially hired in late 2006 as a teaching assistant, he moved on to be promoted to Media Manager, where he was tasked with creating marketing videos for the school's web presence. Since becoming employed at WheelsTV, he has worked frequently as a part-time Final Cut Pro instructor, teaching Final Cut to photography students, and monitoring edit labs.
+
+Gordon also dabbles in code from time to time. He has created an iOS app for beer logging and rating, that he lovingly calls [Hops][]. He also created a little ruby based wishlist webapp that is kind of an ongoing tool for learning ruby-based web technologies that he called [Wishboard][]. He has also done some other code projects that can be found at his [GitHub][] profile.
+
+Gordon currently lives in Waltham, MA, and dreams of his hometown of Fredericksburg, Texas on a regular basis.
+
+
+[twitter]: http://www.twitter.com/gfontenot
+[WheelsTV]: http://www.wheelstvnetwork.com
+[Autotrader.com]: http://www.autotrader.com
+[AT-YouTube]:http://www.youtube.com/user/AutoTrader
+[WTV-1on1]: http://wheelstvnetwork.com/products/100-on-one/
+[WTV-POV]: http://wheelstvnetwork.com/products/pov-reviews/
+[BUCDIA]: http://www.cdiabu.com
+[Hops]: http://www.hopsapp.com
+[Wishboard]: http://wishboard.heroku.com/
+[GitHub]: http://www.github.com/gfontenot
