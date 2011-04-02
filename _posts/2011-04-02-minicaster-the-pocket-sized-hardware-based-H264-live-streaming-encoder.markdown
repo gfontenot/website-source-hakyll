@@ -1,7 +1,7 @@
 ---
 layout: post
 type: link
-name: Minicaster: the pocket-sized hardware-based H.264 live streaming encoder
+name: Minicaster
 source: http://www.engadget.com/2011/04/02/minicaster-the-pocket-sized-hardware-based-h-264-live-streaming/
 ---
 
