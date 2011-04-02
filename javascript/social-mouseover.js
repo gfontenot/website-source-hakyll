@@ -32,4 +32,12 @@ jQuery(document).ready(function($) {
     $('#instagram').mouseout(function() {
         $('#hover-text').text("On the Web:");
     });
+
+	$('#rss').mouseover(function() {
+        $('#hover-text').text("RSS");
+    });
+
+    $('#rss').mouseout(function() {
+        $('#hover-text').text("On the Web:");
+    });
 });
