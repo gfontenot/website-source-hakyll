@@ -3,6 +3,8 @@ layout: main
 title: Gordon Fontenot - About
 ---
 
+#Gordon Ridley Fontenot
+
 Gordon can be contacted easily [on Twitter][twitter], or just as easily <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#103;&#111;&#114;&#100;&#111;&#110;&#46;&#102;&#111;&#110;&#116;&#101;&#110;&#111;&#116;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;'>&#118;&#105;&#97;&#32;&#101;&#109;&#97;&#105;&#108;</a>.
 
 For the past 2 years, Gordon has been working at [WheelsTV][] as a full-time editor. He currently works as Senior Editor on [Autotrader.com][]'s proprietary car reviews, which can be seen on Autotrader's site, as well as on their [YouTube channel][AT-YouTube]. In the past, he has been in charge of editing WheelsTV's various products, including [1:00 on ONE][WTV-1on1] and helping develop and produce WheelsTV's Previously Owned Vehicle Reviews, or [POV][WTV-POV]. He has also worked extensively designing motion graphics for various projects, and occasionally steps in as the resident code-monkey.

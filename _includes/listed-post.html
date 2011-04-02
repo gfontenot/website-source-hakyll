@@ -1,7 +1,7 @@
 <div class="post">
-	<h1>
+	<h1 class="list-post-header">
 	{% if post.type == "link" %}
-		<a href="{{ post.source }}">§ {{ post.name }}</a>
+		<a href="{{ post.source }}">{{ post.name }}</a> <a href="{{ post.url }}" title="Permalink for this post">§</a>
 	{% else %}
 		<a href="{{ post.url }}">{{ post.name }}</a>
 	{% endif %}

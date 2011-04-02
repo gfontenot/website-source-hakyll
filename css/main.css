@@ -1,0 +1,146 @@
+body
+{
+	background-color: #F9F9F9;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+	font-weight: 300;
+}
+
+a
+{
+	text-decoration: none;
+	color: #1D5669;
+}
+
+blockquote
+{
+	border-left: 2px solid #D3D3D3;
+	margin: 1.5em 10px;
+	padding: .5em 10px;
+	quotes: "\201C""\201D""\2018""\2019";
+	font-style: italic;
+}
+blockquote p
+{
+	display: inline;
+}
+
+h1
+{
+	font-size: 30px;
+	font-weight: bold;
+	color: #8bafb0;
+	padding-bottom: 5px;
+	border-bottom: 1px dashed #D3D3D3;
+}
+
+h2
+{
+	text-transform: uppercase;
+}
+
+h1.list-post-header
+{
+	font-size: 20px;
+	font-weight: bold;
+	border-bottom: none;
+	padding-bottom: none;
+}
+
+.header
+{
+/*	float: right;*/
+	position: fixed;
+/*	right: 25%;*/
+	left: 15px;
+	top: 15px;
+	width: 120px;
+}
+
+#content
+{
+/*	float: left;
+	position: relative; */
+/*	left: 25%;*/
+	margin-left: 140px;
+	width: 600px;
+	margin-bottom: 50px;
+	font-size: 18px;
+}
+
+.avatar
+{
+	margin-left: 16px;
+	border: 1px solid #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 4px #555;
+}
+
+#me
+{
+	font-family: Helvetica, sans-serif;
+	text-transform: uppercase;
+	margin: 10px 0 0px 0;
+}
+
+#fname
+{
+	font-size: 23px;
+	font-style: bold;
+	letter-spacing: 2px;
+	color: #666;
+}
+
+#lname
+{
+	font-size: 17px;
+	font-weight: bold;
+	letter-spacing: 3px;
+}
+
+#tagline
+{
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+
+#hover-text
+{
+	font-size: 14px;
+	color: #808080;
+}
+
+#internal-links
+{
+	margin-bottom: 20px;
+}
+
+div.post
+{
+	border-bottom: 1px dashed #D3D3D3;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+/*	margin-left:-999em;
+	padding-left: 999em;*/
+	
+}
+
+.authoring{
+  padding-left: 3px;
+  font-size: 14px;
+  color: #777;
+}
+
+div.post postamble
+{
+	display: block;
+	font-size: 14px;
+	margin-bottom: 1em;
+	color: #999;
+}
+
+#content #post
+{
+	margin-bottom: 10px;
+	border-bottom: 1px dashed #D3D3D3;
+}

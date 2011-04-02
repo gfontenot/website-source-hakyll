@@ -1,7 +1,10 @@
 <h1>
+{% if page.type == "link" %}
+	<a href="{{ page.source }}">{{ page.name }}</a>
+{% else %}
 	<a href="{{ page.url }}">{{ page.name }}</a>
+{% endif %}
 </h1>
-
 <div class="authoring">
 	{{ page.date | date: "%B %e, %Y" }}
 </div>

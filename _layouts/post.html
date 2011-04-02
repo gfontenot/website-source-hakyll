@@ -5,4 +5,8 @@ layout: main
 <div id="post">
 	{% include post_header.html %}
 	{{ content }}
+	
+	{% if page.type == "link" %}
+		<a href="{{ page.url }}" title="Permalink for this page">§</a>
+	{% endif%}
 </div>
