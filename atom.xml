@@ -25,7 +25,7 @@ layout: nil
 		{% if post.type == "link" %}
 		<link href="{{ post.source }}" />
 		{% else %}
-		<link href="http://test.gordonfontenot.com{{ post.url }}" />
+		<link href="http://gordonfontenot.com{{ post.url }}" />
 		{% endif %}
 		<updated>{{ post.date | date_to_xmlschema }}</updated>
 		<id>gordonfontenot.com:{{ post.id }}</id>
