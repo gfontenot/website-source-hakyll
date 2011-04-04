@@ -29,7 +29,8 @@ layout: nil
 		{% endif %}
 		<updated>{{ post.date | date_to_xmlschema }}</updated>
 		<id>gordonfontenot.com:{{ post.id }}</id>
-		<content type="html">{{ post.content | h }}</content>
+		<content type="html">{{ post.content | h }}{% if post.type == "link" %}
+			&lt;a href=&quot;http://gordonfontenot.com{{ post.url }}&quot;&gt;&#8658;&lt;/a&gt;&lt;br&gt;{% endif %}</content>
 		<author>
 			<name>{{ post.author_name }}</name>
 			<uri>{{ post.author_uri }}</uri>
