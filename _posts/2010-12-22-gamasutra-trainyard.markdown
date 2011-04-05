@@ -1,10 +1,11 @@
 ---
 layout: post
 name: Trainyard
+slug: trainyard
 type: link
 source: http://www.gamasutra.com/view/news/31837/How_One_Man_With_An_Idea_And_1000_Made_The_Global_iOS_Hit_Trainyard.php
 ---
-
+Gamasutra - 
 > Success came literally overnight. Trainyard was released on June 10 this year, selling modestly till Apple featured the game in its recommended list a the start of October.
 
 Literally overnight.

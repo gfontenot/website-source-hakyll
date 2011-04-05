@@ -1,0 +1,16 @@
+---
+layout: post
+name: Using Nocturne Sans-menubar icon
+slug: Using-Nocturne-Sans-menubar-icon
+type: post
+source:
+---
+
+After reading Rasmus Anderson's great post about why [OSX's menubar should be dark, not bright][rsms-menubar], I immediatly went and installed [Nocturne] on all my machines. Haven't looked back. Nocturne is in my login items, so it's launched on startup, and I've got it set exactly the way I like it. I never use the other features of Nocturne though. So the one thing that has been bugging the hell out of me was the menubar icon that you couldn't get rid of. And I can't imagine that I'm the only one who feels this way. So I pulled the source, and just commented out the bit where it creates and sets the menubar icon. Bingo bango, I get the clean black dim menubar, with no unnecessary menubar icon.
+
+If you end up using this, you will not have access to _any_ of your settings while running the no-menubar version. You will have to run the "real" version (which means doing a `killall Nocturne` via terminal to quit the modified version) to gain access to the settings. I recommend renaming the original Nocturne to something and keeping it around just for this reason.
+
+[Download Nocturne Sans Menubar Here]("/files/Nocturne-no_menu.zip")
+
+[Nocturne]: http://code.google.com/p/blacktree-nocturne/
+[rsms-menubar]: http://rsms.me/2011/02/06/osx-menubar-should-be-dark.html

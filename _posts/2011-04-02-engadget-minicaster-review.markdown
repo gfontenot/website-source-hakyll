@@ -1,7 +1,8 @@
 ---
 layout: post
-type: link
 name: Minicaster
+slug: minicaster
+type: link
 source: http://www.engadget.com/2011/04/02/minicaster-the-pocket-sized-hardware-based-h-264-live-streaming/
 ---
 
