@@ -10,7 +10,7 @@ After reading Rasmus Anderson's great post about why [OSX's menubar should be da
 
 If you end up using this, you will not have access to _any_ of your settings while running the no-menubar version. You will have to run the "real" version (which means doing a `killall Nocturne` via terminal to quit the modified version) to gain access to the settings. I recommend renaming the original Nocturne to something and keeping it around just for this reason.
 
-[Download Nocturne Sans Menubar Here]("/files/Nocturne-no_menu.zip")
+[Download Nocturne Sans Menubar Here](/files/Nocturne-no_menu.zip)
 
 [Nocturne]: http://code.google.com/p/blacktree-nocturne/
 [rsms-menubar]: http://rsms.me/2011/02/06/osx-menubar-should-be-dark.html
