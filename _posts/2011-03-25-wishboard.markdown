@@ -1,6 +1,6 @@
 ---
 layout: post
-name: Wishboard (A work in progress)
+title: Wishboard (A work in progress)
 slug: wishboard
 type: post
 source:

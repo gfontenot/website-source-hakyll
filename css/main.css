@@ -144,3 +144,9 @@ div.post postamble
 	margin-bottom: 10px;
 	border-bottom: 1px dashed #D3D3D3;
 }
+
+div.footnotes
+{
+	font-size: 14px;
+	color: #777;
+}

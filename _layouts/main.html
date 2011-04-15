@@ -6,7 +6,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>{{ page.title }}</title>
 	<meta name="generator" content="TextMate http://macromates.com/">
-	<meta name="author" content="Gordon Fontenot">
+	<base ref="http://gordonfontenot.com" />
+	<meta name="author" content="Gordon Fontenot" />
 	<meta name="description" content="editor | shooter | geek" />
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
   	<script type="text/javascript" src="/javascript/social-mouseover.js"></script>
@@ -18,50 +19,56 @@
 </head>
 <body>
 	
-<div class="header">
+<div id="main-body">
+	<div class="header">
 
-	<a href="/">
-<!--		<img src="http://www.gravatar.com/avatar/412dfe5c117b55a2ba9d44eb4c653626.png" height="75" width="75" class="avatar" /> -->
-		<img src="/images/fleur.png" class="logo" height="120" width="120">
-	</a>
+		<a href="/">
+	<!--		<img src="http://www.gravatar.com/avatar/412dfe5c117b55a2ba9d44eb4c653626.png" height="75" width="75" class="avatar" /> -->
+			<img src="/images/fleur.png" class="logo" height="120" width="120">
+		</a>
 
-	<div id="me">
-		<span id="fname">Gordon</span>
-		<span id="lname">Fontenot</span>
+		<div id="me">
+			<span id="fname">Gordon</span>
+			<span id="lname">Fontenot</span>
+		</div>
+	
+		<div id="tagline">editor | shooter | geek</div>
+	
+		<div id="internal-links">
+			<a href="/about">About</a><br>
+			<a href="/about/resume">Resume</a><br>
+			<a href="/">Blog</a><br>
+			<a href="/demo">Demo (Coming Soon)</a><br>
+		</div>
+	
+		<div id="external-links">
+			<div id="hover-text">On the Web:</div>
+			<a href="http://www.twitter.com/gfontenot" id="twitter">
+				<img src="/images/twitter.png" alt="twitter" title="@gfontenot on Twitter" height="16" width="16" />
+			</a>
+			<a href="http://www.facebook.com/gordon.fontenot" id="facebook">
+				<img src="/images/facebook.png" alt="facebook" title="Gordon Fontenot on Facebook" height="16" width="16" />
+			</a>
+			<a href="http://www.github.com/gfontenot" id="github">
+				<img src="/images/github.png" alt="github" title="@gfontenot on GitHub" height="16" width="16" />
+			</a>
+			<a href="http://www.instagrid.me/gfontenot" id="instagram">
+				<img src="/images/instagram.png" alt="instagram" title="@gfontenot on Instagram" height="16" width="16" />
+			</a>
+			<a href="http://feeds.feedburner.com/gfontenot" id="rss">
+				<img src="/images/rss.png" alt="rss" title="RSS for this blog" height="16" width="16" />
+			</a>
+		</div>
+	
 	</div>
-	
-	<div id="tagline">editor | shooter | geek</div>
-	
-	<div id="internal-links">
-		<a href="/about.html">About</a><br>
-		<a href="/resume.html">Resume</a><br>
-		<a href="/">Blog</a><br>
-		<a href="/demo.html">Demo (Coming Soon)</a><br>
+
+	<div id="content">
+		{{ content }}
 	</div>
-	
-	<div id="external-links">
-		<div id="hover-text">On the Web:</div>
-		<a href="http://www.twitter.com/gfontenot" id="twitter">
-			<img src="/images/twitter.png" alt="twitter" title="@gfontenot on Twitter" height="16" width="16" />
-		</a>
-		<a href="http://www.facebook.com/gordon.fontenot" id="facebook">
-			<img src="/images/facebook.png" alt="facebook" title="Gordon Fontenot on Facebook" height="16" width="16" />
-		</a>
-		<a href="http://www.github.com/gfontenot" id="github">
-			<img src="/images/github.png" alt="github" title="@gfontenot on GitHub" height="16" width="16" />
-		</a>
-		<a href="http://www.instagrid.me/gfontenot" id="instagram">
-			<img src="/images/instagram.png" alt="instagram" title="@gfontenot on Instagram" height="16" width="16" />
-		</a>
-		<a href="/atom.xml" id="rss">
-			<img src="/images/rss.png" alt="rss" title="RSS for this blog" height="16" width="16" />
-		</a>
-	</div>
-	
 </div>
-
-<div id="content">
-	{{ content }}
+<div class="footer">
+	This is a <a href="http://jekyllrb.com">Jekyll</a> powered site hosted at <a href="http://github.com">GitHub</a>. Thanks for stopping by.<br>
+	 - Gordon Fontenot
 </div>
 
 </body>

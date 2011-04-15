@@ -1,6 +1,6 @@
 ---
 layout: post
-name: Real men drop-test the iPhone bumper case
+title: Real men drop-test the iPhone bumper case
 type: link
 source: http://www.mobilecrunch.com/2010/07/09/real-men-drop-test-the-iphone-bumper-case/
 ---

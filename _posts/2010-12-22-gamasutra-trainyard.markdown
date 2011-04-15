@@ -1,6 +1,6 @@
 ---
 layout: post
-name: Trainyard
+title: Trainyard
 slug: trainyard
 type: link
 source: http://www.gamasutra.com/view/news/31837/How_One_Man_With_An_Idea_And_1000_Made_The_Global_iOS_Hit_Trainyard.php

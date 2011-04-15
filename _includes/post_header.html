@@ -1,8 +1,8 @@
 <h1>
 {% if page.type == "link" %}
-	<a href="{{ page.source }}">{{ page.name }}</a>
+	<a href="{{ page.source }}">{{ page.title }}</a>
 {% else %}
-	<a href="{{ page.url }}">{{ page.name }}</a>
+	<a href="{{ page.url }}">{{ page.title }}</a>
 {% endif %}
 </h1>
 <div class="authoring">

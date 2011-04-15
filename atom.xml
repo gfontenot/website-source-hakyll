@@ -13,9 +13,9 @@ layout: nil
 	<entry>
 		
 		{% if post.type == "link" %}
-		<title>{{ post.name | h }} &#8658;</title>
+		<title>{{ post.title | h }} &#8658;</title>
 		{% else %}
-		<title>{{ post.name | h }}</title>
+		<title>{{ post.title | h }}</title>
 		{% endif %}
 		
 		{% for category in post.categories %}

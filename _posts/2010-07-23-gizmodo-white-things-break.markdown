@@ -1,6 +1,6 @@
 ---
 layout: post
-name: Gizmodo Why a White iPhone Delay is Great News
+title: Gizmodo Why a White iPhone Delay is Great News
 type: link
 source: http://gizmodo.com/5594738/why-a-white-iphone-delay-is-great-news
 
