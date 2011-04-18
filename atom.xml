@@ -12,11 +12,7 @@ layout: nil
 	{% for post in site.posts %}
 	<entry>
 		
-		{% if post.type == "link" %}
-		<title>{{ post.title | h }} &#8658;</title>
-		{% else %}
 		<title>{{ post.title | h }}</title>
-		{% endif %}
 		
 		{% for category in post.categories %}
 		<category term="{{category}}" scheme="http://www.sixapart.com/ns/types#tag" />
