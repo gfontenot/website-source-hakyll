@@ -1,10 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-   "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>{{ page.title }}</title>
+	<title>Gordon Fontenot - {{ page.title }}</title>
 	<meta name="generator" content="TextMate http://macromates.com/">
 	<base ref="http://gordonfontenot.com" />
 	<meta name="author" content="Gordon Fontenot" />
@@ -12,6 +12,7 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
   	<script type="text/javascript" src="/javascript/social-mouseover.js"></script>
 	<link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/gfontenot" />
+	<link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen, projection" charset="utf-8">
 	<link rel="stylesheet" href="/css/main.css" type="text/css" media="screen, projection" charset="utf-8">
 	
 	{% include analytics.html %}
@@ -22,25 +23,25 @@
 <div id="main-body">
 	<div class="header">
 
-		<a href="/">
-	<!--		<img src="http://www.gravatar.com/avatar/412dfe5c117b55a2ba9d44eb4c653626.png" height="75" width="75" class="avatar" /> -->
+    <a href="/">
+<!-- 		<img src="http://www.gravatar.com/avatar/412dfe5c117b55a2ba9d44eb4c653626.png" height="75" width="75" class="avatar" /> -->
 			<img src="/images/fleur.png" class="logo" height="120" width="120">
 		</a>
 
-		<div id="me">
-			<span id="fname">Gordon</span>
+	  <div id="name">
+			<span id="fname">Gordon</span><br />
 			<span id="lname">Fontenot</span>
 		</div>
-	
-		<div id="tagline">editor | shooter | geek</div>
-	
+		
+		<span id="tagline">editor | shooter | geek</span>
+
 		<div id="internal-links">
 			<a href="/about">About</a><br>
 			<a href="/about/resume">Resume</a><br>
 			<a href="/">Blog</a><br>
 			<a href="/demo">Demo (Coming Soon)</a><br>
 		</div>
-	
+
 		<div id="external-links">
 			<div id="hover-text">On the Web:</div>
 			<a href="http://www.twitter.com/gfontenot" id="twitter">
@@ -59,16 +60,14 @@
 				<img src="/images/rss.png" alt="rss" title="RSS for this blog" height="16" width="16" />
 			</a>
 		</div>
-	
-	</div>
-
+  </div>
 	<div id="content">
 		{{ content }}
 	</div>
-</div>
-<div class="footer">
-	This is a <a href="http://jekyllrb.com">Jekyll</a> powered site hosted at <a href="http://github.com">GitHub</a>. Thanks for stopping by.<br>
-	 - Gordon Fontenot
+	<div class="footer">
+  	This is a <a href="http://jekyllrb.com">Jekyll</a> powered site hosted at <a href="http://github.com">GitHub</a>. Thanks for stopping by.<br>
+  	 - Gordon Fontenot
+  </div>
 </div>
 
 </body>

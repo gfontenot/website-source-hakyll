@@ -1,6 +1,6 @@
 ---
 layout: main
-title: Gordon Fontenot - About
+title: About
 ---
 
 #Gordon Ridley Fontenot
