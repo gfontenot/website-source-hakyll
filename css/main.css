@@ -218,3 +218,49 @@ div.footer
   color: darkgrey;
  	border-top: 1px dashed #D3D3D3;
 }
+
+/* Resume styling */
+
+div.resume-content
+{
+  margin-left: 30px;
+  padding-left: 15px;
+  border-left: 1px dashed #8bafb0;
+	
+}
+
+div.resume-section#software-and-skills
+{
+/*  position: absolute;*/
+  top:15px;
+}
+
+
+h2.resume-header
+{
+  /* Rotate the text like a boss */
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+  color: #8bafb0;
+	padding: 0;  
+  position: relative;
+  text-align: left;
+  right: 290px;
+}
+
+div#employment h2.resume-header
+{
+  top: -120px;
+}
+
+div#education h2.resume-header
+{
+  top: -150px;
+}
+
+div#software-and-skills h2.resume-header
+{
+  top: -30px;
+}
