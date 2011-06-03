@@ -8,11 +8,14 @@ title: Projects
 <h2>Film</h2>
 
 <h2>Code</h2>
+<a href="http://www.hopsapp.com">Hops</a><br>
+<span class="repo-description">Beer logging app for iPhone and iPod Touch.</span> <a href="http://click.linksynergy.com/fs-bin/stat?id=q6EUHJI0HeE&offerid=146261&type=3&subid=0&tmpid=1826&RD_PARM1=http%253A%252F%252Fitunes.apple.com%252Fus%252Fapp%252Fhops%252Fid429052313%253Fmt%253D8%2526uo%253D4%2526partnerId%253D30">(App Store link)</a>
+</p>
 
-
-
+<h3>Open source repositories:</h3>
+<ul>
 {% for_github_repos_do username:gfontenot show_forks:false %}
-<p>
+<Li>
 <a href="{{ repo.url }}" title="{{ repo.name }}">{{ repo.name }}</a><br />
 <span class="repo-description">{{ repo.description }}</span><br \>
 <span class="repo-details">
@@ -20,8 +23,13 @@ title: Projects
   <span class="repo-forks">{{ repo.forks }} forks</span>
   {% endif %}
   
+  {% if repo.forks > 1 && repo.watchers > 1 %}
+   | 
+  {% endif %}
+  
   {% if repo.watchers > 1 %}
   <span class="repo-watchers">{{ repo.watchers }} watchers</span>
   {% endif %}</span>
-</p>
+</li>
 {% endfor_github_repos_do %}
+</ul>
