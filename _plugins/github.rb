@@ -60,7 +60,6 @@ module Jekyll
       
       context.stack do
         repo_collection.each_with_index do |item, index|
-          puts item
           context[@variable_name] = item.stringify_keys! if item.keys.size > 0
           context['forloop'] = {
             'length' => length,

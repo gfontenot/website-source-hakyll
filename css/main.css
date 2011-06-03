@@ -112,6 +112,13 @@ hr
   margin-bottom: .5em;
 }
 
+code
+{
+  background: #FDF6E3;
+  color: #2AA198;
+  font-family: "Courier New", Courier, monospace
+}
+
 div.header
 {
   position: fixed;
