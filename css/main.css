@@ -211,9 +211,8 @@ div.footnotes
 
 div.footer
 {
-  position: static/relative/absolute/fixed;
   padding-left: 160px;
-  padding-bottom: 20px;
+  padding-bottom: .5em;
   padding-top: .5em;
   color: darkgrey;
  	border-top: 1px dashed #D3D3D3;
@@ -229,9 +228,9 @@ div.resume-content
 	
 }
 
-div.resume-section#software-and-skills
+div#software-and-skills
 {
-/*  position: absolute;*/
+  position: absolute;
   top:15px;
 }
 

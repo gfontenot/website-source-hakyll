@@ -11,9 +11,11 @@ For the past 2 years, Gordon has been working at [WheelsTV][] as a full-time edi
 
 Gordon has also been employed by [Boston University Center For Digital Imaging Arts][BUCDIA] off and on for the better part of 6 years. Initially hired in late 2006 as a teaching assistant, he moved on to be promoted to Media Manager, where he was tasked with creating marketing videos for the school's web presence. Since becoming employed at WheelsTV, he has worked frequently as a part-time Final Cut Pro instructor, teaching Final Cut to photography students, and monitoring edit labs.
 
-Gordon has also been lucky enough to have been associated with some very fun freelance projects in recent years. Most recently, he was the Director of Photography for the pilot of [When I Grow Up][], a documentary-style TV show following [Sean Baptiste][] as he attempts to do all the jobs he wanted to do as a child. Also of note, Gordon edited the comedy short (5 minutes) [The Policy][]; a short film about Jesus meeting with his Life Insurance agent after the crucifixion.
+He has also been associated with some very interesting freelance projects in recent years. Most recently, he was the Director of Photography for the pilot of [When I Grow Up][], a documentary-style TV show following [Sean Baptiste][] as he attempts to do all the jobs he wanted to do as a child. Also of note, Gordon edited the comedy short (5 minutes) [The Policy][]; a short film about Jesus meeting with his Life Insurance agent after the crucifixion.
 
 Gordon also dabbles in code from time to time. He has created an iOS app for beer logging and rating, that he lovingly calls [Hops][]. He also created a little ruby based wishlist webapp that is kind of an ongoing tool for learning ruby-based web technologies that he called [Wishboard][]. He has also done some other code projects that can be found at his [GitHub][] profile.
+
+A full list of films and code projects can be found on the [Projects page][].
 
 Gordon currently lives in Waltham, MA, and dreams of his hometown of Fredericksburg, Texas on a regular basis.
 
@@ -30,3 +32,4 @@ Gordon currently lives in Waltham, MA, and dreams of his hometown of Fredericksb
 [Hops]: http://www.hopsapp.com
 [Wishboard]: http://wishboard.heroku.com/
 [GitHub]: http://www.github.com/gfontenot
+[Projects page]: /projects

@@ -1,0 +1,27 @@
+---
+layout: main
+title: Projects
+---
+
+<h1>Projects</h1>
+
+<h2>Film</h2>
+
+<h2>Code</h2>
+
+
+
+{% for_github_repos_do username:gfontenot show_forks:false %}
+<p>
+<a href="{{ repo.url }}" title="{{ repo.name }}">{{ repo.name }}</a><br />
+<span class="repo-description">{{ repo.description }}</span><br \>
+<span class="repo-details">
+  {% if repo.forks > 1 %}
+  <span class="repo-forks">{{ repo.forks }} forks</span>
+  {% endif %}
+  
+  {% if repo.watchers > 1 %}
+  <span class="repo-watchers">{{ repo.watchers }} watchers</span>
+  {% endif %}</span>
+</p>
+{% endfor_github_repos_do %}
