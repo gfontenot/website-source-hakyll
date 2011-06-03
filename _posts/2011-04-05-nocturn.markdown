@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Using Nocturne Sans-menubar icon
-slug: Using-Nocturne-Sans-menubar-icon
 type: post
 source:
 ---

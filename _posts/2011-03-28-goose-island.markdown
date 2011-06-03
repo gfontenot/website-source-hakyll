@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Goose Island
-slug: goose-island
 type: link
 source: http://www.gooseisland.com/pages/special_announcement/133.php
 ---

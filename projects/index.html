@@ -9,22 +9,31 @@ title: Projects
 Coming soon....
 
 <h2>Development</h2>
-<p>
-  <a href="http://www.hopsapp.com">Hops</a><br \>
-  <span class="repo-description">Beer logging app for iPhone and iPod Touch.</span> <a href="http://click.linksynergy.com/fs-bin/stat?id=q6EUHJI0HeE&offerid=146261&type=3&subid=0&tmpid=1826&RD_PARM1=http%253A%252F%252Fitunes.apple.com%252Fus%252Fapp%252Fhops%252Fid429052313%253Fmt%253D8%2526uo%253D4%2526partnerId%253D30">(App Store link)</a>
-</p>
-<p>
-  <a href="http://wishboard.heroku.com/gfontenot">WishBoard</a><br \>
-  <span class="repo-description">Wishlists generated from <a href="http://www.pinboard.in">Pinboard</a>. Just go to <code>wishboard.heroku.com/username</code> to see items tagged with "want"</span><br \>
-  <a href="/posts/wishboard/">(Blog post)</a>
-</p>
+<ul>
+<li>
+  <a href="http://www.hopsapp.com">Hops</a><br />
+  <span class="repo-description">Beer logging app for iPhone and iPod Touch.</span><br />
+  <a href="http://click.linksynergy.com/fs-bin/stat?id=q6EUHJI0HeE&offerid=146261&type=3&subid=0&tmpid=1826&RD_PARM1=http%253A%252F%252Fitunes.apple.com%252Fus%252Fapp%252Fhops%252Fid429052313%253Fmt%253D8%2526uo%253D4%2526partnerId%253D30">(App Store link)</a>
+</li>
 
+<li>
+  <a href="http://wishboard.heroku.com/gfontenot">WishBoard</a><br />
+  <span class="repo-description">Wishlists generated from <a href="http://www.pinboard.in">Pinboard</a>. Just go to <code>wishboard.heroku.com/username</code> to see items tagged with "want"</span><br />
+  <a href="/posts/wishboard/">(Blog post)</a>
+</li>
+
+<li>
+  Honeypot Passwords file<br />
+  <span class="repo-description">Fake Excel document that acts as a honeypot for thieves. Works with <a href="http://dropbox.com">Dropbox</a></span><br />
+  <a href="/posts/dropbox-honeypot/">(Blog post)</a>
+</li>
+</ul>
 <h3>Open source repositories:</h3>
 <ul>
 {% for_github_repos_do username:gfontenot show_forks:false %}
 <Li>
 <a href="{{ repo.url }}" title="{{ repo.name }}">{{ repo.name }}</a><br />
-<span class="repo-description">{{ repo.description }}</span><br \>
+<span class="repo-description">{{ repo.description }}</span><br />
 <span class="repo-details">
   {% if repo.forks > 1 %}
   <span class="repo-forks">{{ repo.forks }} forks</span>

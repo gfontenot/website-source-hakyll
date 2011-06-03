@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Fragility of Free — The Brooks Review
-slug: fragility-of-free
 type: link
 source: http://brooksreview.net/2011/03/fragility-free/
 ---

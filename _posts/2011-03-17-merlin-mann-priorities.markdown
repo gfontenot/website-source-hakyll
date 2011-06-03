@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Mud Rooms, Red Letters, and Real Priorities
-slug: merlin-mann-priorities
 type: link
 source: http://www.43folders.com/2009/04/28/priorities
 ---
