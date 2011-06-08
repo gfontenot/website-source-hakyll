@@ -5,47 +5,67 @@ title: Projects
 
 <h1>Projects</h1>
 
-<h2>Film</h2>
-Coming soon....
+<div class="resume-download">
+	<a href="/files/resume.pdf">Download Resume</a>
+</div>
 
-<h2>Development</h2>
-<ul>
-<li>
-  <a href="http://www.hopsapp.com">Hops</a><br />
-  <span class="repo-description">Beer logging app for iPhone and iPod Touch.</span><br />
-  <a href="http://click.linksynergy.com/fs-bin/stat?id=q6EUHJI0HeE&offerid=146261&type=3&subid=0&tmpid=1826&RD_PARM1=http%253A%252F%252Fitunes.apple.com%252Fus%252Fapp%252Fhops%252Fid429052313%253Fmt%253D8%2526uo%253D4%2526partnerId%253D30">(App Store link)</a>
-</li>
+<div class="film">
+  <h2 class="project-header">Film</h2>
+  <div class="project-content">
+    <ul class="project">
+      <li>
+        <a href="http://www.whenigrowupshow.com">When I Grow Up</a><br />
+        <span class="project-role">Director of Photography / Editor (intro segment)</span><br />
+        <span class="project-description">Pilot for Documentary TV Show following a man living with a brain tumor as he does the jobs he wanted to do as a kid.</span>
+      </li>
+      <li>
+        <a href="http://www.youtube.com/user/AutoTrader?blend=7&ob=5">AutoTrader New/Used car reviews</a><br />
+        <span class="project-role">Lead editor</span><br />
+        <span class="project-description">Ongoing production by <a href="http://www.wheelstvnetwork.com">WheelsTV</a> of <a href="http://www.autotrader.com">Autotrader's</a> used and new car review videos.</span>
+      </li>
+    </ul>
+  </div>
+</div>
 
-<li>
-  <a href="http://wishboard.heroku.com/gfontenot">WishBoard</a><br />
-  <span class="repo-description">Wishlists generated from <a href="http://www.pinboard.in">Pinboard</a>. Just go to <code>wishboard.heroku.com/username</code> to see items tagged with "want"</span><br />
-  <a href="/posts/wishboard/">(Blog post)</a>
-</li>
+<div class="development">
+  <h2 class="project-header">Development</h2>
+  <div class="project-content">
+    <ul class="project">
+      <li>
+        <a href="http://www.hopsapp.com">Hops</a> - <a href="http://click.linksynergy.com/fs-bin/stat?id=q6EUHJI0HeE&offerid=146261&type=3&subid=0&tmpid=1826&RD_PARM1=http%253A%252F%252Fitunes.apple.com%252Fus%252Fapp%252Fhops%252Fid429052313%253Fmt%253D8%2526uo%253D4%2526partnerId%253D30">(App Store link)</a><br />
+        <span class="project-description">Beer logging app for iPhone and iPod Touch.</span><br />
+      </li>
 
-<li>
-  Honeypot Passwords file<br />
-  <span class="repo-description">Fake Excel document that acts as a honeypot for thieves. Works with <a href="http://dropbox.com">Dropbox</a></span><br />
-  <a href="/posts/dropbox-honeypot/">(Blog post)</a>
-</li>
-</ul>
-<h3>Open source repositories:</h3>
-<ul>
-{% for_github_repos_do username:gfontenot show_forks:false %}
-<Li>
-<a href="{{ repo.url }}" title="{{ repo.name }}">{{ repo.name }}</a><br />
-<span class="repo-description">{{ repo.description }}</span><br />
-<span class="repo-details">
-  {% if repo.forks > 1 %}
-  <span class="repo-forks">{{ repo.forks }} forks</span>
-  {% endif %}
-  
-  {% if repo.forks > 1 && repo.watchers > 1 %}
-   | 
-  {% endif %}
-  
-  {% if repo.watchers > 1 %}
-  <span class="repo-watchers">{{ repo.watchers }} watchers</span>
-  {% endif %}</span>
-</li>
-{% endfor_github_repos_do %}
-</ul>
+      <li>
+        <a href="http://wishboard.heroku.com/gfontenot">WishBoard</a> - <a href="/posts/wishboard/">(Blog post)</a><br />
+        <span class="project-description">Wishlists generated from <a href="http://www.pinboard.in">Pinboard</a>. Just go to <code>wishboard.heroku.com/username</code> to see items tagged with "want"</span><br />
+      </li>
+
+      <li>
+        Honeypot Passwords file - <a href="/posts/dropbox-honeypot/">(Blog post)</a><br />
+        <span class="project-description">Fake Excel document that acts as a honeypot for thieves. Works with <a href="http://dropbox.com">Dropbox</a></span><br />
+      </li>
+    </ul>
+    <h3>Open source:</h3>
+    <ul>
+    {% for_github_repos_do username:gfontenot show_forks:false %}
+      <Li>
+      <a href="{{ repo.url }}" title="{{ repo.name }}">{{ repo.name }}</a><br />
+      <span class="project-description">{{ repo.description }}</span><br />
+      <span class="repo-details">
+        {% if repo.forks > 1 %}
+        <span class="repo-forks">{{ repo.forks }} forks</span>
+        {% endif %}
+
+        {% if repo.forks > 1 && repo.watchers > 1 %}
+         | 
+        {% endif %}
+
+        {% if repo.watchers > 1 %}
+        <span class="repo-watchers">{{ repo.watchers }} watchers</span>
+        {% endif %}</span>
+      </li>
+    {% endfor_github_repos_do %}
+    </ul>
+  </div>
+</div>

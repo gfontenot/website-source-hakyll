@@ -225,24 +225,21 @@ div.footer
  	border-top: 1px dashed #D3D3D3;
 }
 
-/* Resume styling */
+/* Projects styling */
 
-div.resume-content
+ul.project
+{
+  padding-left: 0;
+}
+
+div.project-content
 {
   margin-left: 30px;
   padding-left: 15px;
   border-left: 1px dashed #8bafb0;
-	
 }
 
-div#software-and-skills
-{
-  position: absolute;
-  top:15px;
-}
-
-
-h2.resume-header
+h2.project-header
 {
   /* Rotate the text like a boss */
   -webkit-transform: rotate(-90deg);
@@ -252,21 +249,29 @@ h2.resume-header
   color: #8bafb0;
 	padding: 0;  
   position: relative;
-  text-align: left;
+  text-align: center;
   right: 290px;
 }
 
-div#employment h2.resume-header
+div.film h2.project-header
 {
-  top: -120px;
+  top: 50px;
 }
 
-div#education h2.resume-header
+div.development h2.project-header
 {
-  top: -150px;
+  top: 110px;
 }
 
-div#software-and-skills h2.resume-header
+span.project-description
 {
-  top: -30px;
+  font-style: italic;
+  font-size: .9em;
+/*  font-size: 16px;*/
+}
+
+span.project-role
+{
+  font-weight: bold;
+  font-size: .9em;
 }
