@@ -149,7 +149,6 @@ img.avatar
 div#name
 {
   margin: 10px 0 0px 0;
-	width: 300px;
 	font-family: Helvetica, sans-serif;
 	text-transform: uppercase;
 }
@@ -223,7 +222,14 @@ div.footer
   padding-top: .5em;
   color: darkgrey;
  	border-top: 1px dashed #D3D3D3;
+ 	width: 600px;
 }
+
+h2.year-header
+{
+  text-decoration: underline;
+}
+
 
 /* Projects styling */
 

@@ -4,6 +4,23 @@ title: Post Archive
 ---
 <h1>Post Archive</h1>
 
+{% assign previous_post_year = 0 %}
+
 {% for post in site.posts %}
-  <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %e, %Y" }}<br \>
+  {% capture current_post_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+  {% if current_post_year != previous_post_year %}
+    {% assign previous_post_year = current_post_year %}
+    {% unless forloop.first  %}
+    </p>
+    </div>
+    {% endunless %}
+  <div>
+    <h2 class="year-header">{{ post.date |date: "%Y" }}</h2>
+    <p>
+  {% endif %}
+  {{ post.date | date: "%b %d" }} &mdash;  <a href="{{ post.url }}">{% if post.type == "link" %}Link: {% endif %}{{ post.title }}</a><br \>
+  {% if forloop.last %}
+  </p>
+  </div>
+  {% endif %}
 {% endfor %}
