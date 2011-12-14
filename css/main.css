@@ -1,251 +1,219 @@
-body
-{
-	background-color: #F9F9F9;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
-	font-weight: 300;
-	line-height: 1.3;
-}
+/* #mark Centering */
 
-a
-{
+#content, nav {
+  width: 40em;
+  margin: auto;
+  }
+
+/* #mark Style */
+
+body {
+	background-color: #cccecc;
+  }
+
+a {
 	text-decoration: none;
 	color: #1D5669;
-}
+  }
 
-a:hover
-{
+a:hover {
   text-decoration: underline;
-}
+  }
 
-p
-{
-  padding-bottom: 1em;
-}
+h1, h2, h3, h4, h5, h6 {
+  font-family: HelveticaNeue-Light, Helvetica, sans-serif;
+  }
 
-blockquote
-{
+/* #mark Clearing floats */
+ 
+ header {
+  clear: both;
+  overflow: hidden;
+  }
+
+/* #mark Header */
+
+header {
+  background: rgb(68,68,68); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(68,68,68,1) 0%, rgba(119,119,119,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(68,68,68,1)), color-stop(100%,rgba(119,119,119,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(68,68,68,1) 0%,rgba(119,119,119,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(68,68,68,1) 0%,rgba(119,119,119,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(68,68,68,1) 0%,rgba(119,119,119,1) 100%); /* IE10+ */
+  background: linear-gradient(top,  rgba(68,68,68,1) 0%,rgba(119,119,119,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444444', endColorstr='#777777',GradientType=0 ); /* IE6-9 */
+
+  -webkit-box-shadow: inset 0px -4px 7px rgba(0, 0, 0, .4);
+  -moz-box-shadow: inset 0px -4px 7px rgba(0, 0, 0, .4);
+  box-shadow: inset 0px -4px 7px rgba(0, 0, 0, .4);
+
+  padding: 1em;
+  margin-bottom: 1em;
+  }
+
+header li {
+  display: inline;
+  }
+  
+#me {
+  float: left;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, .7);
+  }
+
+header a:hover {
+  text-decoration: none;
+  }
+
+#fname, #lname {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  }
+
+#fname {
+  color: #ccc;
+  }
+
+#lname {
+  font-weight: bold;
+  color: #aaa;
+  }
+
+#tagline {
+  float: none;
+  width: 90%;
+  color: #ccc;
+  
+  margin: auto;
+  margin-top: .3em;
+  
+  }
+
+#tagline li {
+  display: inline-block;
+	width: 4em;
+  }
+
+/*
+#tagline .tag-one,
+#tagline .tag-three {
+  width: 27.5%;
+  }
+
+#tagline .tag-two {
+  width: 41%;
+  }
+*/
+
+#tagline .tag-two {
+  text-align: center;
+  }
+
+#tagline .tag-three {
+  text-align: right;
+  }
+
+#tagline .tag-one span {
+  float: right;
+  }
+
+#tagline .tag-three span {
+  float: left;
+  }
+
+nav ol {
+  float: right;
+  }
+
+#internal-nav {
+	margin-top: 2em;
+	}
+
+#internal-nav a {
+  color: #ccc;
+  }
+
+#internal-nav a:hover {
+  color: #aaa;
+  }
+
+#external-nav a {
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+  opacity: .3;
+  }
+
+#external-nav a:hover {
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  }
+/* #mark Content */
+
+blockquote {
 	border-left: 2px solid #D3D3D3;
 	margin-bottom: 1em;
-	margin-left: 1em;
-	padding: .5em 10px;
+	margin-left: 0;
+	padding: .5em;
 	quotes: "\201C""\201D""\2018""\2019";
 	font-style: italic;
-}
-blockquote p
-{
+  }
+
+blockquote p {
 	display: inline;
-}
+  }
 
-h1, h2, h3
-{
-	font-weight: bold;
-	padding-bottom: .2em;
-}
-
-h1
-{
-	font-size: 1.8em;
-	color: #8bafb0;
-	border-bottom: 1px dashed #D3D3D3;
-	margin-bottom: .5em;
-}
-
-h2
-{
-  font-size: 1.5em;
-}
-
-h1.list-post-header
-{
-	font-size: 20px;
-	border-bottom: none;
-}
-
-ul, ol
-{
+.post ul, .post ol {
   margin-bottom: 1em;
   margin-left: 1em;
   width: 30em;
   padding-left: 1em;
   text-indent: -1em;
   list-style-position: inside; 
-}
+  }
 
-ul
-{
-  list-style-type: disc;
-}
+.post ol {
+  list-style: numeral;
+  }
 
-ol
-{
-  list-style-type: decimal;
-}
+.post ul {
+  list-style: disc;
+  }
 
-li
-{
-  padding-bottom: 5px;
-}
-
-sup, sub
-{
+sup, sub {
   font-size: .8em;
   vertical-align: baseline;
   _vertical-align: bottom;
   position: relative;
   padding-left: 3px;
-}
+  }
 
-sup
-{
+sup {
   bottom: 1ex;
-}
+  }
 
-sub
-{
+sub {
   top: .5ex;
-}
+  }
 
-hr
-{
-  margin-bottom: .5em;
-}
-
-code
-{
+code {
   background: #FDF6E3;
   color: #2AA198;
   font-family: "Inconsolata", monospace
-}
-
-div.header
-{
-  position: fixed;
-  left: 15px;
-  top: 15px;
-  width: 120px;
-}
-
-div#content
-{
-	margin-left: 160px;
-	margin-bottom: 50px;
-	margin-top: 15px;
-	font-size: 18px;
-	width: 600px;
-	min-height: 350px;
-}
-
-img.avatar
-{
-	margin-left: 16px;
-	border: 1px solid #fff;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-box-shadow: 0px 0px 4px #555;
-}
-
-div#name
-{
-  margin: 10px 0 0px 0;
-	text-transform: uppercase;
-}
-
-span#fname
-{
-  font-size: 23px;
-	font-style: bold;
-	letter-spacing: 3px;
-	color: #666;
-	margin-bottom: 0;
-}
-
-span#lname
-{
-  margin-top: 0px;
-	font-size: 17px;
-	font-weight: bold;
-	letter-spacing: 3px;
-}
-
-span#tagline
-{
-	font-size: 12px;
-  margin-bottom: 1em;
-}
-
-div#hover-text
-{
-	font-size: 14px;
-	color: #808080;
-}
-
-div#internal-links
-{
-  margin-top: 1em;
-	margin-bottom: 1em;
-}
-
-div.post
-{
-	border-bottom: 1px dashed #D3D3D3;
-	margin-top: 1.5em;
-	margin-bottom: 1.5em;
-	
-}
-
-.authoring{
-  padding-left: 3px;
-  padding-bottom: .5em;
-  font-size: 14px;
-  color: #777;
-}
-
-div.post postamble
-{
-	display: block;
-	font-size: 14px;
-	margin-bottom: 1em;
-	color: #999;
-}
-
-div.footnotes
-{
-	font-size: 14px;
-	color: #777;
-}
-
-div.footer
-{
-  padding-left: 160px;
-  padding-bottom: .5em;
-  padding-top: .5em;
-  color: darkgrey;
- 	border-top: 1px dashed #D3D3D3;
- 	width: 600px;
-}
-
-h2.year-header
-{
-  text-decoration: underline;
-}
-
+  }
 
 /* Projects styling */
 
-ul.project
-{
+.project {
   padding-left: 0;
-}
+  }
 
-div.project-content
-{
+.project-content {
   margin-left: 30px;
   padding-left: 15px;
   border-left: 1px dashed #8bafb0;
-}
+  }
 
-h2.project-header
-{
+.project-header {
   /* Rotate the text like a boss */
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
@@ -256,26 +224,22 @@ h2.project-header
   position: relative;
   text-align: center;
   right: 290px;
-}
+  }
 
-div.film h2.project-header
-{
+.film h2.project-header {
   top: 50px;
-}
+  }
 
-div.development h2.project-header
-{
+.development h2.project-header {
   top: 110px;
-}
+  }
 
-span.project-description
-{
+.project-description {
   font-style: italic;
   font-size: .9em;
-}
+  }
 
-span.project-role
-{
+.project-role {
   font-weight: bold;
   font-size: .9em;
-}
+  }
