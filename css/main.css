@@ -14,7 +14,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: #1D5669;
+	color: #297C97;
   }
 
 a:hover {
@@ -146,56 +146,6 @@ nav ol {
 #internal-nav a:hover {
   color: #aaa;
   }
-
-#external-nav li {
-  margin-left: .2em;
-  }
-
-#external-nav li:first-child {
-  margin-left: 0;
-  }
-
-#external-nav a {
-  display: inline-block;
-  width: 27px;
-  height: 27px;
-  text-indent: -9999em;
-  background-image: url("/images/social.png");
-  
-  /* Transitional */
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-  filter: alpha(opacity=30);
-  
-  /* Future */
-  opacity: .3;
-  }
-
-#external-nav a:hover {
-  
-  /* Transitional */
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  filter: alpha(opacity=100);
-  
-  /* Future */
-  opacity: 1;
-  
-  }
-  
-#external-nav #twitter {
-  background-position: 0 0;
-  }
-
-#external-nav #facebook {
-  background-position: 0 -27px;
-  }
-
-#external-nav #github {
-  background-position: 0 -54px;
-  }
-
-#external-nav #spotify {
-  background-position: 0 -81px;
-  }
   
 /* #mark Content */
 
@@ -243,7 +193,6 @@ blockquote p {
   }
 
 article ul, article ol {
-  margin-bottom: 1em;
   width: 30em;
   padding-left: 1em;
   text-indent: -1em;
@@ -285,7 +234,74 @@ postamble {
   color: #999;
   }
 
-/* Projects styling */
+.footnotes {
+  color: #666;
+  }
+
+/* #mark about page */
+
+#avatar {
+  float: right;
+  margin-left: 1em;
+  }
+
+#external-nav {
+  float: right;
+  clear: right;
+  }
+
+#external-nav li {
+  margin-left: .2em;
+  display: inline-block;
+  }
+
+#external-nav li:first-child {
+  margin-left: 0;
+  }
+
+#external-nav a {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  text-indent: -9999em;
+  background-image: url("/images/social.png");
+  
+  /* Transitional */
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+  
+  /* Future */
+  opacity: .3;
+  }
+
+#external-nav a:hover {
+  
+  /* Transitional */
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  
+  /* Future */
+  opacity: 1;
+  
+  }
+  
+#external-nav #twitter {
+  background-position: 0 0;
+  }
+
+#external-nav #facebook {
+  background-position: 0 -27px;
+  }
+
+#external-nav #github {
+  background-position: 0 -54px;
+  }
+
+#external-nav #spotify {
+  background-position: 0 -81px;
+  }
+
+/* #mark Projects styling */
 
 .project {
   padding-left: 0;
