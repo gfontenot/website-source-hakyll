@@ -1,6 +1,6 @@
 /* #mark Centering */
 
-#content, nav {
+#content, nav, footer p {
   max-width: 40em;
   margin: auto;
   }
@@ -71,7 +71,7 @@ header li {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, .7);
   }
 
-header a:hover {
+#me a:hover {
   text-decoration: none;
   }
 
@@ -165,19 +165,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 
 h1 {
-  display: inline-block;
+  /*display: inline-block;*/
   font-size: 1.3em;
   /*border-bottom: 1px dashed #1D5669;*/
   margin-bottom: .7em;
-  }
-
-.permalink {
-  color: #999;
-  margin-left: .7em;
-  }
-  
-.permalink a {
-  margin-left: 1em;
   }
 
 blockquote {
@@ -193,7 +184,7 @@ blockquote p {
   }
 
 article ul, article ol {
-  width: 30em;
+/*  width: 30em;*/
   padding-left: 1em;
   text-indent: -1em;
   list-style-position: inside; 
@@ -232,6 +223,15 @@ code {
 
 postamble {
   color: #999;
+  }
+
+.permalink {
+  margin-left: .2em;
+  }
+  
+.permalink a {
+	display: inline-block;
+  margin-left: .5em;
   }
 
 .footnotes {
@@ -343,3 +343,62 @@ postamble {
   font-weight: bold;
   font-size: .9em;
   }
+  
+/* #mark Footer */
+
+
+footer {
+	color: #aaa;
+/*	background: rgb(68,68,68);*/
+
+/*	box-shadow: inset 0px 5px 10px rgba(0, 0, 0, .6);*/
+	
+	border-top: 2px dashed #297C97;
+	
+	padding-top: 1em;	
+	margin-top: 2em;
+	
+	}
+
+/*
+footer a {
+	color: #ccc;
+	}
+*/
+
+/*
+footer a:hover {
+  color: #aaa;
+  }
+*/
+
+/* #mark @media */
+
+@media only screen
+and (max-width: 42em) {
+	
+	#content, nav, footer p {
+		width: 30em;
+		}
+	}
+
+@media only screen
+and (max-width: 32em) {
+	
+	#content, nav, footer p, #me {
+		width: 18em;
+		}
+	
+	#me, #internal-nav, #external-nav {
+		width: 100%;
+		margin: auto;
+		text-align: center;
+		float: none;
+		}
+		
+	#fname, #lname {
+		font-size: 1.7em;
+		}
+	
+	}
+	
