@@ -11,14 +11,13 @@ layout: main
   {% endif %}
   </h1>
 
-  <span class="permalink">
-    •<a href="{{ post.url }}" title="Permalink for this post">&infin;</a>
-  </span>
-
 	<div class="post_body">{{ content }}</div>
 	
   <postamble datetime="{{ page.date | date: "%Y-%m-%d" }}">
     &mdash;{{ page.date | date: "%b %d, %Y" }}
+		<span class="permalink">
+			•<a href="{{ post.url }}" title="Permalink for this post">∞</a>
+		</span>
 	</postamble>
 	
-<article  >
+</article>
