@@ -1,19 +1,19 @@
-<div class="post">
-	<h1 class="list-post-header">
-	{% if post.type == "link" %}
-		<a href="{{ post.source }}">{{ post.title }}</a>
-	{% else %}
-		<a href="{{ post.url }}">{{ post.title }}</a>
-	{% endif %}
-	</h1>
-	<div class="body">{{ post.content }}</div>
-	{% if post.type == "link" %}
-	<div class="permalink">
- 		<a href="{{ post.url }}" title="Permalink for this post">&#8658;</a>
-	</div>
-	{% endif %}
-	<div class="breaker"></div>
-	<postamble datetime="{{ post.date | date: "%Y-%m-%d" }}">
+<article>
+  <h1>
+  {% if post.type == "link" %}
+    <a href="{{ post.source }}">&rArr; {{ post.title }}</a>
+  {% else %}
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  {% endif %}
+  </h1>
+	
+	<div class="post_body">{{ post.content }}</div>
+	
+  <postamble datetime="{{ post.date | date: "%Y-%m-%d" }}">
     &mdash;{{ post.date | date: "%b %d, %Y" }}
-  	</postamble>
-</div>
+		<span class="permalink">
+			•<a href="{{ post.url }}" title="Permalink for this post">∞</a>
+		</span>
+	</postamble>
+	
+</article>

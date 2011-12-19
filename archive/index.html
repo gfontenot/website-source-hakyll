@@ -11,16 +11,15 @@ title: Post Archive
   {% if current_post_year != previous_post_year %}
     {% assign previous_post_year = current_post_year %}
     {% unless forloop.first  %}
-    </p>
-    </div>
+  </ol>
     {% endunless %}
-  <div>
+  <ol>
     <h2 class="year-header">{{ post.date |date: "%Y" }}</h2>
-    <p>
   {% endif %}
-  {{ post.date | date: "%b %d" }} &mdash;  <a href="{{ post.url }}">{% if post.type == "link" %}Link: {% endif %}{{ post.title }}</a><br \>
+    <li>
+    {{ post.date | date: "%b %d" }} &mdash;  <a href="{{ post.url }}">{% if post.type == "link" %}Link: {% endif %}{{ post.title }}</a>
+    </li>
   {% if forloop.last %}
-  </p>
-  </div>
+  </ol>
   {% endif %}
 {% endfor %}
