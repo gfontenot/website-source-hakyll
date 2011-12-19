@@ -258,35 +258,40 @@ postamble {
 
 /* #mark Projects styling */
 
-.project {
-  padding-left: 0;
-  }
 
-.project-content {
-  margin-left: 30px;
-  padding-left: 15px;
+.project-list {
+  padding-left: .8em;
   border-left: 1px dashed #8bafb0;
+  margin-left: 1.5em;
+  margin-top: 1.5em;
   }
 
-.project-header {
+.project-list dt, .project-list dd {
+  line-height: 1.5;
+  }
+
+.project-list h2 {
+  
+  float: left;
+  
+  display: inline-block;
+
   /* Rotate the text like a boss */
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-
   color: #8bafb0;
-	padding: 0;  
-  position: relative;
-  text-align: center;
-  right: 290px;
+  padding: 0;
+  margin: .5em 0 0 -3em;
+  
   }
 
-.film h2.project-header {
-  top: 50px;
+.development h2 {
+  margin: 2.8em -1.2em 0 -5.1em;
   }
 
-.development h2.project-header {
-  top: 110px;
+.project-list dt {
+  margin-top: 1em;
   }
 
 .project-description {
@@ -348,7 +353,8 @@ footer p {
 #external-nav li {
   margin-left: .2em;
   margin-bottom: .4em;
-  display: inline-block;
+/*  display: inline-block; */
+  float: left;
   }
 
 /*
@@ -465,10 +471,12 @@ and (max-width: 32em) {
 	
 	#external-nav li {
 		margin-left: 1.5em;
+		display: inline;
+		float: none;
 		}
 	
 	#external-nav li:first-child {
-		margin-left: 0;
+		margin-left: .5em;
 		}
 	
 	}
