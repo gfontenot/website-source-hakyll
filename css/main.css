@@ -1,7 +1,7 @@
 /* #mark Centering */
 
 #content, nav, footer div {
-  max-width: 40em;
+  width: 40em;
   margin: auto;
   }
 
@@ -57,7 +57,7 @@ header {
   
   /* Future */
   box-shadow: inset 0px -4px 7px rgba(0, 0, 0, .4);
-
+  
   padding: 1em;
   margin-bottom: 1em;
   }
@@ -226,7 +226,7 @@ code {
   font-family: inconsolata-1, inconsolata-2, monospace
   }
 
-postamble {
+.postamble {
   color: #999;
   }
 

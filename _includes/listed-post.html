@@ -9,11 +9,11 @@
 	
 	<div class="post_body">{{ post.content }}</div>
 	
-  <postamble datetime="{{ post.date | date: "%Y-%m-%d" }}">
+  <div class="postamble" datetime="{{ post.date | date: "%Y-%m-%d" }}">
     &mdash;{{ post.date | date: "%b %d, %Y" }}
 		<span class="permalink">
 			•<a href="{{ post.url }}" title="Permalink for this post">∞</a>
 		</span>
-	</postamble>
+	</div>
 	
 </article>
