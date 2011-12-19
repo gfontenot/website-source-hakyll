@@ -172,9 +172,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
 h1 {
-  /*display: inline-block;*/
   font-size: 1.3em;
-  /*border-bottom: 1px dashed #1D5669;*/
   margin-bottom: .7em;
   }
 
@@ -225,7 +223,7 @@ sub {
 code {
   background: #FDF6E3;
   color: #2AA198;
-  font-family: "Inconsolata", monospace
+  font-family: inconsolata-1, inconsolata-2, monospace
   }
 
 postamble {
@@ -309,28 +307,12 @@ postamble {
 
 footer {
 	color: #aaa;
-/*	background: rgb(68,68,68);*/
-
-/*	box-shadow: inset 0px 5px 10px rgba(0, 0, 0, .6);*/
 	
+	padding-top: 1em;
 	border-top: 2px dashed rgba(0, 0, 0, .1);
-	
-	padding-top: 1em;	
 	margin-top: 2em;
 	
 	}
-
-/*
-footer a {
-	color: #ccc;
-	}
-*/
-
-/*
-footer a:hover {
-  color: #aaa;
-  }
-*/
 
 footer div {
 	clear: both;
@@ -353,15 +335,8 @@ footer p {
 #external-nav li {
   margin-left: .2em;
   margin-bottom: .4em;
-/*  display: inline-block; */
   float: left;
   }
-
-/*
-#external-nav li:first-child {
-  margin-left: 0;
-  }
-*/
 
 #external-nav a {
   display: inline-block;
