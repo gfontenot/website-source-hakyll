@@ -13,11 +13,11 @@ layout: main
 
 	<div class="post_body">{{ content }}</div>
 	
-  <postamble datetime="{{ page.date | date: "%Y-%m-%d" }}">
+  <div class="postamble" datetime="{{ page.date | date: "%Y-%m-%d" }}">
     &mdash;{{ page.date | date: "%b %d, %Y" }}
 		<span class="permalink">
 			•<a href="{{ post.url }}" title="Permalink for this post">∞</a>
 		</span>
-	</postamble>
+	</div>
 	
 </article>
