@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6, #fname, #lname, #tagline {
   
 /* #mark Clearing floats */
  
- header {
+nav {
   clear: both;
   overflow: hidden;
   }
@@ -61,10 +61,6 @@ header {
   padding: 1em;
   margin-bottom: 1em;
   }
-
-header li {
-  display: inline;
-  }
   
 #me {
   float: left;
@@ -76,7 +72,6 @@ header li {
   }
 
 #fname, #lname {
-  display: inline-block;
   text-transform: uppercase;
   font-size: 1.8em;
   }
@@ -90,45 +85,6 @@ header li {
   color: #aaa;
   }
 
-#tagline {
-  float: none;
-  width: 95%;
-  color: #ccc;
-  
-  margin: auto;
-  margin-top: .3em;
-  
-  }
-
-#tagline li {
-  display: inline-block;
-  }
-
-#tagline .tag-one,
-#tagline .tag-two {
-  width: 28%;
-  }
-
-#tagline .tag-three {
-  width: 40%;
-  }
-
-#tagline .tag-two {
-  text-align: center;
-  }
-
-#tagline .tag-three {
-  text-align: right;
-  }
-
-#tagline .tag-one .decoration {
-  float: right;
-  }
-
-#tagline .tag-three .decoration {
-  float: left;
-  }
-
 #internal-nav {
 	float: right;
 	margin-top: .4em;
@@ -136,6 +92,7 @@ header li {
 	
 #internal-nav li {
 	margin-left: 1em;
+  display: inline;
 	}
 
 #internal-nav li:first-child {
