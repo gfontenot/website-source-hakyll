@@ -129,11 +129,8 @@ header li {
   float: left;
   }
 
-nav ol {
-  float: right;
-  }
-
 #internal-nav {
+	float: right;
 	margin-top: .4em;
 	}
 	
