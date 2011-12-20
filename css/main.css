@@ -131,7 +131,6 @@ header li {
 
 nav ol {
   float: right;
-  clear: right;
   }
 
 #internal-nav {
@@ -225,7 +224,7 @@ code {
   color: #2AA198;
   font-family: inconsolata-1, inconsolata-2, monospace
   }
-
+	
 .postamble {
   color: #999;
   }
