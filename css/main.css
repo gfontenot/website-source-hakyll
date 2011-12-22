@@ -10,6 +10,16 @@
 body {
 	background-color: #eee;
 	font-family: gesta-1, gesta-2, helvetica, sans-serif;
+	font-weight: light;
+  font-style: normal;
+  }
+
+em {
+  font-style: italic;
+  }
+
+strong {
+  font-weight: bold;
   }
 
 a {
@@ -127,6 +137,10 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 1.3em;
   margin-bottom: .7em;
+  }
+  
+h2 {
+  text-decoration: underline;
   }
 
 blockquote {
