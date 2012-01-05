@@ -39,7 +39,7 @@ This can be done after the thief already has your laptop. As long as Dropbox is 
 
 Hypothetically, it may look to the thief like Excel is simply crashing, which may even cause him/her to attempt to launch it again, increasing your chances of getting a useable picture.
 
-### DISCLAIMERS
+## DISCLAIMERS
 
 It should be noted that using this script in no way guarantees that you will be able to find your stolen laptop, and I make no claims as such. Also, please note that there are a number of ways a semi-smart thief could foil this script:
 
@@ -49,7 +49,7 @@ It should be noted that using this script in no way guarantees that you will be 
 4. There is also a chance that the thief will be able to catch and delete the image before Dropbox gets to upload it. I have tried to minimize this by placing it in the Public directory (And therefor, out of sight). But the chance is always there.
 5. There is also no way to know how the image will come out. Theoretically, if the thief is trying to open your passwords file, they would be staring right at the screen, and therefor, the picture would be great. But there's really no way to know for sure.
 
-### CODE
+## CODE
 
 I'm making the (extremely) basic code for the Applescript portion of this app available as a [Gist on GitHub][gist]. I do not have access to the iSightCapture CLI source, and will not be releasing it as a standalone product, just embedded into the app. If you want the actual iSightCapture CLI, you will have to download it from [it's project page][isightCapture].
 

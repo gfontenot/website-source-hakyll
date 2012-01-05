@@ -140,7 +140,9 @@ h1 {
   }
   
 h2 {
-  text-decoration: underline;
+  padding-bottom: .5em;
+  border-bottom: 2px dashed #297C97;
+  margin-bottom: .5em;
   }
 
 blockquote {
