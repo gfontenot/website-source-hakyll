@@ -236,6 +236,7 @@ code {
   border-left: 1px dashed #8bafb0;
   margin-left: 1.5em;
   margin-top: 1.5em;
+  position: relative;
   }
 
 .project-list dt, .project-list dd {
@@ -244,9 +245,11 @@ code {
 
 .project-list h2 {
   
-  float: left;
-  
+  position: relative;
+
   display: inline-block;
+
+  float: left;
 
   /* Rotate the text like a boss */
   -webkit-transform: rotate(-90deg);
@@ -254,14 +257,15 @@ code {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   color: #8bafb0;
   padding: 0;
-  margin: .5em 0 0 -3em;
+  margin: .8em 0 0 -2.5em;
 
   border-top: none;
   
   }
 
 .development h2 {
-  margin: 2.8em -1.2em 0 -5.1em;
+  padding-bottom: .1em;
+  margin: 3.4em -5em 0 -5.1em;
   }
 
 .project-list dt {
