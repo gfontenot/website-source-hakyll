@@ -53,6 +53,7 @@ header {
   /* Transitional */
   background: -moz-linear-gradient(top,  rgba(68,68,68,1) 0%, rgba(119,119,119,1) 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(68,68,68,1)), color-stop(100%,rgba(119,119,119,1))); /* Chrome,Safari4+ */
+
   background: -webkit-linear-gradient(top,  rgba(68,68,68,1) 0%,rgba(119,119,119,1) 100%); /* Chrome10+,Safari5.1+ */
   background: -o-linear-gradient(top,  rgba(68,68,68,1) 0%,rgba(119,119,119,1) 100%); /* Opera 11.10+ */
   background: -ms-linear-gradient(top,  rgba(68,68,68,1) 0%,rgba(119,119,119,1) 100%); /* IE10+ */
@@ -68,7 +69,7 @@ header {
   /* Future */
   box-shadow: inset 0px -4px 7px rgba(0, 0, 0, .4);
   
-  padding: 1em;
+  padding: 6em 1em 1em 1em;
   margin-bottom: 1em;
   }
   
@@ -83,7 +84,7 @@ header {
 
 #fname, #lname {
   text-transform: uppercase;
-  font-size: 1.8em;
+  font-size: 2.3em;
   }
 
 #fname {
@@ -97,7 +98,8 @@ header {
 
 #internal-nav {
 	float: right;
-	margin-top: .4em;
+	margin-top: .7em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, .7);
 	}
 	
 #internal-nav li {
@@ -363,7 +365,15 @@ and (max-width: 42em) {
 	#content, nav, footer div {
 		width: 30em;
 		}
-	
+
+	#fname, #lname {
+   font-size: 1.7em; 
+  }
+
+  #internal-nav {
+    margin-top: .4em;
+  }
+
 	footer p {
 		width: 25em;
 		line-height: 1.5;
@@ -406,6 +416,7 @@ and (max-width: 32em) {
 	footer p {
 		float: none;
 		width: 100%;
+    text-align: center;
 		}
 	
 	#external-nav {
