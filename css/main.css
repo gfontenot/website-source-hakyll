@@ -1,11 +1,11 @@
-/* #mark Centering */
+/* Centering */
 
 #content, nav, footer div {
   width: 40em;
   margin: auto;
   }
 
-/* #mark Base Style */
+/* Base Style */
 
 body {
 	background-color: #eee;
@@ -36,14 +36,14 @@ h1, h2, h3, h4, h5, h6, #fname, #lname, #tagline {
 		font-weight: 300;
   }
   
-/* #mark Clearing floats */
+/* Clearing floats */
  
 nav {
   clear: both;
   overflow: hidden;
   }
 
-/* #mark Header */
+/* Header */
 
 header {
   
@@ -119,7 +119,7 @@ header {
   color: #aaa;
   }
   
-/* #mark Content */
+/* Content */
 
 article {
   padding-bottom: 4em;
@@ -217,7 +217,7 @@ code {
   color: #666;
   }
 
-/* #mark about page */
+/* About */
 
 #avatar {
   float: right;
@@ -228,7 +228,7 @@ code {
 	padding-bottom: 1em;
 	}
 
-/* #mark Projects styling */
+/* Projects */
 
 
 .project-list {
@@ -243,7 +243,7 @@ code {
   line-height: 1.5;
   }
 
-.project-list h2 {
+.project-header {
   
   position: relative;
 
@@ -252,12 +252,14 @@ code {
   float: left;
 
   /* Rotate the text like a boss */
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(-90deg); /* Webkit */
+  -moz-transform: rotate(-90deg); /* FireFox */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* IE */
+  transform: rotate(-90deg); /* WC3 */
+
   color: #8bafb0;
   padding: 0;
-  margin: .8em 0 0 -2.5em;
+  margin: .8em 0 -3em -.6em;
 
   border-top: none;
   
@@ -265,7 +267,7 @@ code {
 
 .development h2 {
   padding-bottom: .1em;
-  margin: 3.4em -5em 0 -5.1em;
+  margin: 3.3em -5em 0 -3.1em;
   }
 
 .development h3 {
@@ -288,7 +290,7 @@ code {
   font-size: .9em;
   }
   
-/* #mark Footer */
+/* Footer */
 
 
 footer {
@@ -367,10 +369,10 @@ footer p {
   }
 
 
-/* #mark @media */
+/* @media */
 
 
-/* #mark Small Screen */
+/* Small Screen */
 @media only screen
 and (max-width: 42em) {
 	
@@ -397,7 +399,7 @@ and (max-width: 42em) {
 		
 	}
 
-/* #mark iPhone */
+/* iPhone */
 
 @media only screen
 and (max-width: 32em) {
