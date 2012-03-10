@@ -1,6 +1,6 @@
 function get_github_public_repos(username) {  
   // Github API V3 endpoint
-  var gh_pub_repos = "https://api.github.com/users/" + username + "/repos"
+  var gh_pub_repos = "https://api.github.com/users/" + username + "/repos";
 
   $.ajax({
     url: gh_pub_repos,
