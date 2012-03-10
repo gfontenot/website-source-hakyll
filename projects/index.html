@@ -44,25 +44,10 @@ title: Projects
     </dt>
     <dd class="project-description">Fake Excel document that acts as a honeypot for thieves. Works with <a href="http://dropbox.com">Dropbox</a></dd>
   </dl>
-<!--<h3>Open source:</h3>
-  <ul>
-  {% for_github_repos_do username:gfontenot show_forks:false %}
-    <Li>
-    <a href="{{ repo.url }}" title="{{ repo.name }}">{{ repo.name }}</a><br />
-    <span class="project-description">{{ repo.description }}</span><br />
-    <span class="repo-details">
-      {% if repo.forks > 1 %}
-      <span class="repo-forks">{{ repo.forks }} forks</span>
-      {% endif %}
-
-      {% if repo.forks > 1 && repo.watchers > 1 %}
-       | 
-      {% endif %}
-
-      {% if repo.watchers > 1 %}
-      <span class="repo-watchers">{{ repo.watchers }} watchers</span>
-      {% endif %}</span>
-    </li>
-  {% endfor_github_repos_do %}
-  </ul> -->
+  <h3>Open source repos (on <a href="http://github.com/gfontenot">GitHub</a>)</h3>
+  <dl class="project-list" id="gh-projects">
+    <!-- To be filled in by Javascript. Hooray! -->
+  </dl>
 </section>
+<script src="/js/gh-projects.js"></script>
+<script>get_github_public_repos('gfontenot')</script>
