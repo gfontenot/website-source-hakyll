@@ -1,0 +1,5 @@
+// ghrepos.js - http://github.com/gfontenot/ghrepos.js
+// 
+// Copyright 2012, Gordon Fontenot - http://gordonfontenot.com
+// Released under the WTFPL license - http://sam.zoy.org/wtfpl/
+(function(a){a.fn.getUserRepos=function(b){var c={username:"example",showForks:!1,showInverted:!0,allowedRepos:[""]};return a.extend(c,b),this.each(function(){var b="https://api.github.com/users/"+c.username+"/repos",d=this;a.ajax({url:b,dataType:"jsonp",type:"get",success:function(b){function f(a,b){return new Date(a.pushed_at)-new Date(b.pushed_at)}var e=b.data;e.sort(f),c.showInverted?e.reverse():!1;var g;for(g=0;g<e.length;g++){var h=e[g];if(c.allowedRepos.indexOf(h.name)>=0||c.showForks||!h.fork){var i=a("<a>").attr("href",h.html_url).attr("title",h.name).text(h.name),j=a("<dt>").append(i),k=a("<dd>").addClass("project-description").text(h.description);a(d).append(j).append(k)}}}})})}})(jQuery);

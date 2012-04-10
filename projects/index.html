@@ -49,4 +49,9 @@ title: Projects
     <!-- To be filled in by Javascript. Hooray! -->
   </dl>
 </section>
-<script src="/js/gh-projects.js"></script>
+<script src="/js/jquery.ghrepos.js"></script>
+<script>
+  $(document).ready(function() {
+    $("#gh-projects").getUserRepos({username: 'gfontenot', allowedRepos: ['dotfiles']});
+  })
+</script>
