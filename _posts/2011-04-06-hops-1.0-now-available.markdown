@@ -46,7 +46,7 @@ Again, a number of reasons:
 
 [Click here to see the app on the app store.][app store]
 
-[app store]: http://click.linksynergy.com/fs-bin/stat?id=q6EUHJI0HeE&offerid=146261&type=3&subid=0&tmpid=1826&RD_PARM1=http%253A%252F%252Fitunes.apple.com%252Fus%252Fapp%252Fhops%252Fid429052313%253Fmt%253D8%2526uo%253D4%2526partnerId%253D30
+[app store]: http://itunes.apple.com/us/app/hops/id429052313
 
 I just want to say thank you to the excellent community over at [StackOverflow][] for the help I received during development. I’m spoiled that I have such a resource to help me learn something as complicated as this. If you’re ever thinking about getting into development, I can’t recommend that place enough. I also got a whole hell of a lot of inspiration from guys like [Marco][] at [Instapaper][], [Loren Brichter][] of Tweetie/Twitter for iOS fame, and of course the amazing work by the teams at Apple.
 
