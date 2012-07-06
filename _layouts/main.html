@@ -2,42 +2,34 @@
 
 <html lang="en">
 <head>
-	<title>{{ page.title }} &mdash; Gordon Fontenot</title>
-	<!-- <base href="http://gordonfontenot.com" /> -->
-	<meta charset="utf-8" />
-	<meta name="author" content="Gordon Fontenot" />
-	<meta name="designer" content="Gordon Fontenot" />
-	<meta name="description" content="editor | shooter | geek" />
-	<meta name="viewport" content="width=device-width" />
+  <title>{{ page.title }} &mdash; Gordon Fontenot</title>
+  <!-- <base href="http://gordonfontenot.com" /> -->
+  <meta charset="utf-8" />
+  <meta name="author" content="Gordon Fontenot" />
+  <meta name="designer" content="Gordon Fontenot" />
+  <meta name="description" content="editor | shooter | geek" />
+  <meta name="viewport" content="width=device-width" />
 
-	<link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/gfontenot" />
-	
+  <link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/gfontenot" />
+  
   {% include typekit-font.html %}
   
-	<link href="/css/reset.css" rel="stylesheet" media="all" />
-	<link href="/css/main.css" rel="stylesheet" media="all" />
-	
-	{% include analytics.html %}
+  <link href="/css/reset.css" rel="stylesheet" media="all" />
+  <link href="/css/main.css" rel="stylesheet" media="all" />
+  <link href="/webfonts/ss-social.css" rel="stylesheet" media="all" />
+  
+  {% include analytics.html %}
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	
   <!--[if lt IE 9]>
-	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-	
+  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
 </head>
 <body>
   <header>
     <nav>
       <div id="me">
         <a href="/"><span id="fname">Gordon</span><span id="lname">Fontenot</span></a>        
-<!-- 
-				<ol id="tagline">
-					<li class="tag-one">film <span class="decoration">&#9679;</span></li>
-					<li class="tag-two"> dev </li>
-					<li class="tag-three"><span class="decoration">&#9679;</span> nerdery</li>
-				</ol>
- -->
       </div>
       
       <ol id="internal-nav">
@@ -49,30 +41,30 @@
     </nav>
   </header>
   
-	<div id="content">
-		{{ content }}
-	</div>
-	<footer>
-		<div>
-			<p>
-				This site powered by <a href="http://jekyllrb.com">Jekyll</a>, hosted at <a href="http://github.com/gfontenot/gfontenot.github.com">GitHub</a>, with fonts from <a href="http://www.typekit.com">TypeKit</a>.<br />
-				<!-- All content  -->&copy; 2010-2011 Gordon Fontenot.
-			</p>
-			<ol id="external-nav">
-				<li>
-					<a href="http://www.twitter.com/gfontenot" id="twitter" title="@gfontenot on Twitter">Twitter</a>
-				</li>
-				<li>
-					<a href="http://www.facebook.com/gordon.fontenot" id="facebook" title="Gordon Fontenot on Facebook">Facebook</a>
-				</li>
-				<li>
-					<a href="http://www.github.com/gfontenot" id="github" title="@gfontenot on GitHub">GitHub</a>
-				</li>
-				<li>
-					<a href="http://open.spotify.com/user/gfontenot" id="spotify" title="gfontenot on Spotify">Spotify</a>
-				</li>
-			</ol>
-		</div>
+  <div id="content">
+    {{ content }}
+  </div>
+  <footer>
+    <div>
+      <p>
+        This site powered by <a href="http://jekyllrb.com">Jekyll</a>, hosted at <a href="http://github.com/gfontenot/gfontenot.github.com">GitHub</a>, with fonts from <a href="http://www.typekit.com">TypeKit</a>.<br />
+        <!-- All content  -->&copy; 2010-2011 Gordon Fontenot.
+      </p>
+      <ol id="external-nav">
+        <li>
+          <a href="http://www.twitter.com/gfontenot" class="ss-icon ss-social-circle" title="@gfontenot on Twitter">Twitter</a>
+        </li>
+        <li>
+          <a href="http://www.facebook.com/gordon.fontenot" class="ss-icon ss-social-circle" title="Gordon Fontenot on Facebook">Facebook</a>
+        </li>
+        <li>
+          <a href="http://www.github.com/gfontenot" class="ss-icon ss-social-circle" title="@gfontenot on GitHub">github</a>
+        </li>
+        <li>
+          <a href="http://open.spotify.com/user/gfontenot" id="spotify" title="gfontenot on Spotify">Spotify</a>
+        </li>
+      </ol>
+    </div>
   </footer>
 
 </body>
