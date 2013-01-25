@@ -7,6 +7,8 @@ title: Gordon Ridley Fontenot
 
 My name is Gordon Fontenot.
 
+I am a native Texan transplanted in Boston.
+
 I type square brackets and semicolons over at [thoughtbot][].
 
 [thoughtbot]: http://www.thoughtbot.com
@@ -27,5 +29,3 @@ I put my code up on [GitHub][].
 If those don't work for you, you can get in touch [via email][email].
 
 [email]: mailto:gordon@thoughtbot.com
-
-I am a native Texan transplanted in Boston.
