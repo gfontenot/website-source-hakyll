@@ -2,46 +2,22 @@
 
 <html lang="en">
 <head>
-  <title>{{ page.title }} &mdash; Gordon Fontenot</title>
+  <title>{{ page.title }}</title>
   <!-- <base href="http://gordonfontenot.com" /> -->
   <meta charset="utf-8" />
   <meta name="author" content="Gordon Fontenot" />
   <meta name="designer" content="Gordon Fontenot" />
-  <meta name="description" content="editor | shooter | geek" />
   <meta name="viewport" content="width=device-width" />
-
-  <link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/gfontenot" />
 
   {% include typekit-font.html %}
 
   <link href="/css/reset.css" rel="stylesheet" media="all" />
   <link href="/css/main.css" rel="stylesheet" media="all" />
-  <link href="/webfonts/ss-social.css" rel="stylesheet" media="all" />
 
   {% include analytics.html %}
 
-  <!--[if lt IE 9]>
-  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-
 </head>
 <body>
-  <header>
-    <nav>
-      <div id="me">
-        <a href="/"><span id="fname">Gordon</span><span id="lname">Fontenot</span></a>
-
-      </div>
-
-      <ol id="internal-nav">
-        <li><a href="/about">About</a></li>
-        <li><a href="/">Blog</a></li>
-        <li><a href="/projects">Projects</a></li>
-      </ol>
-
-    </nav>
-  </header>
-
   <div id="content">
     {{ content }}
   </div>
@@ -49,22 +25,8 @@
     <div>
       <p>
         This site powered by <a href="http://jekyllrb.com">Jekyll</a>, hosted at <a href="http://github.com/gfontenot/gfontenot.github.com">GitHub</a>, with fonts from <a href="http://www.typekit.com">TypeKit</a>.<br />
-        <!-- All content  -->&copy; 2010-2011 Gordon Fontenot.
+        <!-- All content  -->&copy; 2013 Gordon Fontenot.
       </p>
-      <ol id="external-nav">
-        <li>
-          <a href="http://www.twitter.com/gfontenot" class="ss-icon ss-social-circle" title="@gfontenot on Twitter">Twitter</a>
-        </li>
-        <li>
-          <a href="http://www.facebook.com/gordon.fontenot" class="ss-icon ss-social-circle" title="Gordon Fontenot on Facebook">Facebook</a>
-        </li>
-        <li>
-          <a href="http://www.github.com/gfontenot" class="ss-icon ss-social-circle" title="@gfontenot on GitHub">github</a>
-        </li>
-        <li>
-          <a href="http://open.spotify.com/user/gfontenot" class="ss-icon ss-social-circle" title="gfontenot on Spotify">Spotify</a>
-        </li>
-      </ol>
     </div>
   </footer>
 
