@@ -15,7 +15,7 @@ I type square brackets and semicolons over at [thoughtbot][].
 
 I make stupid jokes on [twitter][] (And less frequently on [app.net][]).
 
-[twitter]: http://www.twitter.com/gfontenot
+[twitter]: http://twitter.com/gfontenot
 [app.net]: http://alpha.app.net/gfontenot
 
 I listen to bad music on [Rdio][].
