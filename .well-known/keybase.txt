@@ -1,0 +1,64 @@
+==================================================================
+https://keybase.io/gfontenot
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.gordonfontenot.com
+  * I am gfontenot (https://keybase.io/gfontenot) on keybase.
+  * I have a public key with fingerprint FC96 877D E91A C0B4 381D  D33A 0BF4 A6C7 2DA8 F9CE
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "fc96877de91ac0b4381dd33a0bf4a6c72da8f9ce",
+            "host": "keybase.io",
+            "key_id": "0BF4A6C72DA8F9CE",
+            "uid": "f515dcfb82705ebf3f700be912b21300",
+            "username": "gfontenot"
+        },
+        "service": {
+            "hostname": "www.gordonfontenot.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1395942764,
+    "expire_in": 157680000,
+    "prev": "80b3ee9de7017de5693a76abea4d5ce0406ad63fb6887a14235adc148a7fd7d6",
+    "seqno": 9,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owE1kV1IFFEUx3dX2zSpjKwWiZAJI2t3m9n53odA149CKtIHKYTtztw765A7s+6O
+u4ouohC6D6I+WIlBiPZJJWFEGmIFFmKG9GGUZgb5YEIfUIih1B3R+3K55/zP73/u
+Oe1bkyw2a9rv6y9cN5dfWcefrEiWUgZV1hGSDmsJbx1xHq1diqoFUDgUVjWD8BKK
+LHICz0MkUkAmJYYWKAhpGpCSwgBO5j0QCIooI8JJVOgRswJjJBBBblXHMfzwqxBH
+ybxCJpfz8Z78XKFQ9BXgXPVaQmEpFsqKJHh4kkWSQis8SUrYziN5KJokTWEEhTUQ
+RFgdUHTNQJpuEHEngcNRFVvjpk3vdUksFnMH9DDUtQ2tW9aDGBMK64Yu65VYU2EY
+Ia+JMGpDazVI8q/T/JKqQTwCXBBF4Yiqa4SXwkrZUE08RYusyHh4jnESqCakhpFf
+NRUszwkkPqYNimKkQEo0QiJEPEnh8bGcSAOeAxICDGRlRDIkByBHKxInCDygGA/N
+AihTjAB4BfKQI8z/VWk64RVxmyCAkRE1oAGjOoyIeMK6N9litVnsm2zmEi1bUtM3
+VjtHbf5XMOqKvR/8PLXHmxa7sjxZo3oz2gZG9GaHtTVzrGfW0jEiLZCOlMYB+/36
+fbd394nUx7KZ4/MqnJomxblJX/0ft+1CU3mKK7/3xtAxGo2vLJR0Hoq0O0/96gtG
+Yy/H5l3x6t7V0URw8W9f8tc2+1DOckl3+8WGpwNL/u7BieJ+p33pFv0z78f0ruLW
+R/pgB2g8k3606OqnE19mT5Zz0YkuR2Pa4pGkB/vfPM/65nx3biJ+MLs5r6V/W5fc
+8OHuJSZzuOl0hUAkV70dT2Q8s2/PDlzLKsoRDh8oa/ruKDVazs6k+jqnqR21CWG4
+2PL6sbN8NfSwR8hOXGbu7Lz3Hw==
+=Zhrd
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/gfontenot
+
+==================================================================
