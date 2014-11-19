@@ -1,10 +1,10 @@
 ==================================================================
-https://keybase.io/gfontenot
+keybase prove web http://gordonfontenot.com https://keybase.io/gfontenot
 --------------------------------------------------------------------
 
 I hereby claim:
 
-  * I am an admin of http://www.gordonfontenot.com
+  * I am an admin of http://gordonfontenot.com
   * I am gfontenot (https://keybase.io/gfontenot) on keybase.
   * I have a public key with fingerprint FC96 877D E91A C0B4 381D  D33A 0BF4 A6C7 2DA8 F9CE
 
@@ -12,6 +12,10 @@ To claim this, I am signing this object:
 
 {
     "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.3"
+        },
         "key": {
             "fingerprint": "fc96877de91ac0b4381dd33a0bf4a6c72da8f9ce",
             "host": "keybase.io",
@@ -19,46 +23,53 @@ To claim this, I am signing this object:
             "uid": "f515dcfb82705ebf3f700be912b21300",
             "username": "gfontenot"
         },
+        "merkle_root": {
+            "ctime": 1416410957,
+            "hash": "8f9f87fc2f9c1d1bad8d67d79784f5cfa516d0c0fa589d3dbaafa8ad63e80aa027468fd2ed399ce29569e89777113c37e925ed874d01596df4e4bd8083fb4e30",
+            "seqno": 96910
+        },
         "service": {
-            "hostname": "www.gordonfontenot.com",
+            "hostname": "gordonfontenot.com",
             "protocol": "http:"
         },
         "type": "web_service_binding",
         "version": 1
     },
-    "ctime": 1395942764,
+    "ctime": 1416411488,
     "expire_in": 157680000,
-    "prev": "80b3ee9de7017de5693a76abea4d5ce0406ad63fb6887a14235adc148a7fd7d6",
-    "seqno": 9,
+    "prev": "b5f5bf5290a9744ec75bc20133a4ea4defaa258be850d74551cebb58065c1c48",
+    "seqno": 19,
     "tag": "signature"
 }
 
 with the aforementioned key, yielding the PGP signature:
 
 -----BEGIN PGP MESSAGE-----
-Version: GnuPG v1
+Version: GnuPG v2
 
-owE1kV1IFFEUx3dX2zSpjKwWiZAJI2t3m9n53odA149CKtIHKYTtztw765A7s+6O
-u4ouohC6D6I+WIlBiPZJJWFEGmIFFmKG9GGUZgb5YEIfUIih1B3R+3K55/zP73/u
-Oe1bkyw2a9rv6y9cN5dfWcefrEiWUgZV1hGSDmsJbx1xHq1diqoFUDgUVjWD8BKK
-LHICz0MkUkAmJYYWKAhpGpCSwgBO5j0QCIooI8JJVOgRswJjJBBBblXHMfzwqxBH
-ybxCJpfz8Z78XKFQ9BXgXPVaQmEpFsqKJHh4kkWSQis8SUrYziN5KJokTWEEhTUQ
-RFgdUHTNQJpuEHEngcNRFVvjpk3vdUksFnMH9DDUtQ2tW9aDGBMK64Yu65VYU2EY
-Ia+JMGpDazVI8q/T/JKqQTwCXBBF4Yiqa4SXwkrZUE08RYusyHh4jnESqCakhpFf
-NRUszwkkPqYNimKkQEo0QiJEPEnh8bGcSAOeAxICDGRlRDIkByBHKxInCDygGA/N
-AihTjAB4BfKQI8z/VWk64RVxmyCAkRE1oAGjOoyIeMK6N9litVnsm2zmEi1bUtM3
-VjtHbf5XMOqKvR/8PLXHmxa7sjxZo3oz2gZG9GaHtTVzrGfW0jEiLZCOlMYB+/36
-fbd394nUx7KZ4/MqnJomxblJX/0ft+1CU3mKK7/3xtAxGo2vLJR0Hoq0O0/96gtG
-Yy/H5l3x6t7V0URw8W9f8tc2+1DOckl3+8WGpwNL/u7BieJ+p33pFv0z78f0ruLW
-R/pgB2g8k3606OqnE19mT5Zz0YkuR2Pa4pGkB/vfPM/65nx3biJ+MLs5r6V/W5fc
-8OHuJSZzuOl0hUAkV70dT2Q8s2/PDlzLKsoRDh8oa/ruKDVazs6k+jqnqR21CWG4
-2PL6sbN8NfSwR8hOXGbu7Lz3Hw==
-=Zhrd
+owFVUn9oVVUcf5su5mxMYwjRj60bLVbzec6959xz7ouQp+4lLo1AKql4nZ/bbW/3
+Pu+9rjd0VEqpOCSRUf2xRplLKDLKrIaOMGjSRj8WVkTBg7Bl/ZM5KBGxc8dGef46
+h+/n+/nx/Z6XGpdkamuWz41Nrj52+cuaqQs8s7X0yVM7LR7KASu30xIlXwVJegtY
+n7JyVq8a4CxWWT9sDUKpsk/HrQuYDqtfRbEfBgYFsiTrWIMdKTxt1n7QraJy5Kdc
+lhaeSwmRyoNMAI4cCqV0HAa4RswVxJaMak8oQ9kTxsl1qtY8Z9GXqcq6Asq764m9
+IU8L3vpOU9sxX9AYYik0pzYBWHHtaAIAN3I2t6EDQAqMVbQQqVuHQaKCMEkN96mo
+t6SKURjOpxaJn2Iggi6CwMPEWGJxj+kyDjUlWtjGKZSQM0mlSyTxCEUaC80wdCUQ
+wFyoJx3JGdOMMuk6igLGgE2QS7W0lXQ8k9X2sOsp6hFCIHSEQ5RnYyUpQRJA7LlS
+I4W4pIA6miPlpBlitT0IrZznehAMps+o3zdTM7bTsS2mCyMZBosRsyLsM53lKExC
+EZZMvSdJyrk0eTJQVtaJnPWM4sUFqiL3A2lW9//dQgO9bioQUdphqUrZj1TRTxGY
+uBSYk+qofqPBscZcY9sDzCMIKUEwFzaAZudIMSSVZszGlCuKgSQIYygU55gCFwso
+EP0vK/SMUdZtOGO/O2DJjkhZg/trbl2aqanN3FBXm/7eTMOyFYtf+trK+szZI4+f
+eq55xYND/9x7359Na0/2jlzZNdd2YarxzFj77cf32e4X+S1DzdjtxOd3na6X27+e
+Dt9taGlqCIcnv+/avGmssq1weOvdH11adWjv6NSbfrX9m7rNv39Q+XZTubm+9p2N
+6JXJcxOjq//468QvrYWR6QfW3Ll76jY5e7VzpK3i3/TThsZrZ28p7X/v/uGL3z3/
+6tv9+944+MLw+bWND6FjG3efmcmvPPl629ye1w5U4pZHOoZOtdctHX7/jseiH569
+60ip2rLnt+Wnm2afWFa4+bOPM1d/Peq/FXx+5eKnYubnczdWx1+856sPra6Jtm2j
+8US2mn/y5Z5148f/vnzo4SUHLs20dlUP/zg+++j0vw==
+=u6RT
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
 
 View my publicly-auditable identity here: https://keybase.io/gfontenot
-
 ==================================================================
