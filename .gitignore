@@ -1,2 +1,7 @@
+.DS_Store
+cabal-dev
+.cabal-sandbox
+cabal.sandbox.config
+dist/
+_cache
 _site
-_drafts

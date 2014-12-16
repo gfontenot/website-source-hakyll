@@ -1,5 +1,0 @@
-include: [.well-known]
-markdown: maruku
-pygments: true
-permalink: /posts/:title
-auto: true
