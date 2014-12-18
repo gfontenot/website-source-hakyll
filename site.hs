@@ -39,19 +39,20 @@ main = hakyll $ do
         route   idRoute
         compile copyFileCompiler
 
-    match "css/*" $ do
-        route   idRoute
-        compile compressCssCompiler
+    match "images/**/*" copyInPlace
 
-    match "javascript/*" $ do
-        route idRoute
-        compile copyFileCompiler
+    match "css/*" copyInPlace
 
-    match "CNAME" $ do
-        route idRoute
-        compile copyFileCompiler
+    match "javascript/*" copyInPlace
+
+    match "CNAME" copyInPlace
 
 --------------------------------------------------------------------------------
+copyInPlace :: Rules ()
+copyInPlace = do
+    route idRoute
+    compile copyFileCompiler
+
 postCtx :: Context String
 postCtx =
     dateField "date" "%B %e, %Y" `mappend`
