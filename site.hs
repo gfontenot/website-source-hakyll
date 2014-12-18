@@ -7,7 +7,7 @@ import           Hakyll
 --------------------------------------------------------------------------------
 main :: IO ()
 main = hakyll $ do
-    match "index.md" $ do
+    match "index.markdown" $ do
         route $ setExtension "html"
         compile $ pandocCompiler
                 >>= loadAndApplyTemplate "templates/default.html" defaultContext
