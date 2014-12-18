@@ -7,13 +7,7 @@ import           Hakyll
 --------------------------------------------------------------------------------
 main :: IO ()
 main = hakyll $ do
-    match "index.markdown" $ do
-        route $ setExtension "html"
-        compile $ pandocCompiler
-                >>= loadAndApplyTemplate "templates/default.html" defaultContext
-                >>= relativizeUrls
-
-    create ["blog/index.html"] $ do
+    create ["index.html"] $ do
         route idRoute
         compile  $ do
             posts <- recentFirst =<< loadAll allPosts
