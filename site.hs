@@ -35,9 +35,7 @@ main = hakyll $ do
 
     match "templates/*" $ compile templateCompiler
 
-    match "images/**/*" $ do
-        route   idRoute
-        compile copyFileCompiler
+    match "partials/*" $ compile templateCompiler
 
     match "images/**/*" copyInPlace
 
