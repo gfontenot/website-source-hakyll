@@ -1,25 +1,52 @@
 body {
-    color: black;
-    font-size: 16px;
-    margin: 0px auto 0px auto;
-    width: 600px;
+  color: black;
+  font-size: 1.2em;
+  line-height: 1.56em;
+  margin: 0px auto 0px auto;
+  width: 720px;
+}
+
+header {
+  padding-top: 1em;
+}
+
+header li {
+  display: inline;
+  padding-right: 1em;
+}
+
+main {
+  padding-top: 1em;
+}
+
+main li {
+  padding-top: 0.25em;
+}
+
+.timestamp {
+  display: inline-block;
+  min-width: 120px;
+}
+
+.post-body h1 {
+  font-size: 2.3rem
+}
+
+.post-body h2 {
+  font-size: 1.62em
+}
+
+.post-body p {
+  margin-top: 1.4em;
 }
 
 footer {
-    border-top: solid 2px black;
-    color: #555;
-    font-size: 12px;
-    margin-top: 30px;
-    padding: 12px 0px 12px 0px;
-    text-align: right;
-}
-
-h1 {
-    font-size: 24px;
-}
-
-h2 {
-    font-size: 20px;
+  border-top: solid 2px black;
+  color: #555;
+  font-size: 1em;
+  margin-top: 30px;
+  padding: 12px 0px 12px 0px;
+  text-align: right;
 }
 
 a.thoughtbot:hover {

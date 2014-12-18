@@ -47,7 +47,7 @@ copyInPlace = do
 
 postCtx :: Context String
 postCtx =
-    dateField "date" "%B %e, %Y" `mappend`
+    dateField "date" "%b %d %Y" `mappend`
     defaultContext
 
 allPosts :: Pattern
