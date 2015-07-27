@@ -49,9 +49,10 @@ copyInPlace p = match p $ do
     compile copyFileCompiler
 
 postCtx :: Context String
-postCtx =
-    dateField "date" "%b %d, %Y" `mappend`
-    defaultContext
+postCtx = mconcat
+    [ dateField "date" "%b %d, %Y"
+    , defaultContext
+    ]
 
 allPosts :: Pattern
 allPosts = "blog/*.markdown"
