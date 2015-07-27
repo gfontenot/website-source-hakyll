@@ -27,6 +27,10 @@ main = hakyll $ do
             >>= loadAndApplyTemplate "templates/default.html" postCtx
             >>= replaceIndexLinks
 
+    match "pgp/keybase.txt" $ do
+        route $ gsubRoute "pgp" (const ".well-known")
+        compile copyFileCompiler
+
     compileTemplates $
              "templates/*"
         .||. "partials/*"
@@ -35,6 +39,7 @@ main = hakyll $ do
              "images/**/*"
         .||. "css/*"
         .||. "javascript/*"
+        .||. "pgp/*"
         .||. "CNAME"
 
 siteTitle :: String
