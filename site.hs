@@ -40,7 +40,10 @@ main = hakyll $ do
         .||. "css/*"
         .||. "javascript/*"
         .||. "pgp/*"
-        .||. "CNAME"
+
+    match "root/*" $ do
+        route $ gsubRoute "root/" (const "")
+        compile copyFileCompiler
 
 siteTitle :: String
 siteTitle = "Gordon Fontenot"
