@@ -1,6 +1,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 
 import Hakyll
+import IndexedRoute
 
 main :: IO ()
 main = hakyll $ do
@@ -15,14 +16,14 @@ main = hakyll $ do
             makeItem ""
                 >>= loadAndApplyTemplate "templates/blog.html" blogCtx
                 >>= loadAndApplyTemplate "templates/default.html" blogCtx
-                >>= relativizeUrls
+                >>= replaceIndexLinks
 
     match allPosts $ do
-        route $ setExtension "html"
+        route $ setExtension "" `composeRoutes` indexedRoute
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/post.html"    postCtx
             >>= loadAndApplyTemplate "templates/default.html" postCtx
-            >>= relativizeUrls
+            >>= replaceIndexLinks
 
     compileTemplates (
         "templates/*"
