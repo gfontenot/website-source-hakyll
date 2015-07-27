@@ -6,7 +6,7 @@ main :: IO ()
 main = hakyll $ do
     create ["index.html"] $ do
         route idRoute
-        compile  $ do
+        compile $ do
             posts <- recentFirst =<< loadAll allPosts
             let blogCtx =
                     listField "posts" postCtx (return posts) `mappend`
