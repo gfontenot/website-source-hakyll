@@ -24,20 +24,21 @@ main = hakyll $ do
             >>= loadAndApplyTemplate "templates/default.html" postCtx
             >>= relativizeUrls
 
-    match "templates/*" $ compile templateCompiler
+    compileTemplates (
+        "templates/*"
+        .||. "partials/*")
 
-    match "partials/*" $ compile templateCompiler
+    copyInPlace (
+        "images/**/*"
+        .||. "css/*"
+        .||. "javascript/*"
+        .||. "CNAME")
 
-    match "images/**/*" copyInPlace
+compileTemplates :: Pattern -> Rules ()
+compileTemplates p = match p $ compile templateCompiler
 
-    match "css/*" copyInPlace
-
-    match "javascript/*" copyInPlace
-
-    match "CNAME" copyInPlace
-
-copyInPlace :: Rules ()
-copyInPlace = do
+copyInPlace :: Pattern -> Rules ()
+copyInPlace p = match p $ do
     route idRoute
     compile copyFileCompiler
 
