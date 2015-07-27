@@ -9,9 +9,11 @@ main = hakyll $ do
         route idRoute
         compile $ do
             posts <- recentFirst =<< loadAll allPosts
-            let blogCtx =
-                    listField "posts" postCtx (return posts) `mappend`
-                    defaultContext
+            let blogCtx = mconcat
+                    [ listField "posts" postCtx (return posts)
+                    , constField "title" siteTitle
+                    , defaultContext
+                    ]
 
             makeItem ""
                 >>= loadAndApplyTemplate "templates/blog.html" blogCtx
@@ -34,6 +36,9 @@ main = hakyll $ do
         .||. "css/*"
         .||. "javascript/*"
         .||. "CNAME"
+
+siteTitle :: String
+siteTitle = "Gordon Fontenot"
 
 compileTemplates :: Pattern -> Rules ()
 compileTemplates p = match p $ compile templateCompiler
