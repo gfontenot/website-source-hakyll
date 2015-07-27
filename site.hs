@@ -25,15 +25,15 @@ main = hakyll $ do
             >>= loadAndApplyTemplate "templates/default.html" postCtx
             >>= replaceIndexLinks
 
-    compileTemplates (
-        "templates/*"
-        .||. "partials/*")
+    compileTemplates $
+             "templates/*"
+        .||. "partials/*"
 
-    copyInPlace (
-        "images/**/*"
+    copyInPlace $
+             "images/**/*"
         .||. "css/*"
         .||. "javascript/*"
-        .||. "CNAME")
+        .||. "CNAME"
 
 compileTemplates :: Pattern -> Rules ()
 compileTemplates p = match p $ compile templateCompiler
