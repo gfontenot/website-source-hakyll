@@ -1,9 +1,7 @@
---------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
 import           Data.Monoid (mappend)
 import           Hakyll
 
---------------------------------------------------------------------------------
 main :: IO ()
 main = hakyll $ do
     create ["index.html"] $ do
@@ -38,7 +36,6 @@ main = hakyll $ do
 
     match "CNAME" copyInPlace
 
---------------------------------------------------------------------------------
 copyInPlace :: Rules ()
 copyInPlace = do
     route idRoute
