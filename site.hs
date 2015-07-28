@@ -31,6 +31,10 @@ main = hakyll $ do
         route $ gsubRoute "pgp" (const ".well-known")
         compile copyFileCompiler
 
+    match "root/nojekyll" $ do
+        route $ gsubRoute "root/" (const ".")
+        compile copyFileCompiler
+
     compileTemplates $
              "templates/*"
         .||. "partials/*"
