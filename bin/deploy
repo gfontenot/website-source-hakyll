@@ -19,8 +19,8 @@ cp -rf _site/* $tmp_dir
 
 cd $tmp_dir
 
-git add -f .
-git commit -m "deploy $(date '+%m/%d/%y %H:%M')"
+git add --all --force || true
+git commit -m "deploy $(date '+%m/%d/%y %H:%M')" || true
 git push origin master
 
 rm -rf $tmp_dir
