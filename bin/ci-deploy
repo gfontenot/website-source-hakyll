@@ -2,8 +2,6 @@
 #
 # Deploy the build with CI
 
-ssh-add deploy-key
-
 git config user.email "Build Deployment Bot"
 git config user.name "blogbot@gitpushgitpaid.com"
 
