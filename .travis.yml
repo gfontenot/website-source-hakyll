@@ -2,10 +2,11 @@ language: haskell
 branches:
   only:
   - master
-install:
-- cabal install hakyll
-- cabal run -- build
-after_script: bin/deploy
+
 before_install:
 - openssl aes-256-cbc -K $encrypted_67b91d1ca19d_key -iv $encrypted_67b91d1ca19d_iv
   -in deploy-key.enc -out deploy-key -d
+
+script: 
+  - cabal run -- build
+  - bin/deploy
