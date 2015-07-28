@@ -4,6 +4,8 @@
 # Stolen from Tony DiPasquale
 # https://github.com/tonyd256/blog/blob/master/post_build.sh
 
+cabal run -- build
+
 tmp_dir=$HOME/_tmp
 
 mkdir $tmp_dir

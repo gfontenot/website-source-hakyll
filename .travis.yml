@@ -9,6 +9,4 @@ before_install:
 
 install: cabal install hakyll
 
-script:
-  - cabal run -- build
-  - bin/ci-deploy
+script: bin/ci-deploy
