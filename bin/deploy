@@ -1,0 +1,21 @@
+#!/usr/bin/env sh
+#
+# Deploy the built site to a git repo
+# Stolen from Tony DiPasquale
+# https://github.com/tonyd256/blog/blob/master/post_build.sh
+
+git config --global user.email $GIT_EMAIL
+git config --global user.name $GIT_NAME
+
+tmp_dir=$HOME/_tmp
+
+mkdir $tmp_dir
+git clone https://${GIT_TOKEN}@${GIT_REPO} $tmp_dir
+
+cp -rf _site/* $tmp_dir
+
+cd $tmp_dir
+
+git add -f .
+git commit -m "deploy $(date '+%m/%d/%y %H:%M')"
+git push origin master
