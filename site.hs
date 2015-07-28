@@ -39,6 +39,7 @@ main = hakyll $ do
              "images/**/*"
         .||. "css/*"
         .||. "javascript/*"
+        .||. "font/*"
         .||. "pgp/*"
 
     match "root/*" $ do
