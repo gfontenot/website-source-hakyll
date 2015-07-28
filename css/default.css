@@ -1,18 +1,57 @@
 body {
   color: black;
   font-size: 1.2em;
+  font-family: helvetica, sans-serif;
   line-height: 1.56em;
   margin: 0px auto 0px auto;
   width: 720px;
 }
 
+a {
+  text-decoration: none;
+  color: #606060;
+}
+
+a:visited {
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#fname {
+  color: black;
+}
+
+#lname {
+  color: #696969;
+}
+
 header {
   padding-top: 1em;
+  clear: both;
+}
+
+header h2 {
+  font-size: 2em;
+}
+
+header a:hover {
+  text-decoration: none;
+}
+
+header ul {
+  float: right;
 }
 
 header li {
   display: inline;
-  padding-right: 1em;
+  font-size: 1.3em;
+  padding-left: .3em;
+}
+
+header li a {
+  color: black;
 }
 
 main {
@@ -47,8 +86,4 @@ footer {
   margin-top: 30px;
   padding: 12px 0px 12px 0px;
   text-align: right;
-}
-
-a.thoughtbot:hover {
-  background-color: red
 }
