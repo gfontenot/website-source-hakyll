@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+#
+# Create a new stub post today's date
+
+today=$(date +"%Y-%m-%e")
+
+printf "Post title? "
+read title
+
+normalized=$(echo $title | tr '[:upper:]' '[:lower:]' | tr '[:blank:]' '-')
+
+filename="blog/$today-$normalized.markdown"
+
+cat > $filename << EOF
+---
+title: $title
+org: personal
+---
+EOF
+
+echo "Created: $filename"
+/usr/local/bin/mvim -v $filename
