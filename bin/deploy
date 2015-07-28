@@ -4,8 +4,10 @@
 # Stolen from Tony DiPasquale
 # https://github.com/tonyd256/blog/blob/master/post_build.sh
 
-git config --global user.email $GIT_EMAIL
-git config --global user.name $GIT_NAME
+source deploy-keys
+
+git config user.email $GIT_EMAIL
+git config user.name $GIT_NAME
 
 tmp_dir=$HOME/_tmp
 
