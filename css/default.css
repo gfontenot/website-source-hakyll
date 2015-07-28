@@ -55,7 +55,8 @@ header li a {
 }
 
 main {
-  padding-top: 1em;
+  margin-top: 1em;
+  border-top: 1px dotted black;
 }
 
 main li {
@@ -65,10 +66,16 @@ main li {
 .timestamp {
   display: inline-block;
   min-width: 120px;
+  padding-top: .3em;
+  color: #999999;
+}
+
+.post-body {
+  padding-top: 0.75em;
 }
 
 .post-body h1 {
-  font-size: 2.3rem
+  font-size: 2.3rem;
 }
 
 .post-body h2 {
