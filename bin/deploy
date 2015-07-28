@@ -4,15 +4,15 @@
 # Stolen from Tony DiPasquale
 # https://github.com/tonyd256/blog/blob/master/post_build.sh
 
-source deploy-keys
+ssh-add deploy-key
 
-git config user.email $GIT_EMAIL
-git config user.name $GIT_NAME
+git config user.email "Build Deployment Bot"
+git config user.name "blogbot@gitpushgitpaid.com"
 
 tmp_dir=$HOME/_tmp
 
 mkdir $tmp_dir
-git clone https://${GIT_TOKEN}@${GIT_REPO} $tmp_dir
+git clone git@github.com:gfontenot/gfontenot.github.com.git $tmp_dir
 
 cp -rf _site/* $tmp_dir
 

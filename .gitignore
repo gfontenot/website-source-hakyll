@@ -6,4 +6,4 @@ dist/
 _cache
 _site
 
-deploy-keys
+deploy-key
