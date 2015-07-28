@@ -15,6 +15,7 @@ git clone git@github.com:gfontenot/gfontenot.github.com.git $tmp_dir
 
 rm -rf $tmp_dir/*
 
+shopt -s dotglob
 cp -rf _site/* $tmp_dir
 
 cd $tmp_dir
