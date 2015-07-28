@@ -4,11 +4,6 @@
 # Stolen from Tony DiPasquale
 # https://github.com/tonyd256/blog/blob/master/post_build.sh
 
-ssh-add deploy-key
-
-git config user.email "Build Deployment Bot"
-git config user.name "blogbot@gitpushgitpaid.com"
-
 tmp_dir=$HOME/_tmp
 
 mkdir $tmp_dir

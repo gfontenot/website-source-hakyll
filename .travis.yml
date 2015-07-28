@@ -11,4 +11,4 @@ install: cabal install hakyll
 
 script:
   - cabal run -- build
-  - bin/deploy
+  - bin/ci-deploy
