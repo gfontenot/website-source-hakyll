@@ -3,7 +3,7 @@ title: StrongLifts Week Eight
 org: personal
 ---
 
-![](/images/StrongLifts/week-8.jpg)
+![](/images/StrongLifts-week-8.jpg)
 
 Things are heating up. I'm now 10lbs under what I started with as my 5 rep max for Squat. Still haven't failed a rep. That's almost certainly coming soon, though. The squats, and OH Press specifically are getting really spicy. I'll hit 145 (full plates) on the OH Press tomorrow, actually, which will be a significant milestone.
 

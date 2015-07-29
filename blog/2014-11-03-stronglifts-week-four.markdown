@@ -6,7 +6,7 @@ org: personal
 A little late, but week 4 of StrongLifts. Finally got all of the lifts over
 100lbs, and finally hit 2 plates on deadlift:
 
-![](/images/StrongLifts/week-4.jpg)
+![](/images/StrongLifts-week-4.jpg)
 
 Last time, I said that I was worried that I was "too strong" for this program,
 which was both fairly arrogant, and also incorrect. My concern isn't my

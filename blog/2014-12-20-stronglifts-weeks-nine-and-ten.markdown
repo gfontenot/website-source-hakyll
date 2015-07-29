@@ -8,7 +8,7 @@ of StrongLifts.
 
 Week 9:
 
-![](/images/StrongLifts/week-9.PNG)
+![](/images/StrongLifts-week-9.PNG)
 
 Whole bunch of milestones this week.
 
@@ -42,7 +42,7 @@ hitting 265 in my squat, but I missed the rest of the week, and so I ended up
 tossing the workout. Following the StrongLifts plan, I deloaded 10%, and came
 back for week 10:
 
-![](/images/StrongLifts/week-10.PNG)
+![](/images/StrongLifts-week-10.PNG)
 
 Ok, so I didn't deload _everything_. I didn't want to drop back below 300 on
 deadlift. So there's actually no record of me hitting 3 plates, instead it

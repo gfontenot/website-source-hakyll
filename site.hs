@@ -46,7 +46,7 @@ main = hakyll $ do
         .||. "partials/*"
 
     copyInPlace $
-             "images/**/*"
+             "images/*"
         .||. "css/*"
         .||. "javascript/*"
         .||. "font/*"

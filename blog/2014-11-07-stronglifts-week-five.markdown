@@ -3,7 +3,7 @@ title: StrongLifts Week Five
 org: personal
 ---
 
-![](/images/StrongLifts/week-5.jpg)
+![](/images/StrongLifts-week-5.jpg)
 
 Went to a new gym today and couldn't find the squat rack. Had to do my squats
 in a 3D Smith machine, which was a complete and utter waste of time. How the
