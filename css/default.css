@@ -1,3 +1,5 @@
+/* Global */
+
 body {
   color: black;
   font-size: 1.2em;
@@ -7,25 +9,26 @@ body {
   width: 720px;
 }
 
+p {
+  padding-bottom: 1.4em;
+}
+
 a {
   text-decoration: none;
   color: #606060;
-}
-
-a:visited {
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-#fname {
-  color: black;
+main {
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px dotted black;
 }
 
-#lname {
-  color: #696969;
-}
+/* Header */
 
 header {
   padding-top: 1em;
@@ -36,8 +39,16 @@ header h2 {
   font-size: 2em;
 }
 
-header a:hover {
+header h2 a:hover {
   text-decoration: none;
+}
+
+#fname {
+  color: black;
+}
+
+#lname {
+  color: #696969;
 }
 
 header ul {
@@ -46,32 +57,55 @@ header ul {
 
 header li {
   display: inline;
+  font-size: 1.0em;
+  padding-left: .3em;
+}
+
+/* Footer */
+
+#social li {
+  display: inline;
   font-size: 1.3em;
   padding-left: .3em;
 }
 
-header li a {
+#social a {
   color: black;
 }
 
-main {
-  margin-top: 1em;
-  border-top: 1px dotted black;
+#social a:hover {
+  text-decoration: none;
 }
 
-main li {
-  padding-top: 0.25em;
+footer {
+  border-top: solid 2px black;
+  color: #555;
+  font-size: 1em;
+  padding: 12px 0px 12px 0px;
 }
+
+footer span {
+  float: right;
+}
+
+/* Blog */
+
+.blog li {
+  padding-bottom: 0.25em;
+}
+
+.blog {
+  padding-bottom: .5em;
+}
+
+
+/* Posts */
 
 .timestamp {
   display: inline-block;
   min-width: 120px;
   padding-top: .3em;
   color: #999999;
-}
-
-.post-body {
-  padding-top: 0.75em;
 }
 
 .post-body h1 {
@@ -82,15 +116,3 @@ main li {
   font-size: 1.62em
 }
 
-.post-body p {
-  margin-top: 1.4em;
-}
-
-footer {
-  border-top: solid 2px black;
-  color: #555;
-  font-size: 1em;
-  margin-top: 30px;
-  padding: 12px 0px 12px 0px;
-  text-align: right;
-}
