@@ -9,8 +9,32 @@ body {
   width: 720px;
 }
 
+h1, h2 {
+  padding-bottom: .3em;
+}
+
+h1 {
+  font-size: 2.3em;
+}
+
+h2 {
+  font-size: 1.62em;
+}
+
 p {
   padding-bottom: 1.4em;
+}
+
+li {
+  padding-bottom: 0.25em;
+}
+
+main > :last-child {
+  padding-bottom: 0;
+}
+
+main ul > :last-child {
+  padding-bottom: 0;
 }
 
 a {
@@ -23,20 +47,21 @@ a:hover {
 }
 
 main {
-  margin-top: 1em;
   padding-top: 1em;
   border-top: 1px dotted black;
+  padding-bottom: 1em;
 }
 
 /* Header */
 
 header {
   padding-top: 1em;
-  clear: both;
+  padding-bottom: 1em;
 }
 
 header h2 {
-  font-size: 2em;
+  font-size: 1.5em;
+  padding-bottom: 0;
 }
 
 header h2 a:hover {
@@ -81,7 +106,8 @@ footer {
   border-top: solid 2px black;
   color: #555;
   font-size: 1em;
-  padding: 12px 0px 12px 0px;
+  padding-top: .3em;
+  padding-bottom: .3em;
 }
 
 footer span {
@@ -90,29 +116,14 @@ footer span {
 
 /* Blog */
 
-.blog li {
-  padding-bottom: 0.25em;
-}
-
-.blog {
-  padding-bottom: .5em;
-}
-
-
-/* Posts */
-
 .timestamp {
   display: inline-block;
   min-width: 120px;
-  padding-top: .3em;
   color: #999999;
 }
 
-.post-body h1 {
-  font-size: 2.3rem;
-}
+/* Posts */
 
-.post-body h2 {
-  font-size: 1.62em
+.post-body > :last-child {
+  padding-bottom: 0;
 }
-
