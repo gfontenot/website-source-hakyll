@@ -27,8 +27,8 @@ main = hakyll $ do
             >>= loadAndApplyTemplate "templates/default.html" postCtx
             >>= replaceIndexLinks
 
-    match "main/bio.markdown" $ do
-        route  $ constRoute "about/index.html"
+    match "main/*.markdown" $ do
+        route convertMainToIndexRoute
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= replaceIndexLinks
@@ -66,6 +66,12 @@ copyInPlace :: Pattern -> Rules ()
 copyInPlace p = match p $ do
     route idRoute
     compile copyFileCompiler
+
+convertMainToIndexRoute :: Routes
+convertMainToIndexRoute =
+    gsubRoute "main/" (const "")
+    `composeRoutes`
+    gsubRoute ".markdown" (const "/index.html")
 
 postCtx :: Context String
 postCtx = mconcat
