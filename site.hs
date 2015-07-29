@@ -33,6 +33,12 @@ main = hakyll $ do
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= replaceIndexLinks
 
+    match "404.markdown" $ do
+        route $ setExtension ".html"
+        compile $ pandocCompiler
+            >>= loadAndApplyTemplate "templates/default.html" defaultContext
+            >>= replaceIndexLinks
+
     match "pgp/keybase.txt" $ do
         route $ gsubRoute "pgp" (const ".well-known")
         compile copyFileCompiler
