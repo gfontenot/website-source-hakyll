@@ -15,7 +15,7 @@ Crossfit][fcf].
 [astros]: http://houston.astros.mlb.com/index.jsp
 [fcf]: http://stayforevercrossfit.com/
 
-He drinks [fine bourbons] and drinks [craft beers].
+He drinks [craft beers] and [fine bourbons].
 
 [fine bourbons]: http://www.garrisonbros.com/
 [craft beers]: http://prettybeer.com/wp/
