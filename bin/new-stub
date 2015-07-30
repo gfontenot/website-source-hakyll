@@ -17,7 +17,7 @@ filename="$today-$normalized.markdown"
 cat > "blog/$filename" << EOF
 ---
 title: $title
-url: $url
+ext_url: $url
 org: thoughtbot
 ---
 EOF

@@ -2,7 +2,11 @@
   $for(posts)$
     <li>
     <span class="timestamp">$date$</span>
-    <a href="$url$" class="$org$">$title$</a>
+    $if(ext_url)$
+    <a href="$ext_url$">$title$</a>
+    $else$
+    <a href="$url$">$title$</a>
+    $endif$
     </li>
   $endfor$
 </ul>

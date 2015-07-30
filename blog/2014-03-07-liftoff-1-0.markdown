@@ -1,5 +1,5 @@
 ---
 title: Liftoff 1.0
+ext_url: http://robots.thoughtbot.com/liftoff-10
 org: thoughtbot
-url: http://robots.thoughtbot.com/liftoff-10
 ---
