@@ -1,6 +1,12 @@
 machine:
   ghc:
     version: 7.10.1
+
+general:
+  branches:
+    only:
+      - master
+
 deployment:
   master:
     branch: master
