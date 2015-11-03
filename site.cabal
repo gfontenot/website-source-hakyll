@@ -1,7 +1,9 @@
-name:               site
-version:            1.0.0
-build-type:         Simple
-cabal-version:      >= 1.10
+name:                   site
+version:                1.0.0
+Author:                 Gordon Fontenot <gordon@fonten.io>
+Maintainer:             Gordon Fontenot <gordon@fonten.io>
+cabal-version:          >= 1.10
+build-type:             Simple
 
 Library
   Default-Language:     Haskell2010
@@ -12,10 +14,13 @@ Library
                       , hakyll
                       , filepath
 
-executable site
-  main-is:          site.hs
-  build-depends:    base == 4.*
-                  , hakyll == 4.6.*
-                  , site
-  ghc-options:      -threaded
-  default-language: Haskell2010
+Executable site
+  Default-Language:     Haskell2010
+  Main-Is:              site.hs
+  Build-Depends:        base
+                      , hakyll
+                      , site
+
+Source-Repository head
+  Type:                 git
+  Location:             https://github.com/gfontenot/website-source
