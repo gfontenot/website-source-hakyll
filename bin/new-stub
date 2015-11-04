@@ -2,7 +2,7 @@
 #
 # Create a new stub post with today's date
 
-today=$(date +"%Y-%m-%e")
+today=$(date +"%F")
 
 printf "Post title? "
 read title

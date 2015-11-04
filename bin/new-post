@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #
-# Create a new stub post today's date
+# Create a new post for today's date
 
-today=$(date +"%Y-%m-%e")
+today=$(date +"%F")
 
 printf "Post title? "
 read title
@@ -19,4 +19,4 @@ org: personal
 EOF
 
 echo "Created: $filename"
-/usr/local/bin/mvim -v $filename
+$VISUAL $filename
