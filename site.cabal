@@ -18,7 +18,7 @@ Executable site
   Default-Language:     Haskell2010
   Main-Is:              site.hs
   Build-Depends:        base
-                      , hakyll
+                      , hakyll == 4.7.*
                       , site
 
 Source-Repository head
