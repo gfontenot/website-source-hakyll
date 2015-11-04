@@ -5,6 +5,10 @@ body {
   font-size: 1.2em;
   font-family: helvetica, sans-serif;
   line-height: 1.56em;
+  border-top: 5px solid #808000;
+}
+
+main {
   margin: 0px auto 0px auto;
   width: 720px;
 }
@@ -14,7 +18,7 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 2.3em;
+  font-size: 1.5em;
 }
 
 h2 {
@@ -29,11 +33,11 @@ li {
   padding-bottom: 0.25em;
 }
 
-main > :last-child {
+#content > :last-child {
   padding-bottom: 0;
 }
 
-main ul > :last-child {
+#content ul > :last-child {
   padding-bottom: 0;
 }
 
@@ -44,11 +48,12 @@ a {
 
 a:hover {
   text-decoration: underline;
+  color: #808000;
 }
 
-main {
+#content {
   padding-top: 1em;
-  border-top: 1px dotted black;
+  border-top: 1px dotted #808000;
   padding-bottom: 1em;
 }
 
@@ -56,7 +61,6 @@ main {
 
 header {
   padding-top: 1em;
-  padding-bottom: 1em;
 }
 
 header h2 {
@@ -103,26 +107,48 @@ header li {
 }
 
 footer {
-  border-top: solid 2px black;
+  border-top: solid 2px #808000;
   color: #555;
-  font-size: 1em;
   padding-top: .3em;
   padding-bottom: .3em;
 }
 
 footer span {
+  font-size: .8em;
   float: right;
 }
 
 /* Blog */
 
-.timestamp {
+article {
+  margin-bottom: 0.5em;
+}
+
+.blog h3 {
   display: inline-block;
-  min-width: 120px;
+}
+
+time {
+  font-family: monospace;
+  font-size: .9em;
   color: #999999;
+  display: inline-block;
+  margin-right: 10px;
 }
 
 /* Posts */
+
+.post-body {
+  clear: both;
+}
+
+.post-body time {
+  float: right;
+}
+
+.post-body h1 {
+  display: inline-block;
+}
 
 .post-body > :last-child {
   padding-bottom: 0;

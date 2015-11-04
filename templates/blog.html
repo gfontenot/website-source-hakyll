@@ -1,13 +1,15 @@
-<ul class="blog">
+<section class="blog">
   $for(posts)$
-    <li>
-    <span class="timestamp">$date$</span>
-    $if(ext_url)$
-    <a href="$ext_url$">$title$</a>
-    $else$
-    <a href="$url$">$title$</a>
-    $endif$
-    </li>
+    <article>
+      <time>$date$</time>
+      <h3>
+        $if(ext_url)$
+        <a href="$ext_url$">$title$</a>
+        $else$
+        <a href="$url$">$title$</a>
+        $endif$
+      </h3>
+    </article>
   $endfor$
-</ul>
+</section>
 
