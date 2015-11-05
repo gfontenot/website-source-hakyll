@@ -66,6 +66,7 @@ a:hover {
 
 header {
   padding-top: 1em;
+  border-bottom: 1px dotted #808000;
 }
 
 header h2 {
