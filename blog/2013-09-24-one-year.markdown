@@ -1,0 +1,45 @@
+---
+title: One Year
+org: personal
+---
+
+On March 23rd, 2010, I was in a bar with a couple of my friends. After a
+couple of beers, I began ranting about how I wanted an app on iPhone OS that
+could help me keep track of the beers I was drinking, along with tasting notes
+and ratings. It's possible that I had maybe one beer too many, but when one of
+my friends suggested that I just build the app myself, I laughed it off and
+went on with my night. But when I woke up in the morning, it was still there
+in the back of my head. So on March 24th, 2010, I opened Xcode, started a
+project from a template, and started teaching myself Objective-C.
+
+What I knew I'd get out of that project was a silly hobby that might make a
+few dollars. What I hoped for was a basic understanding about how to make
+applications, and maybe a nice challenge for weekend hacking. What I ended up
+with was a career change, and a newfound passion.
+
+1 year ago today, I started as a professional iOS developer at [thoughtbot][]
+in Boston, MA. In that past year, I have grown tenfold professionally. I
+started attending [my local CocoaHeads chapter][cocoaheads] in January, and
+attended my [first professional conference][nsnorth] in April. In June I
+attended my first [WWDC][] ... [kinda][altwwdc]. And at the end of July, I
+started to [co-host a podcast][buildphase] with my good friend and colleague,
+[Mark Adams][].
+
+[thoughtbot]: http://www.thoughtbot.com
+[cocoaheads]: http://www.cocoaheadsboston.org/
+[nsnorth]: http://nsnorth.ca/
+[WWDC]: https://developer.apple.com/wwdc/
+[altwwdc]: http://altwwdc.com/
+[buildphase]: http://buildphase.fm
+[Mark Adams]: https://twitter.com/hyperspacemark
+
+It's been a hell of a fucking year. I've been almost unbelievably lucky over
+the past 12 months. [My co-workers][tb-about] are easily the smartest group of
+people I have ever met in my entire life. The projects I have been able to
+work on have been incredible learning experiences that have forced me to
+become a better developer on a daily basis. And for the first time in my life,
+I'm working in a job that I'm proud to call a career.
+
+[tb-about]: http://www.thoughtbot.com/#our-team
+
+Can't wait to see what happens next.
