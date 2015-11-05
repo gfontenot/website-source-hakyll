@@ -43,12 +43,12 @@ li {
 
 a {
   text-decoration: none;
-  color: #606060;
+  color: #808000;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #808000;
+  color: #606060;
 }
 
 #content {
@@ -124,8 +124,12 @@ article {
   margin-bottom: 0.5em;
 }
 
-.blog h3 {
+#blog h3 {
   display: inline-block;
+}
+
+#blog a {
+  color: #606060;
 }
 
 time {
