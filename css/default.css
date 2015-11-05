@@ -25,12 +25,20 @@ h2 {
   font-size: 1.62em;
 }
 
+hr {
+  margin-bottom: 1.4em;
+}
+
 p, ul {
   padding-bottom: 1.4em;
 }
 
 li {
   padding-bottom: 0.25em;
+}
+
+em {
+  font-style: italic;
 }
 
 #content > :last-child {
