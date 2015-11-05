@@ -1,9 +1,11 @@
 A native Texan, I fell in love with programming in high school, and made it a
 career in adulthood.
 
-Currently, I get paid to write [Swift] and (begrudgingly), [Objective-C] for
-[thoughtbot].  For some reason, they also keep letting me pretend to write
-[Haskell].
+Currently, I get paid to write [Swift] and (begrudgingly) [Objective-C] for
+[thoughtbot].
+
+In my spare time, I like to play around with [Haskell] because talking about
+monads makes me sound smarter than I actually am.
 
 [thoughtbot]: https://thoughtbot.com/
 [Swift]: https://developer.apple.com/swift/
