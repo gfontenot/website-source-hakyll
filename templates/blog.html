@@ -1,7 +1,6 @@
 <section id="blog">
   $for(posts)$
     <article>
-      <time>$date$</time>
       <h3>
         $if(ext_url)$
         <a href="$ext_url$">$title$</a>
@@ -9,7 +8,7 @@
         <a href="$url$">$title$</a>
         $endif$
       </h3>
+      <time>$date$</time>
     </article>
   $endfor$
 </section>
-

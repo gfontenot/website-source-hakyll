@@ -10,15 +10,13 @@ body {
 
 main {
   margin: 0px auto 0px auto;
-  width: 720px;
-}
-
-h1, h2 {
-  padding-bottom: .3em;
+  max-width: 720px;
+  padding: 1em;
 }
 
 h1 {
   font-size: 1.5em;
+  margin-bottom: 0.5em;
 }
 
 h2 {
@@ -61,7 +59,6 @@ a:hover {
 
 #content {
   padding-top: 1em;
-  border-top: 1px dotted #808000;
   padding-bottom: 1em;
 }
 
@@ -141,11 +138,10 @@ article {
 }
 
 time {
-  font-family: monospace;
-  font-size: .9em;
   color: #999999;
   display: inline-block;
-  margin-right: 10px;
+  font-size: .9em;
+  width: 15ex;
 }
 
 /* Posts */
@@ -155,11 +151,8 @@ time {
 }
 
 .post-body time {
-  float: right;
-}
-
-.post-body h1 {
-  display: inline-block;
+  margin-bottom: 1em;
+  display: block;
 }
 
 .post-body > :last-child {
