@@ -4,7 +4,7 @@
 
 set -e
 
-git config --global user.email "Build Deployment Bot"
-git config --global user.name "blogbot@gitpushgitpaid.com"
+git config --global user.name "Build Deployment Bot"
+git config --global user.email "blogbot@gitpushgitpaid.com"
 
 ./bin/deploy
