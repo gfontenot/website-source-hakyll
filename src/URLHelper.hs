@@ -32,14 +32,14 @@ replaceIndexLinks = replace "href=\"/[^\"]*/index.html" P.takeDirectory
 replaceIndexURLs :: String -> Item String -> Compiler (Item String)
 replaceIndexURLs host = replace (host <> "/.*/index.html") P.takeDirectory
 
--- | Replaces @/images/foo@ with @<host>/foo@ for the given host
+-- | Replaces @/images/foo@ with @<host>/inages/foo@ for the given host
 replaceRelativeURLs :: String -> Item String -> Compiler (Item String)
 replaceRelativeURLs host = replace "=\"/.*\"" prependHost
 
   where
     prependHost = ("=\"" <> host </>) . (drop 3)
 
--- | repair urls that have had the given host prepended to them
+-- | Repairs urls that have incorrectly had the given host prepended to them
 repairExternalURLs :: String -> Item String -> Compiler (Item String)
 repairExternalURLs host = replace (host <> "http") (drop (length host))
 
