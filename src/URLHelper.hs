@@ -41,7 +41,7 @@ replaceRelativeURLs host = replace "=\"/.*\"" prependHost
 
 -- | Repairs urls that have incorrectly had the given host prepended to them
 repairExternalURLs :: String -> Item String -> Compiler (Item String)
-repairExternalURLs host = replace (host <> "http") (drop (length host))
+repairExternalURLs host = replace (host <> "http") (drop $ length host)
 
 replace :: String             -- ^ Regular expression to match
         -> (String -> String) -- ^ Provide replacement given match
