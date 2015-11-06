@@ -1,26 +1,21 @@
-name:                   site
-version:                1.0.0
+Name:                   site
+Version:                1.0.0
+Synopsis:               Personal Site
+Homepage:               http://gordonfontenot.com
 Author:                 Gordon Fontenot <gordon@fonten.io>
 Maintainer:             Gordon Fontenot <gordon@fonten.io>
-cabal-version:          >= 1.10
-build-type:             Simple
-
-Library
-  Default-Language:     Haskell2010
-  HS-Source-Dirs:       src
-  GHC-Options:          -Wall
-  Exposed-Modules:      IndexedRoute
-  Build-Depends:        base >= 4.8 && < 5
-                      , hakyll
-                      , filepath
+Build-Type:             Simple
+Cabal-Version:          >= 1.10
 
 Executable site
   Default-Language:     Haskell2010
-  Main-Is:              site.hs
+  HS-Source-Dirs:       src
+  Main-Is:              Site.hs
+  GHC-Options:          -Wall -threaded
   Build-Depends:        base
                       , hakyll == 4.7.*
                       , pandoc
-                      , site
+                      , filepath
 
 Source-Repository head
   Type:                 git
