@@ -10,6 +10,14 @@ import URLHelper
 
 main :: IO ()
 main = hakyll $ do
+    match allPosts $ do
+        route $ setExtension "" `composeRoutes` indexedRoute
+        compile $ pandocCompiler
+            >>= saveSnapshot "content"
+            >>= loadAndApplyTemplate "templates/post.html"    postCtx
+            >>= loadAndApplyTemplate "templates/default.html" postCtx
+            >>= replaceIndexLinks
+
     create ["index.html"] $ do
         route idRoute
         compile $ do
@@ -25,12 +33,6 @@ main = hakyll $ do
                 >>= loadAndApplyTemplate "templates/default.html" blogCtx
                 >>= replaceIndexLinks
 
-    match allPosts $ do
-        route $ setExtension "" `composeRoutes` indexedRoute
-        compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/post.html"    postCtx
-            >>= loadAndApplyTemplate "templates/default.html" postCtx
-            >>= replaceIndexLinks
 
     match "main/*.markdown" $ do
         route convertMainToIndexRoute
@@ -75,6 +77,9 @@ pandocCompiler = pandocCompilerWith
 siteTitle :: String
 siteTitle = "Gordon Fontenot"
 
+allPosts :: Pattern
+allPosts = "blog/*.markdown"
+
 compileTemplates :: Pattern -> Rules ()
 compileTemplates p = match p $ compile templateCompiler
 
@@ -95,5 +100,3 @@ postCtx = mconcat
     , defaultContext
     ]
 
-allPosts :: Pattern
-allPosts = "blog/*.markdown"
