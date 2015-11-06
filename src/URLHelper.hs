@@ -6,6 +6,7 @@ module URLHelper
     , replaceIndexLinks
     , replaceIndexURLs
     , replaceRelativeURLs
+    , repairExternalURLs
     ) where
 
 import Hakyll
@@ -37,6 +38,10 @@ replaceRelativeURLs host = replace "=\"/.*\"" prependHost
 
   where
     prependHost = ("=\"" <> host </>) . (drop 3)
+
+-- | repair urls that have had the given host prepended to them
+repairExternalURLs :: String -> Item String -> Compiler (Item String)
+repairExternalURLs host = replace (host <> "http") (drop (length host))
 
 replace :: String             -- ^ Regular expression to match
         -> (String -> String) -- ^ Provide replacement given match
