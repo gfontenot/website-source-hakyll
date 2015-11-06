@@ -2,6 +2,10 @@
 
 import Hakyll hiding (pandocCompiler)
 import Text.Pandoc
+    ( writerEmailObfuscation
+    , ObfuscationMethod( NoObfuscation )
+    )
+
 import IndexedRoute
 
 main :: IO ()
