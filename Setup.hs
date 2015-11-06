@@ -23,15 +23,9 @@ main = do
   defaultMainWithHooks $ simpleUserHooks { postBuild = copyBinary }
 
 copyBinary :: Args -> BuildFlags -> PackageDescription -> LocalBuildInfo -> IO ()
-copyBinary _ _ desc buildInfo = do
-  let exe = findExecutable "site" desc
+copyBinary _ _ _ buildInfo = do
+  let binaryName = "site"
+  let dir = buildDir buildInfo
 
-  when (isJust exe) $ do
-    let binaryName = fromJust exe
-        dir = buildDir buildInfo
-
-    putStrLn $ "Copying executable '" ++ binaryName ++ "' to current directory..."
-    copyFile (dir </> "site" </> binaryName) binaryName
-
-findExecutable :: String -> PackageDescription -> Maybe String
-findExecutable name desc = find (name ==) $ map exeName (executables desc)
+  putStrLn $ "Copying executable '" ++ binaryName ++ "' to current directory..."
+  copyFile (dir </> binaryName </> binaryName) binaryName
