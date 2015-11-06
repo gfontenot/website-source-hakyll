@@ -19,6 +19,7 @@ Executable site
   Main-Is:              site.hs
   Build-Depends:        base
                       , hakyll == 4.7.*
+                      , pandoc
                       , site
 
 Source-Repository head

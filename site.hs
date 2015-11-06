@@ -1,6 +1,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-import Hakyll
+import Hakyll hiding (pandocCompiler)
+import Text.Pandoc
 import IndexedRoute
 
 main :: IO ()
@@ -61,6 +62,11 @@ main = hakyll $ do
     match "root/*" $ do
         route $ gsubRoute "root/" (const "")
         compile copyFileCompiler
+
+pandocCompiler :: Compiler (Item String)
+pandocCompiler = pandocCompilerWith
+    defaultHakyllReaderOptions
+    defaultHakyllWriterOptions { writerEmailObfuscation = NoObfuscation }
 
 siteTitle :: String
 siteTitle = "Gordon Fontenot"
