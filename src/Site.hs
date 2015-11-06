@@ -6,7 +6,7 @@ import Text.Pandoc
     , ObfuscationMethod( NoObfuscation )
     )
 
-import IndexedRoute
+import URLHelper
 
 main :: IO ()
 main = hakyll $ do
