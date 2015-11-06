@@ -1,6 +1,13 @@
 machine:
   ghc:
     version: 7.10.1
+
+test:
+  override:
+    - cabal build
+    - cabal run -- build
+    - cabal run -- check
+
 deployment:
   master:
     branch: master
