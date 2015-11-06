@@ -6,7 +6,7 @@ test:
   override:
     - cabal build
     - cabal run -- build
-    - cabal run -- check
+    - cabal run -- check --internal-links
 
 deployment:
   master:
