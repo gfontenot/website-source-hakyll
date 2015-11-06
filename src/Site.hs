@@ -33,6 +33,21 @@ main = hakyll $ do
                 >>= loadAndApplyTemplate "templates/default.html" blogCtx
                 >>= replaceIndexLinks
 
+    create ["feed.xml"] $ do
+        route idRoute
+        compile $ do
+            posts <- recentFirst =<< loadAllSnapshots allPosts "content"
+            let feedConfig = FeedConfiguration
+                    siteTitle           -- title
+                    "Gordon Fontenot"   -- description
+                    "Gordon Fontenot"   -- author name
+                    "gordon@fonten.io"  -- author email
+                    siteHost            -- root
+
+            renderAtom feedConfig feedItemCtx posts
+                >>= replaceIndexURLs siteHost
+                >>= repairExternalURLs siteHost
+                >>= replaceRelativeURLs siteHost
 
     match "main/*.markdown" $ do
         route convertMainToIndexRoute
@@ -77,6 +92,9 @@ pandocCompiler = pandocCompilerWith
 siteTitle :: String
 siteTitle = "Gordon Fontenot"
 
+siteHost :: String
+siteHost = "http://gordonfontenot.com"
+
 allPosts :: Pattern
 allPosts = "blog/*.markdown"
 
@@ -100,3 +118,9 @@ postCtx = mconcat
     , defaultContext
     ]
 
+feedItemCtx :: Context String
+feedItemCtx = mconcat
+    [ dateField "date" "%a, %d %b %Y %H:%M:%S %z"
+    , bodyField "description"
+    , defaultContext
+    ]
