@@ -1,4 +1,11 @@
 import Distribution.Simple
+    ( Args
+    , UserHooks
+    , defaultMainWithHooks
+    , simpleUserHooks
+    , postBuild
+    )
+
 import Distribution.Simple.Setup (BuildFlags)
 
 import Distribution.Simple.LocalBuildInfo
@@ -19,8 +26,10 @@ import System.Directory (copyFile)
 import System.FilePath ((</>))
 
 main :: IO ()
-main = do
-  defaultMainWithHooks $ simpleUserHooks { postBuild = copyBinary }
+main = defaultMainWithHooks hooks
+
+hooks :: UserHooks
+hooks = simpleUserHooks { postBuild = copyBinary }
 
 copyBinary :: Args -> BuildFlags -> PackageDescription -> LocalBuildInfo -> IO ()
 copyBinary _ _ _ buildInfo = do
