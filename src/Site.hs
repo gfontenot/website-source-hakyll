@@ -47,23 +47,23 @@ main = hakyll $ do
                 >>= replaceRelativeURLs siteHost
 
     match "main/*.markdown" $ do
-        route mainToIndex
+        route makeIndexed
         compile $ baseCompiler
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= replaceIndexLinks
 
     match "404.markdown" $ do
-        route $ setExtension ".html"
+        route toHTML
         compile $ baseCompiler
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= replaceIndexLinks
 
     match "pgp/keybase.txt" $ do
-        route $ gsubRoute "pgp" (const ".well-known")
+        route wellKnown
         compile copyFileCompiler
 
     match "root/nojekyll" $ do
-        route $ gsubRoute "root/" (const ".")
+        route makeHidden
         compile copyFileCompiler
 
     compileTemplates $
@@ -78,5 +78,5 @@ main = hakyll $ do
         .||. "pgp/*"
 
     match "root/*" $ do
-        route $ gsubRoute "root/" (const "")
+        route makeRoot
         compile copyFileCompiler
