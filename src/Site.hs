@@ -1,23 +1,19 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-import Hakyll hiding (pandocCompiler)
+import Hakyll
 
 import Site.Constants
 import Site.Routes
 import Site.Patterns
 import Site.Contexts
 import Site.URLHelper
-
-import Text.Pandoc
-    ( writerEmailObfuscation
-    , ObfuscationMethod( NoObfuscation )
-    )
+import Site.Compilers
 
 main :: IO ()
 main = hakyll $ do
     match allPosts $ do
         route $ setExtension "" `composeRoutes` indexedRoute
-        compile $ pandocCompiler
+        compile $ baseCompiler
             >>= saveSnapshot "content"
             >>= loadAndApplyTemplate "templates/post.html"    postCtx
             >>= loadAndApplyTemplate "templates/default.html" postCtx
@@ -52,13 +48,13 @@ main = hakyll $ do
 
     match "main/*.markdown" $ do
         route mainToIndex
-        compile $ pandocCompiler
+        compile $ baseCompiler
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= replaceIndexLinks
 
     match "404.markdown" $ do
         route $ setExtension ".html"
-        compile $ pandocCompiler
+        compile $ baseCompiler
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= replaceIndexLinks
 
@@ -84,16 +80,3 @@ main = hakyll $ do
     match "root/*" $ do
         route $ gsubRoute "root/" (const "")
         compile copyFileCompiler
-
-pandocCompiler :: Compiler (Item String)
-pandocCompiler = pandocCompilerWith
-    defaultHakyllReaderOptions
-    defaultHakyllWriterOptions { writerEmailObfuscation = NoObfuscation }
-
-compileTemplates :: Pattern -> Rules ()
-compileTemplates p = match p $ compile templateCompiler
-
-copyInPlace :: Pattern -> Rules ()
-copyInPlace p = match p $ do
-    route idRoute
-    compile copyFileCompiler
