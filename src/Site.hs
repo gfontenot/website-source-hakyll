@@ -2,6 +2,7 @@
 
 import Hakyll hiding (pandocCompiler)
 
+import Site.Contexts
 import Site.URLHelper
 
 import Text.Pandoc
@@ -23,15 +24,11 @@ main = hakyll $ do
         route idRoute
         compile $ do
             posts <- recentFirst =<< loadAll allPosts
-            let blogCtx = mconcat
-                    [ listField "posts" postCtx (return posts)
-                    , constField "title" siteTitle
-                    , defaultContext
-                    ]
+            let ctx = blogCtx siteTitle posts
 
             makeItem ""
-                >>= loadAndApplyTemplate "templates/blog.html" blogCtx
-                >>= loadAndApplyTemplate "templates/default.html" blogCtx
+                >>= loadAndApplyTemplate "templates/blog.html" ctx
+                >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= replaceIndexLinks
 
     create ["feed.xml"] $ do
@@ -112,16 +109,3 @@ convertMainToIndexRoute =
     gsubRoute "main/" (const "")
     `composeRoutes`
     gsubRoute ".markdown" (const "/index.html")
-
-postCtx :: Context String
-postCtx = mconcat
-    [ dateField "date" "%b %d, %Y"
-    , defaultContext
-    ]
-
-feedItemCtx :: Context String
-feedItemCtx = mconcat
-    [ dateField "date" "%a, %d %b %Y %H:%M:%S %z"
-    , bodyField "description"
-    , defaultContext
-    ]
