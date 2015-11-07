@@ -5,8 +5,9 @@ machine:
 test:
   override:
     - cabal build
-    - cabal run -- build
-    - cabal run -- check --internal-links
+    - ./site clean
+    - ./site build
+    - ./site check --internal-links
 
 deployment:
   master:
