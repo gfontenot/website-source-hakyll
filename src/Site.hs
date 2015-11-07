@@ -24,7 +24,7 @@ main = hakyll $ do
         route idRoute
         compile $ do
             posts <- recentFirst =<< loadAll allPosts
-            let ctx = blogCtx siteTitle posts
+            let ctx = blogCtx posts
 
             makeItem ""
                 >>= loadAndApplyTemplate "templates/blog.html" ctx
