@@ -1,7 +1,7 @@
 -- Shamelessly stolen from Pat Brisbin
 -- https://github.com/pbrisbin/pbrisbin.com/blob/master/src/IndexedRoute.hs
 
-module URLHelper
+module Site.URLHelper
     ( indexedRoute
     , replaceIndexLinks
     , replaceIndexURLs

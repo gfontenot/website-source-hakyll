@@ -1,12 +1,13 @@
 {-# LANGUAGE OverloadedStrings #-}
 
 import Hakyll hiding (pandocCompiler)
+
+import Site.URLHelper
+
 import Text.Pandoc
     ( writerEmailObfuscation
     , ObfuscationMethod( NoObfuscation )
     )
-
-import URLHelper
 
 main :: IO ()
 main = hakyll $ do
