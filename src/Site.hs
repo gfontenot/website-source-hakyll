@@ -4,6 +4,7 @@ import Hakyll hiding (pandocCompiler)
 
 import Site.Constants
 import Site.Routes
+import Site.Patterns
 import Site.Contexts
 import Site.URLHelper
 
@@ -88,9 +89,6 @@ pandocCompiler :: Compiler (Item String)
 pandocCompiler = pandocCompilerWith
     defaultHakyllReaderOptions
     defaultHakyllWriterOptions { writerEmailObfuscation = NoObfuscation }
-
-allPosts :: Pattern
-allPosts = "blog/*.markdown"
 
 compileTemplates :: Pattern -> Rules ()
 compileTemplates p = match p $ compile templateCompiler
