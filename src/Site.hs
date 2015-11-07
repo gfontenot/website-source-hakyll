@@ -2,6 +2,7 @@
 
 import Hakyll hiding (pandocCompiler)
 
+import Site.Constants
 import Site.Routes
 import Site.Contexts
 import Site.URLHelper
@@ -88,12 +89,6 @@ pandocCompiler = pandocCompilerWith
     defaultHakyllReaderOptions
     defaultHakyllWriterOptions { writerEmailObfuscation = NoObfuscation }
 
-siteTitle :: String
-siteTitle = "Gordon Fontenot"
-
-siteHost :: String
-siteHost = "http://gordonfontenot.com"
-
 allPosts :: Pattern
 allPosts = "blog/*.markdown"
 
@@ -104,4 +99,3 @@ copyInPlace :: Pattern -> Rules ()
 copyInPlace p = match p $ do
     route idRoute
     compile copyFileCompiler
-
