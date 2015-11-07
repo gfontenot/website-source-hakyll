@@ -2,6 +2,7 @@
 
 import Hakyll hiding (pandocCompiler)
 
+import Site.Routes
 import Site.Contexts
 import Site.URLHelper
 
@@ -48,7 +49,7 @@ main = hakyll $ do
                 >>= replaceRelativeURLs siteHost
 
     match "main/*.markdown" $ do
-        route convertMainToIndexRoute
+        route mainToIndex
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= replaceIndexLinks
@@ -104,8 +105,3 @@ copyInPlace p = match p $ do
     route idRoute
     compile copyFileCompiler
 
-convertMainToIndexRoute :: Routes
-convertMainToIndexRoute =
-    gsubRoute "main/" (const "")
-    `composeRoutes`
-    gsubRoute ".markdown" (const "/index.html")

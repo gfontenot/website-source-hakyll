@@ -2,8 +2,7 @@
 -- https://github.com/pbrisbin/pbrisbin.com/blob/master/src/IndexedRoute.hs
 
 module Site.URLHelper
-    ( indexedRoute
-    , replaceIndexLinks
+    ( replaceIndexLinks
     , replaceIndexURLs
     , replaceRelativeURLs
     , repairExternalURLs
@@ -12,17 +11,9 @@ module Site.URLHelper
 import Hakyll
 
 import Data.Monoid ((<>))
-import System.FilePath ((</>), splitFileName)
+import System.FilePath ((</>))
 
 import qualified System.FilePath.Posix as P
-
-indexedRoute :: Routes
-indexedRoute = customRoute $ \i ->
-    let (path, name) = splitFileName $ toFilePath i
-    in path </> dropDatePrefix name </> "index.html"
-
-  where
-    dropDatePrefix = drop 11
 
 -- | Replaces @href="/foo/index.html"@ with @href="/foo"@
 replaceIndexLinks :: Item String -> Compiler (Item String)
