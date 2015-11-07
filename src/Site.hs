@@ -6,6 +6,7 @@ import Site.Constants
 import Site.Routes
 import Site.Patterns
 import Site.Contexts
+import Site.Configurations
 import Site.URLHelper
 import Site.Compilers
 
@@ -34,12 +35,6 @@ main = hakyll $ do
         route idRoute
         compile $ do
             posts <- recentFirst =<< loadAllSnapshots allPosts "content"
-            let feedConfig = FeedConfiguration
-                    siteTitle           -- title
-                    "Gordon Fontenot"   -- description
-                    "Gordon Fontenot"   -- author name
-                    "gordon@fonten.io"  -- author email
-                    siteHost            -- root
 
             renderAtom feedConfig feedItemCtx posts
                 >>= replaceIndexURLs siteHost
