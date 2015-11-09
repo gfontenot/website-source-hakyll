@@ -1,5 +1,5 @@
 module Site.Routes
-    ( indexedRoute
+    ( indexedPostRoute
     , makeIndexed
     , wellKnown
     , makeHidden
@@ -11,12 +11,13 @@ import Hakyll
 import System.FilePath
 import Data.Monoid ((<>))
 
-indexedRoute :: Routes
-indexedRoute = customRoute $ \i ->
+indexedPostRoute :: Routes
+indexedPostRoute = customRoute $ \i ->
     let (path, name) = splitFileName $ toFilePath i
-    in path </> dropDatePrefix name </> "index.html"
+    in path </> postName name </> "index.html"
 
   where
+    postName = takeBaseName . dropDatePrefix
     dropDatePrefix = drop 11
 
 makeIndexed :: Routes

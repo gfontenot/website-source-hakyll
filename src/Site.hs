@@ -13,7 +13,7 @@ import Site.Compilers
 main :: IO ()
 main = hakyllWith hakyllConfig $ do
     match allPosts $ do
-        route $ setExtension "" `composeRoutes` indexedRoute
+        route indexedPostRoute
         compile $ baseCompiler
             >>= saveSnapshot "content"
             >>= loadAndApplyTemplate "templates/post.html"    postCtx
