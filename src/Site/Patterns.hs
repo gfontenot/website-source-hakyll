@@ -2,7 +2,7 @@
 
 module Site.Patterns (allPosts) where
 
-import Hakyll (Pattern)
+import Hakyll (Pattern, (.||.))
 
 allPosts :: Pattern
-allPosts = "posts/*"
+allPosts = "posts/*" .||. "stubs/*"
