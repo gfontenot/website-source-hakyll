@@ -1,10 +1,21 @@
 module Site.Configurations
-    ( feedConfig
+    ( hakyllConfig
+    , feedConfig
     ) where
 
-import Hakyll (FeedConfiguration(..))
+import Hakyll
+    ( FeedConfiguration(..)
+    , Configuration
+    , defaultConfiguration
+    , providerDirectory
+    )
 
 import Site.Constants
+
+hakyllConfig :: Configuration
+hakyllConfig = defaultConfiguration {
+  providerDirectory = "web"
+}
 
 feedConfig :: FeedConfiguration
 feedConfig = FeedConfiguration
@@ -13,4 +24,3 @@ feedConfig = FeedConfiguration
     "Gordon Fontenot"   -- author name
     "gordon@fonten.io"  -- author email
     siteHost            -- root
-

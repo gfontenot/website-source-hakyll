@@ -11,7 +11,7 @@ import Site.URLHelper
 import Site.Compilers
 
 main :: IO ()
-main = hakyll $ do
+main = hakyllWith hakyllConfig $ do
     match allPosts $ do
         route $ setExtension "" `composeRoutes` indexedRoute
         compile $ baseCompiler
