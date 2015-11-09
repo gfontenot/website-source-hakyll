@@ -6,8 +6,8 @@
 
 set -e
 
-./site clean
-./site build
+site clean
+site build
 
 tmp_dir=$HOME/_tmp
 

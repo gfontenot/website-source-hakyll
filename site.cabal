@@ -4,7 +4,7 @@ Synopsis:               Personal Site
 Homepage:               http://gordonfontenot.com
 Author:                 Gordon Fontenot <gordon@fonten.io>
 Maintainer:             Gordon Fontenot <gordon@fonten.io>
-Build-Type:             Custom
+Build-Type:             Simple
 Cabal-Version:          >= 1.10
 
 Executable site

@@ -4,10 +4,10 @@ machine:
 
 test:
   override:
-    - cabal build
-    - ./site clean
-    - ./site build
-    - ./site check --internal-links
+    - cabal install --disable-documentation
+    - site clean
+    - site build
+    - site check --internal-links
 
 deployment:
   master:
