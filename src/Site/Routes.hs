@@ -14,9 +14,10 @@ import Data.Monoid ((<>))
 indexedPostRoute :: Routes
 indexedPostRoute = customRoute $ \i ->
     let (path, name) = splitFileName $ toFilePath i
-    in path </> postName name </> "index.html"
+    in blogPath path </> postName name </> "index.html"
 
   where
+    blogPath = flip replaceDirectory "blog"
     postName = takeBaseName . dropDatePrefix
     dropDatePrefix = drop 11
 
