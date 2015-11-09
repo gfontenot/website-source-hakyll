@@ -11,10 +11,9 @@ dependencies:
 
 test:
   override:
-    - cabal install --disable-documentation
-    - site clean
-    - site build
-    - site check --internal-links
+    - cabal run --  clean
+    - cabal run --  build
+    - cabal run --  check --internal-links
 
 deployment:
   master:
