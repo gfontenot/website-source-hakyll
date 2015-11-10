@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+
+set -e
+
+today=$(date +"%F")
+draft=$1
+
+filename=$(basename "$draft")
+
+mv "$draft" "web/posts/$today-$filename"
+
+echo "Published $filename for $today"
