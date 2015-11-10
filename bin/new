@@ -4,7 +4,7 @@
 
 create_stub=0
 
-today=$(date +"%F-")
+today=$(date +"%F")
 
 date_string=""
 post_dir="drafts"
@@ -16,14 +16,14 @@ while getopts ":ps" opt; do
   case $opt in
     p)
       post_dir="posts"
-      date_string="$today"
+      date_string="$today-"
       ;;
     s)
       create_stub=1
       post_dir="stubs"
       template_name="stub"
       org="thoughtbot"
-      date_string="$today"
+      date_string="$today-"
       ;;
     \?)
       echo "Invalid option: -$OPTARG" >&2
@@ -48,6 +48,8 @@ fi
 normalized=$(echo $title | tr '[:upper:]' '[:lower:]' | tr '[:blank:]' '-')
 
 post_path="web/$post_dir/$date_string$normalized.markdown"
+
+mkdir -p "web/$post_dir"
 
 cat > "$post_path" << EOF
 ---
