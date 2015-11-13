@@ -57,6 +57,19 @@ img {
   max-width: 100%;
 }
 
+sup, sub {
+  margin-left: 3px;
+  font-size: .7em;
+}
+
+sup {
+  vertical-align: super;
+}
+
+sub {
+  vertical-align: sub;
+}
+
 #content > :last-child {
   padding-bottom: 0;
 }
