@@ -18,8 +18,8 @@ main = hakyllWith hakyllConfig $ do
         route indexedPostRoute
         compile $ baseCompiler
             >>= saveSnapshot "content"
-            >>= loadAndApplyTemplate "templates/post.html"    postCtx
-            >>= loadAndApplyTemplate "templates/default.html" postCtx
+            >>= loadAndApplyTemplate "templates/post.html"    (postCtx tags)
+            >>= loadAndApplyTemplate "templates/default.html" (postCtx tags)
             >>= replaceIndexLinks
 
     tagsRules tags $ \tag pattern -> do
@@ -28,7 +28,7 @@ main = hakyllWith hakyllConfig $ do
             posts <- recentFirst =<< loadAllSnapshots pattern "content"
 
             let ctx = mconcat
-                    [ listField "posts" postCtx (return posts)
+                    [ listField "posts" (postCtx tags) (return posts)
                     , constField "title" tag
                     , defaultContext
                     ]
@@ -42,7 +42,7 @@ main = hakyllWith hakyllConfig $ do
         route idRoute
         compile $ do
             posts <- recentFirst =<< loadAll allPosts
-            let ctx = blogCtx posts
+            let ctx = blogCtx posts tags
 
             makeItem ""
                 >>= loadAndApplyTemplate "templates/blog.html" ctx

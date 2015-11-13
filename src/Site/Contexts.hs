@@ -8,16 +8,17 @@ import Hakyll
 
 import Site.Constants
 
-blogCtx :: [Item String] -> Context String
-blogCtx posts = mconcat
-    [ listField "posts" postCtx (return posts)
+blogCtx :: [Item String] -> Tags -> Context String
+blogCtx posts tags = mconcat
+    [ listField "posts" (postCtx tags) (return posts)
     , constField "title" siteTitle
     , defaultContext
     ]
 
-postCtx :: Context String
-postCtx = mconcat
+postCtx :: Tags -> Context String
+postCtx tags = mconcat
     [ dateField "date" "%b %d, %Y"
+    , tagsField "tags" tags
     , defaultContext
     ]
 
