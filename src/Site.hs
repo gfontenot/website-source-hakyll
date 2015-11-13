@@ -25,12 +25,7 @@ main = hakyllWith hakyllConfig $ do
         route idRoute
         compile $ do
             posts <- recentFirst =<< loadAllSnapshots pattern "content"
-
-            let ctx = mconcat
-                    [ listField "posts" (postCtx tags) (return posts)
-                    , constField "title" tag
-                    , defaultContext
-                    ]
+            let ctx = blogCtx posts tags tag
 
             makeItem ""
                 >>= loadAndApplyTemplate "templates/tag.html" ctx
@@ -40,8 +35,8 @@ main = hakyllWith hakyllConfig $ do
     create ["index.html"] $ do
         route idRoute
         compile $ do
-            posts <- recentFirst =<< loadAll allPosts
-            let ctx = blogCtx posts tags
+            posts <- recentFirst =<< loadAllSnapshots allPosts "content"
+            let ctx = blogCtx posts tags siteTitle
 
             makeItem ""
                 >>= loadAndApplyTemplate "templates/blog.html" ctx
