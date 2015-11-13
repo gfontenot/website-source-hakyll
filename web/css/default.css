@@ -130,6 +130,10 @@ article {
   margin-bottom: 0.5em;
 }
 
+#tag-title {
+  margin-bottom: 1em;
+}
+
 #blog h3 {
   display: inline-block;
 }
