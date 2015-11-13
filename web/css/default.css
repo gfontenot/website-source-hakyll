@@ -164,6 +164,11 @@ time {
   padding-bottom: 0;
 }
 
+.post-body .tags {
+  display: inline-block;
+  font-size: 0.9em
+}
+
 @media only screen
   and (min-device-width: 320px)
   and (max-device-width: 667px)
