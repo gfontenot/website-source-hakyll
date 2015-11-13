@@ -9,10 +9,12 @@ import Site.Contexts
 import Site.Configurations
 import Site.URLHelper
 import Site.Compilers
+import Site.Years
 
 main :: IO ()
 main = hakyllWith hakyllConfig $ do
     tags <- buildTags allPosts $ fromCapture "blog/tags/*/index.html"
+    years <- buildYears allPosts $ fromCapture "blog/archive/*/index.html"
 
     match allPosts $ do
         route indexedPostRoute
@@ -29,6 +31,17 @@ main = hakyllWith hakyllConfig $ do
 
             makeItem ""
                 >>= loadAndApplyTemplate "templates/tag.html" ctx
+                >>= loadAndApplyTemplate "templates/default.html" ctx
+                >>= replaceIndexLinks
+
+    yearsRules years $ \year pattern -> do
+        route idRoute
+        compile $ do
+            posts <- recentFirst =<< loadAllSnapshots pattern "content"
+            let ctx = blogCtx posts tags year
+
+            makeItem ""
+                >>= loadAndApplyTemplate "templates/blog.html" ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= replaceIndexLinks
 
