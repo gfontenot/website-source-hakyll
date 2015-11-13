@@ -5,7 +5,7 @@ body {
   font-size: 1.2em;
   font-family: helvetica, sans-serif;
   line-height: 1.56em;
-  border-top: 5px solid #808000;
+  border-top: 5px solid #EB6E1F;
 }
 
 main {
@@ -67,11 +67,11 @@ sub {
 
 a {
   text-decoration: none;
-  color: #808000;
+  border-bottom: 1px dotted #EB6E1F;
+  color: black;
 }
 
 a:hover {
-  text-decoration: underline;
   color: #606060;
 }
 
@@ -84,16 +84,12 @@ a:hover {
 
 header {
   padding-top: 1em;
-  border-bottom: 1px dotted #808000;
+  border-bottom: 1px dotted #333;
 }
 
 header h2 {
   font-size: 1.5em;
   padding-bottom: 0;
-}
-
-header h2 a:hover {
-  text-decoration: none;
 }
 
 #fname {
@@ -124,16 +120,13 @@ header ul > :first-child, #social > :first-child {
   font-size: 1.3em;
 }
 
-#social a {
+header a, #social a {
   color: black;
-}
-
-#social a:hover {
-  text-decoration: none;
+  border-bottom: none;
 }
 
 footer {
-  border-top: solid 2px #808000;
+  border-top: solid 2px #EB6E1F;
   color: #555;
   padding-top: .3em;
   padding-bottom: .3em;
@@ -160,6 +153,7 @@ article {
 
 #blog a {
   color: #606060;
+  border-bottom: none;
 }
 
 time {
