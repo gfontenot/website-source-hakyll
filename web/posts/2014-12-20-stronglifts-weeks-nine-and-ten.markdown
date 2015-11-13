@@ -1,6 +1,7 @@
 ---
 title: StrongLifts Weeks Nine and Ten
 org: personal
+tags: life, fitness
 ---
 
 Took me a little bit to get this written up, but I finished up weeks 9 and 10

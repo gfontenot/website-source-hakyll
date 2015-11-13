@@ -1,6 +1,7 @@
 ---
 title: StrongLifts Week Eight
 org: personal
+tags: life, fitness
 ---
 
 ![](/images/StrongLifts-week-8.jpg)

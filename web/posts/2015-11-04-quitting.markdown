@@ -1,6 +1,7 @@
 ---
 title: Quitting
 org: personal
+tags: life
 ---
 
 One of the hardest things I've ever done is quitting smoking. I was never a

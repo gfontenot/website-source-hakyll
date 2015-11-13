@@ -1,6 +1,7 @@
 ---
 title: StrongLifts Week Six
 org: personal
+tags: life, fitness
 ---
 
 Crossed the 1/2 way point in StrongLifts on Sat.

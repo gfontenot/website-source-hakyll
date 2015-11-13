@@ -1,6 +1,7 @@
 ---
 title: StrongLifts Weeks Two and Three
 org: personal
+tags: life, fitness
 ---
 
 ![](/images/StrongLifts-week-2.jpg)

@@ -1,6 +1,7 @@
 ---
 title: StrongLifts Week Seven
 org: personal
+tags: life, fitness
 ---
 
 ![](/images/StrongLifts-week-7.jpg)

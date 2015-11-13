@@ -1,6 +1,7 @@
 ---
 title: StrongLifts Week Five
 org: personal
+tags: life, fitness
 ---
 
 ![](/images/StrongLifts-week-5.jpg)

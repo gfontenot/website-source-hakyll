@@ -1,6 +1,7 @@
 ---
 title: One Year
 org: personal
+tags: life, thoughtbot
 ---
 
 On March 23rd, 2010, I was in a bar with a couple of my friends. After a

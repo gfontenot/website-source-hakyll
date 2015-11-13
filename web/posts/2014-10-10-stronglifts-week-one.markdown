@@ -1,6 +1,7 @@
 ---
 title: StrongLifts Week One
 org: personal
+tags: life, fitness
 ---
 
 Wrapped up the first week of StrongLifts 5x5 this morning. These weights felt

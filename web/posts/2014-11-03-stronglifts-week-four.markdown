@@ -1,6 +1,7 @@
 ---
 title: StrongLifts Week Four
 org: personal
+tags: life, fitness
 ---
 
 A little late, but week 4 of StrongLifts. Finally got all of the lifts over
