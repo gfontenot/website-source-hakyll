@@ -16,6 +16,7 @@ Executable site
                       , hakyll == 4.7.*
                       , pandoc
                       , filepath
+                      , containers
 
 Source-Repository head
   Type:                 git
