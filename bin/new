@@ -55,6 +55,7 @@ cat > "$post_path" << EOF
 ---
 title: $title
 org: $org$url_string
+tags:
 ---
 EOF
 
