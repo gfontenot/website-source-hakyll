@@ -39,6 +39,10 @@ em {
   font-style: italic;
 }
 
+img {
+  max-width: 100%;
+}
+
 #content > :last-child {
   padding-bottom: 0;
 }
