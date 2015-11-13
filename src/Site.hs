@@ -12,6 +12,8 @@ import Site.Compilers
 
 main :: IO ()
 main = hakyllWith hakyllConfig $ do
+    tags <- buildTags allPosts $ fromCapture "blog/tags/*/index.html"
+
     match allPosts $ do
         route indexedPostRoute
         compile $ baseCompiler
@@ -19,6 +21,22 @@ main = hakyllWith hakyllConfig $ do
             >>= loadAndApplyTemplate "templates/post.html"    postCtx
             >>= loadAndApplyTemplate "templates/default.html" postCtx
             >>= replaceIndexLinks
+
+    tagsRules tags $ \tag pattern -> do
+        route idRoute
+        compile $ do
+            posts <- recentFirst =<< loadAllSnapshots pattern "content"
+
+            let ctx = mconcat
+                    [ listField "posts" postCtx (return posts)
+                    , constField "title" tag
+                    , defaultContext
+                    ]
+
+            makeItem ""
+                >>= loadAndApplyTemplate "templates/tag.html" ctx
+                >>= loadAndApplyTemplate "templates/default.html" ctx
+                >>= replaceIndexLinks
 
     create ["index.html"] $ do
         route idRoute
