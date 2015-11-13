@@ -171,6 +171,12 @@ time {
 
 /* Posts */
 
+.post-header a {
+    float: right;
+    color: #999;
+    font-size: 0.8em;
+}
+
 .post-body {
   clear: both;
 }

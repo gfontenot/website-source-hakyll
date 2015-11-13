@@ -19,7 +19,6 @@ main = hakyllWith hakyllConfig $ do
         compile $ baseCompiler
             >>= saveSnapshot "content"
             >>= loadAndApplyTemplate "templates/post.html"    (postCtx tags)
-            >>= loadAndApplyTemplate "templates/default.html" (postCtx tags)
             >>= replaceIndexLinks
 
     tagsRules tags $ \tag pattern -> do
