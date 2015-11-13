@@ -3,11 +3,8 @@ machine:
     version: 7.10.1
 
 dependencies:
-  pre:
-    - cabal update
-    - cabal sandbox init
   override:
-    - cabal install --dependencies-only
+    - ./bin/setup
 
 test:
   override:
