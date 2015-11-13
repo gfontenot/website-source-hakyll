@@ -15,7 +15,7 @@ monads makes me sound smarter than I actually am.
 I'm traveling the country right now, spending a month in various US cities
 before settling in Austin, TX. I'm currently living in Portland.
 
-I root for [Houston Astros][astros], and lift weights at whatever CrossFit gym
-is closest to my Airbnb.
+I root for the [Houston Astros][astros], and lift weights at whatever CrossFit
+gym is closest to my Airbnb.
 
 [astros]: http://houston.astros.mlb.com/index.jsp
