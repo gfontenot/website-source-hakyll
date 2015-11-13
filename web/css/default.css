@@ -32,19 +32,6 @@ p, ul {
   padding-bottom: 1.4em;
 }
 
-ul, ol {
-  margin-left: 0;
-  padding-left: 40px;
-}
-
-ul {
-  list-style-type: disc;
-}
-
-ol {
-  list-style-type: decimal;
-}
-
 li {
   padding-bottom: 0.25em;
 }
@@ -121,18 +108,20 @@ header ul {
   float: right;
 }
 
-header li {
+header li, #social li {
   display: inline;
   font-size: 1.0em;
   padding-left: .3em;
 }
 
+header ul > :first-child, #social > :first-child {
+  padding-left: 0
+}
+
 /* Footer */
 
 #social li {
-  display: inline;
   font-size: 1.3em;
-  padding-left: .3em;
 }
 
 #social a {
@@ -184,6 +173,19 @@ time {
 
 .post-body {
   clear: both;
+}
+
+.post-body ul, ol {
+  margin-left: 0;
+  padding-left: 40px;
+}
+
+.post-body ul {
+  list-style-type: disc;
+}
+
+.post-body ol {
+  list-style-type: decimal;
 }
 
 .post-body time {
