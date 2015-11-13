@@ -51,3 +51,10 @@ contents of this site with your static-site server of choice. I use [pow]:
 ```
 
 Then you will be able to view the generated site at `gordonfontenot.dev`.
+
+### Viewing changes ###
+
+Generally, you will be able to update the built site by running `cabal run --
+build`. However, if you run into issues with cached pages, you can run `cabal
+run -- rebuild` to force a regeneration of the entire site. After that, you
+can reload the page and see the updates.
