@@ -58,7 +58,7 @@ main = hakyllWith hakyllConfig $ do
                 >>= repairExternalURLs siteHost
                 >>= replaceRelativeURLs siteHost
 
-    match "main/*.markdown" $ do
+    match "pages/*" $ do
         route makeIndexed
         compile $ baseCompiler
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
