@@ -4,8 +4,8 @@ org: personal
 tags: life, fitness
 ---
 
-![](/images/StrongLifts-week-2.jpg)
-![](/images/StrongLifts-week-3.jpg)
+![](/images/StrongLifts/week-2.jpg)
+![](/images/StrongLifts/week-3.jpg)
 
 Weeks 2 and 3 of StrongLifts 5x5. Meant to post week 2 last week, but I
 totally forgot.

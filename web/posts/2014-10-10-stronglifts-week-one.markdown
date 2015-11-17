@@ -11,4 +11,4 @@ so (hopefully) it won't be too long before the volume catches up. It really is
 fun squatting this much, and I'm excited to do deadlifts at least once a week,
 as opposed to the once a month I was doing them before.
 
-![](/images/StrongLifts-week-1.jpg)
+![](/images/StrongLifts/week-1.jpg)

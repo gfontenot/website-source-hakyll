@@ -6,7 +6,7 @@ tags: life, fitness
 
 Crossed the 1/2 way point in StrongLifts on Sat.
 
-![](/images/StrongLifts-week-6.jpg)
+![](/images/StrongLifts/week-6.jpg)
 
 Figured this would be a good point to figure out where I am.
 

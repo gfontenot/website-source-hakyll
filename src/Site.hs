@@ -83,7 +83,7 @@ main = hakyllWith hakyllConfig $ do
         .||. "partials/*"
 
     copyInPlace $
-             "images/*"
+             "images/**"
         .||. "css/*"
         .||. "javascript/*"
         .||. "font/*"
