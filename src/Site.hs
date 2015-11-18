@@ -82,13 +82,16 @@ main = hakyllWith hakyllConfig $ do
         route cssRoute
         compile sassCompiler
 
+    match "css/*" $ do
+        route cssRoute
+        compile compressCssCompiler
+
     compileTemplates $
              "templates/*"
         .||. "partials/*"
 
     copyInPlace $
              "images/**"
-        .||. "css/*"
         .||. "javascript/*"
         .||. "font/*"
         .||. "pgp/*"
