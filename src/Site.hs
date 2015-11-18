@@ -78,6 +78,10 @@ main = hakyllWith hakyllConfig $ do
         route makeHidden
         compile copyFileCompiler
 
+    match "scss/screen.scss" $ do
+        route cssRoute
+        compile sassCompiler
+
     compileTemplates $
              "templates/*"
         .||. "partials/*"

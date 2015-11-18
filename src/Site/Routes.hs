@@ -5,6 +5,7 @@ module Site.Routes
     , makeHidden
     , makeRoot
     , toHTML
+    , cssRoute
     ) where
 
 import Hakyll
@@ -39,6 +40,10 @@ makeRoot = customRoute fileName
 
 toHTML :: Routes
 toHTML = setExtension ".html"
+
+cssRoute :: Routes
+cssRoute = customRoute $ \i ->
+    (flip replaceDirectory "css") $ (flip replaceExtension ".css") $ toFilePath i
 
 fileName :: Identifier -> FilePath
 fileName = takeFileName . toFilePath

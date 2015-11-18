@@ -1,5 +1,6 @@
 module Site.Compilers 
     ( baseCompiler
+    , sassCompiler
     , compileTemplates
     , copyInPlace
     ) where
@@ -14,6 +15,13 @@ baseCompiler :: Compiler (Item String)
 baseCompiler = pandocCompilerWith
     defaultHakyllReaderOptions
     defaultHakyllWriterOptions { writerEmailObfuscation = NoObfuscation }
+
+sassCompiler :: Compiler (Item String)
+sassCompiler = getResourceBody
+    >>= withItemBody (unixFilter "scss" args)
+    >>= return . fmap compressCss
+  where
+    args = ["-s", "-I", "web/scss/", "--cache-location", "_cache"]
 
 compileTemplates :: Pattern -> Rules ()
 compileTemplates p = match p $ compile templateCompiler
