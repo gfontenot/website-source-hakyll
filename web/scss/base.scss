@@ -6,7 +6,7 @@ $main-color: #eb6e1f;
 body {
   color: $black;
   font-size: 1.2em;
-  font-family: helvetica, sans-serif;
+  font-family: $helvetica;
   line-height: 1.56em;
   border-top: 5px solid $main-color;
 }
