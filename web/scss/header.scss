@@ -1,0 +1,31 @@
+header {
+  padding-top: 1em;
+  border-bottom: 1px dotted $black;
+}
+
+header h2 {
+  font-size: 1.5em;
+  padding-bottom: 0;
+}
+
+#fname {
+  color: $black;
+}
+
+#lname {
+  color: $light-gray;
+}
+
+header ul {
+  float: right;
+}
+
+header li, #social li {
+  display: inline;
+  font-size: 1.0em;
+  padding-left: .3em;
+}
+
+header ul > :first-child, #social > :first-child {
+  padding-left: 0
+}

@@ -1,0 +1,23 @@
+article {
+  margin-bottom: 0.5em;
+}
+
+#tag-title {
+  margin-bottom: 1em;
+}
+
+#blog h3 {
+  display: inline-block;
+}
+
+#blog a {
+  color: $gray;
+  border-bottom: none;
+}
+
+time {
+  color: $light-gray;
+  display: inline-block;
+  font-size: .9em;
+  width: 15ex;
+}

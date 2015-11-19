@@ -1,0 +1,21 @@
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 667px)
+  {
+
+    header ul {
+      float: none;
+    }
+
+    footer span {
+      float: none;
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+    }
+
+    #social {
+      width: 100%;
+      text-align: center;
+    }
+}

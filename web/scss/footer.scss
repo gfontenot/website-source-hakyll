@@ -1,0 +1,20 @@
+#social li {
+  font-size: 1.3em;
+}
+
+header a, #social a {
+  color: $black;
+  border-bottom: none;
+}
+
+footer {
+  border-top: solid 2px $main-color;
+  color: $light-gray;
+  padding-top: .3em;
+  padding-bottom: .3em;
+}
+
+footer span {
+  font-size: .8em;
+  float: right;
+}
