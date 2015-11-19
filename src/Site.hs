@@ -78,9 +78,11 @@ main = hakyllWith hakyllConfig $ do
         route makeHidden
         compile copyFileCompiler
 
-    match "scss/screen.scss" $ do
-        route cssRoute
-        compile sassCompiler
+    scssDependencies <- makePatternDependency "scss/*.scss"
+    rulesExtraDependencies [scssDependencies] $ do
+        match "scss/screen.scss" $ do
+            route cssRoute
+            compile sassCompiler
 
     match "css/*" $ do
         route cssRoute
