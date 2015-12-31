@@ -1,11 +1,22 @@
 header {
-  padding-top: 1em;
   border-bottom: 1px dotted $black;
 }
 
 header h2 {
   font-size: 1.5em;
   padding-bottom: 0;
+}
+
+#webring {
+  clear: both;
+}
+
+#webring a {
+  color: $light-gray;
+}
+
+#webring #next {
+  float: right
 }
 
 #fname {
