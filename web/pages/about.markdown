@@ -12,10 +12,11 @@ monads makes me sound smarter than I actually am.
 [Objective-C]: https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html
 [Haskell]: https://www.haskell.org/
 
-I'm traveling the country right now, spending a month in various US cities
-before settling in Austin, TX. I'm currently living in Portland.
+I'm currently living in Austin TX, after spending a decade living in the
+frigid North East (specifically Boston).
 
-I root for the [Houston Astros][astros], and lift weights at whatever CrossFit
-gym is closest to my Airbnb.
+I root for the [Houston Astros][astros], and lift weights at [CrossFit South
+Lamar][cf-sola]
 
 [astros]: http://houston.astros.mlb.com/index.jsp
+[cf-sola]: http://www.crossfitsouthlamar.com/
