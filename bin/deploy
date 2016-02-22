@@ -6,8 +6,10 @@
 
 set -e
 
-cabal run --  clean
-cabal run --  build
+cabal build
+
+cabal run -- clean
+cabal run -- build
 
 tmp_dir=$HOME/_tmp
 
