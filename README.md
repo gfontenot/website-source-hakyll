@@ -15,13 +15,12 @@ where the static site is built, and then the whole thing is deployed to
 
 ### Dependencies ###
 
-You'll need to have `cabal` and `ghc` installed. If you're on OS X, you can do
+You'll need to have `stack` and `ghc` installed. If you're on OS X, you can do
 that with homebrew:
 
 ```
 % brew update
-% brew install ghc cabal-install
-% cabal install cabal-install
+% brew install ghc stack
 ```
 
 It's going to take a while.
@@ -32,12 +31,12 @@ dependencies.
 ### Running the app locally ###
 
 Since it's a static site, you'll need to build it first. The easiest way to do
-this is by building the `site` compiler and sending it commands with `cabal
-run`:
+this is by building the `site` compiler and sending it commands with `stack
+exec`:
 
 ```
-% cabal build
-% cabal run -- build
+% stack build
+% stack exec site -- build
 ```
 
 This will generate the built website at `./_site`. You can then view the
@@ -56,7 +55,7 @@ Then you will be able to view the generated site at `gordonfontenot.dev`.
 
 ### Viewing changes ###
 
-Generally, you will be able to update the built site by running `cabal run --
-build`. However, if you run into issues with cached pages, you can run `cabal
-run -- rebuild` to force a regeneration of the entire site. After that, you
-can reload the page and see the updates.
+Generally, you will be able to update the built site by running `stack exec
+site -- build`. However, if you run into issues with cached pages, you can run
+`stack exec site -- rebuild` to force a regeneration of the entire site. After that,
+you can reload the page and see the updates.

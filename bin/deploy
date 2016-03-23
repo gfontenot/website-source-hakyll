@@ -6,10 +6,10 @@
 
 set -e
 
-cabal build
+stack build
 
-cabal run -- clean
-cabal run -- build
+stack exec site -- clean
+stack exec site -- build
 
 tmp_dir=$HOME/_tmp
 

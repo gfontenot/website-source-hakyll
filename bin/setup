@@ -1,7 +1,6 @@
 #!/usr/bin/env sh
 
-cabal update
-cabal sandbox init
-cabal install --dependencies-only
+set -e
 
+stack build --dependencies-only
 bundle

@@ -5,12 +5,14 @@ machine:
 dependencies:
   override:
     - ./bin/setup
+  cache_directories:
+    - "~/.stack"
 
 test:
   override:
-    - cabal run --  clean
-    - cabal run --  build
-    - cabal run --  check --internal-links
+    - stack exec site --  clean
+    - stack exec site --  build
+    - stack exec site --  check --internal-links
 
 deployment:
   master:

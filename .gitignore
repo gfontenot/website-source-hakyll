@@ -2,6 +2,7 @@
 cabal-dev
 .cabal-sandbox
 cabal.sandbox.config
+.stack-work/
 dist/
 _cache
 _site
