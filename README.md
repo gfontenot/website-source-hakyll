@@ -20,7 +20,7 @@ that with homebrew:
 
 ```
 % brew update
-% brew install ghc stack
+% brew install haskell-stack
 ```
 
 It's going to take a while.
