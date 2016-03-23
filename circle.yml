@@ -3,6 +3,9 @@ machine:
     version: 7.10.1
 
 dependencies:
+  pre:
+    - brew update
+    - brew install stack
   override:
     - ./bin/setup
   cache_directories:
