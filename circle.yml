@@ -21,9 +21,9 @@ dependencies:
 
 test:
   override:
-    - stack exec site --  clean
-    - stack exec site --  build
-    - stack exec site --  check --internal-links
+    - stack exec site -- clean
+    - stack exec site -- build
+    - stack exec site -- check --internal-links
 
 deployment:
   master:
