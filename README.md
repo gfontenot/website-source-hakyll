@@ -15,15 +15,13 @@ where the static site is built, and then the whole thing is deployed to
 
 ### Dependencies ###
 
-You'll need to have `stack` and `ghc` installed. If you're on OS X, you can do
-that with homebrew:
+You'll need to have `stack` installed. If you're on OS X, you can do that with
+homebrew:
 
 ```
 % brew update
 % brew install haskell-stack
 ```
-
-It's going to take a while.
 
 Once you have that installed, you can run `bin/setup` to install the app
 dependencies.
