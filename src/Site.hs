@@ -61,7 +61,7 @@ main = hakyllWith hakyllConfig $ do
     match "pages/*" $ do
         route makeIndexed
         compile $ baseCompiler
-            >>= loadAndApplyTemplate "templates/default.html" defaultContext
+            >>= loadAndApplyTemplate "templates/page.html" defaultContext
             >>= replaceIndexLinks
 
     match "404.markdown" $ do
