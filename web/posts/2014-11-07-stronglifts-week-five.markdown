@@ -1,6 +1,5 @@
 ---
 title: StrongLifts Week Five
-org: personal
 tags: life, fitness
 ---
 

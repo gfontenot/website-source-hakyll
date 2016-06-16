@@ -1,6 +1,5 @@
 ---
 title: StrongLifts Week Seven
-org: personal
 tags: life, fitness
 ---
 

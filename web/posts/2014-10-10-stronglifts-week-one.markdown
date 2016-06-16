@@ -1,6 +1,5 @@
 ---
 title: StrongLifts Week One
-org: personal
 tags: life, fitness
 ---
 

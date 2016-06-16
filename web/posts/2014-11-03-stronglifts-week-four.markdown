@@ -1,6 +1,5 @@
 ---
 title: StrongLifts Week Four
-org: personal
 tags: life, fitness
 ---
 

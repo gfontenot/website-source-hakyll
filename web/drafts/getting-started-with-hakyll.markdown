@@ -1,6 +1,5 @@
 ---
 title: Getting started with Hakyll
-org: personal
 tags: hakyll, haskell
 ---
 

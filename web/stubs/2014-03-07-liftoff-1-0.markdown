@@ -1,6 +1,6 @@
 ---
 title: Liftoff 1.0
 url: http://robots.thoughtbot.com/liftoff-10
-org: thoughtbot
+external: true
 tags: thoughtbot, development, open source
 ---

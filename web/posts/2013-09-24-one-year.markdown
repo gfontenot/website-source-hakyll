@@ -1,6 +1,5 @@
 ---
 title: One Year
-org: personal
 tags: life, thoughtbot
 ---
 
