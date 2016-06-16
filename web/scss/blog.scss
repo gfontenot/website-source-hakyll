@@ -19,6 +19,17 @@ article {
   padding-bottom: 0.5em;
 }
 
+#blog li.external:before {
+  content: "";
+  display: inline-block;
+  height: 0.7em;
+  width: 0.7em;
+  background-image: url("/images/external-link.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: -1.1em;
+}
+
 time {
   color: $light-gray;
   display: inline-block;

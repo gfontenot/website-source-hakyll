@@ -18,4 +18,15 @@
       width: 100%;
       text-align: center;
     }
+
+    #blog li.external:before {
+      content: "";
+      display: none;
+      height: 0;
+      width: 0;
+      background-image: none;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-left: -1.1em;
+    }
 }

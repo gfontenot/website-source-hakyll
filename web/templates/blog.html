@@ -1,6 +1,6 @@
 <ul id="blog">
   $for(posts)$
-    <li>
+    <li $if(external)$ class="external" $endif$>
       <h3>
         <a href="$url$">$title$</a>
       </h3>
