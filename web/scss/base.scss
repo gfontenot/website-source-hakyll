@@ -1,10 +1,12 @@
 $black: #333333;
+$off-white: #f2f2f2;
 $gray: #606060;
 $light-gray: #999999;
 $main-color: #eb6e1f;
 
 body {
   color: $black;
+  background-color: $off-white;
   font-size: 1.2em;
   font-family: 'Inconsolata', monospace;
   line-height: 1.56em;
