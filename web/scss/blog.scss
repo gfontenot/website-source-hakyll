@@ -19,15 +19,16 @@ article {
   padding-bottom: 0.5em;
 }
 
-#blog li.external:before {
+#blog li.external:after {
   content: "";
   display: inline-block;
-  height: 0.7em;
-  width: 0.7em;
+  height: 13px;
+  width: 13px;
   background-image: url("/images/external-link.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  margin-left: -1.1em;
+  vertical-align: middle;
+  margin-bottom: 4px;
 }
 
 time {
