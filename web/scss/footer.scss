@@ -1,8 +1,13 @@
-#social li {
-  font-size: 1.3em;
+#social {
+  padding-bottom: 0;
 }
 
-header a, #social a {
+#social li {
+  font-size: 1.3em;
+  display: inline;
+}
+
+#social a {
   color: $black;
   border-bottom: none;
 }
@@ -14,7 +19,7 @@ footer {
   padding-bottom: .3em;
 }
 
-footer span {
+footer p {
   font-size: .8em;
-  float: right;
+  padding-bottom: 0;
 }

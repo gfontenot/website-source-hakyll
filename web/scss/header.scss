@@ -7,16 +7,8 @@ header h2 {
   padding-bottom: 0;
 }
 
-#webring {
-  clear: both;
-}
-
-#webring a {
-  color: $light-gray;
-}
-
-#webring #next {
-  float: right
+header h2 a {
+  border-bottom: none;
 }
 
 #fname {
@@ -25,18 +17,4 @@ header h2 {
 
 #lname {
   color: $light-gray;
-}
-
-header ul {
-  float: right;
-}
-
-header li, #social li {
-  display: inline;
-  font-size: 1.0em;
-  padding-left: .3em;
-}
-
-header ul > :first-child, #social > :first-child {
-  padding-left: 0
 }
