@@ -3,8 +3,10 @@
   font-size: 0.8em;
 }
 
-.post-body {
-  clear: both;
+.post-body h2, h3 {
+  display: block;
+  font-weight: bold;
+  padding-bottom: .5em;
 }
 
 .post-body ul, ol {
