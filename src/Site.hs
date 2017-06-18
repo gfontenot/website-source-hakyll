@@ -64,6 +64,10 @@ main = hakyllWith hakyllConfig $ do
             >>= loadAndApplyTemplate "templates/page.html" defaultContext
             >>= replaceIndexLinks
 
+    match "resume.html" $ do
+        route makeIndexed
+        compile copyFileCompiler
+
     match "404.markdown" $ do
         route toHTML
         compile $ baseCompiler

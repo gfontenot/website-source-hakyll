@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Gordon Fontenot</title>
+  <link href="/css/resume.css" rel="stylesheet" media="all" />
+</head>
+
+<body>
+  <div id="page-wrap">
+    <div id="contact-info" class="vcard">
+      <h1 class="fn">gordon fontenot</h1>
+      <ul>
+        <li>
+          Email:
+          <a class="email" href="mailto:gordon@fonten.io">gordon@fonten.io</a>
+        </li>
+        <li>GitHub: <a href="https://github.com/gfontenot">gfontenot</a></li>
+        <li>Web: <a href="http://gordonfontenot.com">gordonfontenot.com</a></li>
+      </ul>
+    </div>
+
+    <dl>
+      <dd class = "clear"></dd>
+
+      <dt>Summary</dt>
+
+      <dd>
+        <p>
+          I'm an <strong>experienced iOS developer</strong>, going back to
+          iPhone OS 3. I have built numerous apps for numerous clients of all
+          different shapes and sizes. I enjoy trying to find interesting
+          solutions to common problems, and try to push Swift and iOS to their
+          limits in persuit of clean code. I have also built open source
+          software for use on iOS/macOS that has been used by developers across
+          the globe, and has inspired countless other libraries. However, I
+          consider "iOS developer" to be a reductive label.
+        </p>
+
+        <p>
+          I'm a <strong>polyglot software developer</strong> interested in
+          solving interesting problems in interesting languages. I have extensive
+          experience in Objective-C and Swift, but I also have experience in
+          Elixir/Phoenix, JavaScript (via React Native), Haskell, and Ruby.
+        </p>
+
+        <p>
+          I'm a <strong>life-long learner</strong>, drawing inspiration and
+          education from those around me. I thrive in situations where I have
+          to learn new skills to complete my tasks, and I find these
+          experiences invigorating.
+        </p>
+
+        <p>
+          I'm also a <strong>life-long educator</strong>, helping to improve
+          those around me by way of example. I enjoy working on open source
+          work, spreading knowledge by helping end-users with their problems. I
+          also enjoy working in heavily colaborative environments,
+          collaborating and teaching via code review pull requests.
+        </p>
+      </dd>
+
+      <dd class="clear"></dd>
+
+      <dt>Experience</dt>
+
+      <dd>
+        <h2>thoughtbot <span>Mobile Development Director, April 2015 - Present</span></h2>
+
+        <p>
+          Since April of 2015, I have been acting as the Mobile Development
+          Director for thoughtbot. In addition to my duties as a developer, I
+          had additional responsibilities.
+        </p>
+
+        <ul>
+          <li>Managed a team of up to 10 developers across the globe</li>
+          <li>Worked as a team advocate</li>
+          <li>Assisted in the sales process on behalf of the mobile team</li>
+          <li>Performed quarterly reviews with mobile team members</li>
+          <li>Performed bi-weekly one on one meetings with mobile team members</li>
+        </ul>
+
+        <h2>thoughtbot <span>Developer, September 2013 - Present</span></h2>
+
+        <p>
+          I was hired at thoughtbot as part of their initiative to expand into
+          the iOS space. Over the years I have worked as a consultant on
+          projects in Swift, Objective-C, and React Native for iOS.
+          Additionally, I spent time to get up to speed with Elixir and Phoenix
+          and have billed on projects using those technologies as well.
+        </p>
+
+        <ul>
+          <li>Worked with clients to determine the best product needed to fit their needs</li>
+          <li>Designed application architectures and built custom visual components, using a test-first methodology</li>
+          <li>Designed and maintained tooling to improve the development experience</li>
+          <li>Designed and maintained open source libraries to improve the development experience</li>
+        </ul>
+      </dd>
+
+      <dd class="clear"></dd>
+
+      <dt>Open Source Projects</dt>
+
+      <dd>
+        <h2><a href="https://github.com/thoughtbot/argo">Argo</a> <span>Swift</span></h2>
+        <p>
+          Initially created as an experimentation of Swift's type system and
+          improving the JSON parsing experience in Swift, Argo has turned into
+          a more general applicative parser for moving from loosely-typed
+          structures into strongly typed ones.
+        </p>
+
+        <h2><a href="https://github.com/thoughtbot/runes">Runes</a> <span>Swift</span></h2>
+        <p>
+          A playground of sorts, defining infix operators to be used by other
+          libraries (such as Argo) as well as some default implementations for
+          the <code>Optional</code> and <code>Array</code> types in the
+          standard lib. The test suite has turned into an experimentation with
+          using property-based testing to verify the various mathematic laws
+          required by conforming to specific interfaces.
+        </p>
+
+        <h2><a href="https://github.com/gfontenot/reflow">reflow</a> <span>Haskell</span></h2>
+        <p>
+          A Haskell command line tool designed to replace <code>fold -s</code>.
+          It intelligently rewraps lines, with knowledge of things like code
+          blocks, quote blocks, PGP signatures, and plain-text email headers. I
+          use it every day to re-format plain text emails to be more readable.
+          You can see <a href="https://github.com/gfontenot/dotfiles/blob/master/tag-mutt/config/mutt/plugins/display_filter.sh">the usage in my dotfiles</a>
+        </p>
+
+        <h2><a href="https://github.com/gfontenot/vim-xcode">vim-xcode</a> <span>Vimscript</span></h2>
+        <p>
+          A Vim plugin for working with Xcode projects. I'm constantly trying
+          to improve my day-to-day development experience, and a lot of that is
+          focused around trying to break free of Xcode's grasp.
+          <code>vim-xcode</code> allows me to build, test, and run apps
+          directly from within Vim (by wrapping <code>xcodebuild</code>), which
+          helps me avoid needing to switch contexts as often.
+        </p>
+
+        <h2><a href="https://github.com/thoughtbot/curry">Curry</a> <span>Swift</span></h2>
+        <p>
+          A microframework to bring function currying to Swift. Incredibly
+          useful, especially when paired with Argo, where it allows us to curry
+          a type's initializer instead of requiring a curried constructor to be
+          defined manually. The source for Curry is entirely generated by a
+          script.
+        </p>
+
+        <h2><a href="https://github.com/thoughtbot/swish">Swish</a> <span>Swift</span></h2>
+        <p>
+          An attempt at building a protocol-oriented networking stack for iOS.
+          The goal here was to build a networking lib that was easily testable
+          and composable. We also wanted to build something that worked nicely
+          with Argo, and returned <code>Result</code> types instead of using
+          Swift's error handling.
+        </p>
+
+        <h2><a href="https://github.com/gfontenot/featureless-void">Featureless Void</a> <span>Haskell</span></h2>
+        <p>
+          The source code for <a href="https://micro.gordonfontenot.com">my personal microblog</a>.
+          I've been using it as an excuse to learn <a href="https://www.yesodweb.com/">Yesod</a>
+          and as a way to do more web work. It includes things like
+          authentication, image uploading with S3, Twitter cross-posting, and
+          generating RSS/JSON feeds for the content.
+        </p>
+
+        <h2><a href="https://github.com/gfontenot/website-source">Personal Website</a> <span>Haskell, HTML, CSS</span></h2>
+        <p>
+          The source code for <a href="/">my personal website and blog</a>.
+          It's a static website generated by <a href="https://jaspervdj.be/hakyll/">Hakyll</a>
+          and so is largely written in Haskell.
+        </p>
+      </dd>
+
+      <dd class="clear"></dd>
+    </dl>
+  </div>
+</body>
+</html>
