@@ -59,7 +59,7 @@ on my project when I need to, and ignore it during the rest of the week.
 [^2]: I firmly believe there's no such thing as "wasted" time, just time
   that's spent with a different set of priorities. See the venerable Merlin
   Mann's post [Mud Rooms, Red Letters, and Real
-  Priorities](http://www.43folders.com/2009/04/28/priorities_) for more on
+  Priorities](http://www.43folders.com/2009/04/28/priorities) for more on
   "priorities".
 
 [dotfiles]: https://github.com/gfontenot/dotfiles
