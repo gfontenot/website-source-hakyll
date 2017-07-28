@@ -1,63 +1,113 @@
-#!/usr/bin/env bash
-#
-# Create a new post
+#!/bin/sh
 
-create_stub=0
+set -e
 
-today=$(date +"%F")
-
-date_string=""
-post_dir="drafts"
-template_name="post"
-org="personal"
-url_string=""
-
-while getopts ":ps" opt; do
-  case $opt in
-    p)
-      post_dir="posts"
-      date_string="$today-"
-      ;;
-    s)
-      create_stub=1
-      post_dir="stubs"
-      template_name="stub"
-      org="thoughtbot"
-      date_string="$today-"
-      ;;
-    \?)
-      echo "Invalid option: -$OPTARG" >&2
-      exit 1
-      ;;
-    :)
-      echo "Option -$OPTARG requires an argument." >&2
-      exit 1
-      ;;
-  esac
-done
-
-printf "Post title? "
-read title
-
-if (( $create_stub )); then
-  printf "Source url? "
-  read url
-  url_string=$'\n'"url: $url"
-fi
-
-normalized=$(echo $title | tr '[:upper:]' '[:lower:]' | tr '[:blank:]' '-')
-
-post_path="web/$post_dir/$date_string$normalized.markdown"
-
-mkdir -p "web/$post_dir"
-
-cat > "$post_path" << EOF
+post_template(){
+  cat << EOF
 ---
-title: $title
-org: $org$url_string
+title: $1
 tags:
 ---
 EOF
+}
 
-echo "Created: $normalized.markdown"
+stub_template(){
+  cat << EOF
+---
+title: $1
+url: $2
+external: true
+tags:
+---
+EOF
+}
+
+info(){
+  printf "%s\n" "$1"
+}
+
+usage='bin/new
+Create a new post
+
+usage: bin/new [-h | --help] [--[no-]draft | --stub]
+
+  -h | --help           Print this usage documentation and exit
+
+  --[no-]draft          Specify if the post should be created as a draft, or as
+                        a post to be published today. --draft is the default.
+
+  --stub                Create a stub post for an external blog. These are
+                        presented alongside normal posts, but link to an
+                        external website.
+'
+
+post_type="draft"
+destination="web/drafts"
+
+case $1 in
+  --no-draft)
+    post_type="published"
+    destination="web/posts"
+    shift
+    ;;
+  --draft)
+    post_type="draft"
+    destination="web/drafts"
+    shift
+    ;;
+  --stub)
+    post_type="stub"
+    destination="web/stubs"
+    shift
+    ;;
+esac
+
+case $1 in
+  --no-draft|--draft|--stub)
+    error "Invalid configuration, can't specify multiple post types"
+    exit 1
+    ;;
+  --help|-h)
+    info "$usage"
+    exit 0
+    ;;
+esac
+
+today=$(date +"%F")
+
+printf "Post title? "
+read -r title
+
+if [ "$post_type" = "stub" ]; then
+  printf "URL? "
+  read -r external_url
+  printf "Publish date? (yyyy-MM-dd) "
+  read -r today
+fi
+
+title_normalized=$(echo "$title" | tr '[:upper:]' '[:lower:]' | tr '[:blank:]' '-')
+
+case $post_type in
+  draft)
+    filename="$title_normalized.markdown"
+    ;;
+  published|stub)
+    filename="$today-$title_normalized.markdown"
+    ;;
+esac
+
+case $post_type in
+  published|draft)
+    content=$(post_template "$title")
+    ;;
+  stub)
+    content=$(stub_template "$title" "$external_url")
+esac
+
+post_path="$destination/$filename"
+
+mkdir -p "$destination"
+
+echo "$content" > "$post_path"
+info "Created: $filename"
 $VISUAL "$post_path"
