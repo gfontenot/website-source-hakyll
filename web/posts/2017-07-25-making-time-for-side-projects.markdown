@@ -1,5 +1,5 @@
 ---
-title: Making Time for Side Projects
+title: "Making Time for Side Projects"
 tags: development, life
 ---
 

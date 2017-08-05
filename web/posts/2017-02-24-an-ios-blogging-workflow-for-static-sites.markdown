@@ -1,5 +1,5 @@
 ---
-title: An iOS blogging workflow for static sites
+title: "An iOS blogging workflow for static sites"
 tags: development
 ---
 

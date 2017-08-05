@@ -1,5 +1,5 @@
 ---
-title: StrongLifts Week Eight
+title: "StrongLifts Week Eight"
 tags: life, fitness
 ---
 

@@ -5,7 +5,7 @@ set -e
 post_template(){
   cat << EOF
 ---
-title: $1
+title: "$1"
 tags:
 ---
 EOF
@@ -14,7 +14,7 @@ EOF
 stub_template(){
   cat << EOF
 ---
-title: $1
+title: "$1"
 url: $2
 external: true
 tags:

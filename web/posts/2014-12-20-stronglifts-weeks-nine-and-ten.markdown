@@ -1,5 +1,5 @@
 ---
-title: StrongLifts Weeks Nine and Ten
+title: "StrongLifts Weeks Nine and Ten"
 tags: life, fitness
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: StrongLifts Weeks Two and Three
+title: "StrongLifts Weeks Two and Three"
 tags: life, fitness
 ---
 

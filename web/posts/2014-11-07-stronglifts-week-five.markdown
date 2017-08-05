@@ -1,5 +1,5 @@
 ---
-title: StrongLifts Week Five
+title: "StrongLifts Week Five"
 tags: life, fitness
 ---
 
