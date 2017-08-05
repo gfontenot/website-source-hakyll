@@ -13,7 +13,7 @@ Executable site
   Main-Is:              Site.hs
   GHC-Options:          -Wall -threaded
   Build-Depends:        base
-                      , hakyll == 4.7.*
+                      , hakyll
                       , pandoc
                       , filepath
 
