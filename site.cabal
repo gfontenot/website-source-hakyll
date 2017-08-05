@@ -12,6 +12,13 @@ Executable site
   HS-Source-Dirs:       src
   Main-Is:              Site.hs
   GHC-Options:          -Wall -threaded
+  other-modules:        Site.Compilers
+                      , Site.Configurations
+                      , Site.Constants
+                      , Site.Contexts
+                      , Site.Patterns
+                      , Site.Routes
+                      , Site.URLHelper
   Build-Depends:        base
                       , hakyll
                       , pandoc
