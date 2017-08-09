@@ -9,17 +9,26 @@ import Hakyll
 import Site.Constants
 import Site.Fields
 
-blogCtx :: [Item String] -> Tags -> Context String
-blogCtx posts tags = mconcat
-    [ listField "posts" (postCtx tags) (return posts)
+blogCtx :: Bool -> [Item String] -> Tags -> Context String
+blogCtx showDrafts posts tags = mconcat
+    [ listField "posts" (postCtx showDrafts tags) (return posts)
     , constField "title" siteTitle
     , defaultContext
     ]
 
-postCtx :: Tags -> Context String
-postCtx tags = mconcat
+postCtx :: Bool -> Tags -> Context String
+postCtx showDrafts tags = mconcat $
+    draftFields showDrafts ++ postFields tags
+
+draftFields :: Bool -> [Context String]
+draftFields False = []
+draftFields True =
     [ todayField "date" "%b %d, %Y"
-    , dateField "date" "%b %d, %Y"
+    ]
+
+postFields :: Tags -> [Context String]
+postFields tags =
+    [ dateField "date" "%b %d, %Y"
     , draftField "isDraft"
     , tagsField "tags" tags
     , defaultContext
