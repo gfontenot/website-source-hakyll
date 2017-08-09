@@ -16,6 +16,7 @@ Executable site
                       , Site.Configurations
                       , Site.Constants
                       , Site.Contexts
+                      , Site.Fields
                       , Site.Patterns
                       , Site.Routes
                       , Site.URLHelper
@@ -23,6 +24,8 @@ Executable site
                       , hakyll
                       , pandoc
                       , filepath
+                      , time
+                      , time-locale-compat
 
 Source-Repository head
   Type:                 git
