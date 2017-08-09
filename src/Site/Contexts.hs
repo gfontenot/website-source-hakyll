@@ -7,6 +7,7 @@ module Site.Contexts
 import Hakyll
 
 import Site.Constants
+import Site.Fields
 
 blogCtx :: [Item String] -> Tags -> Context String
 blogCtx posts tags = mconcat
@@ -17,7 +18,8 @@ blogCtx posts tags = mconcat
 
 postCtx :: Tags -> Context String
 postCtx tags = mconcat
-    [ dateField "date" "%b %d, %Y"
+    [ todayField "date" "%b %d, %Y"
+    , dateField "date" "%b %d, %Y"
     , tagsField "tags" tags
     , defaultContext
     ]
