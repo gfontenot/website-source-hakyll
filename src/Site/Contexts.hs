@@ -20,6 +20,7 @@ postCtx :: Tags -> Context String
 postCtx tags = mconcat
     [ todayField "date" "%b %d, %Y"
     , dateField "date" "%b %d, %Y"
+    , draftField "isDraft"
     , tagsField "tags" tags
     , defaultContext
     ]
