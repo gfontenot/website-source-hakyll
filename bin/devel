@@ -1,0 +1,5 @@
+#!/bin/sh
+
+stack build --fast \
+  --file-watch site \
+  --exec "stack exec site watch"
