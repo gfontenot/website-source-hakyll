@@ -1,6 +1,6 @@
 ---
 title: "How I Use Stuff: Day One"
-tags:
+tags: how-i-use-stuff
 ---
 
 * App: [Day One](http://dayoneapp.com/)
