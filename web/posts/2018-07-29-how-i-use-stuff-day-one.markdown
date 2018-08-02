@@ -15,7 +15,7 @@ Since then, my usage has largely stayed the same, although I've been able to
 be much more consistent in the past year. I've also added a number of smaller
 semi-automated entries to my practice.
 
-[quitting]: /quitting
+[quitting]: /blog/quitting
 
 ## The Workflow
 As of this writing, I have a grand total of 2,144 entries stored in Day One.
