@@ -1,0 +1,56 @@
+version: 2.1
+
+executors:
+  stack-lts:
+    docker:
+      - image: fpco/stack-build:lts
+
+jobs:
+  build:
+    executor: stack-lts
+    steps:
+      - checkout
+      - restore_cache:
+          name: Restore Cached Dependencies
+          keys:
+            - build-v1-{{ checksum "site.cabal" }}-{{ checksum "stack.yaml" }}
+      - run: ./bin/setup
+      - run: stack build
+      - save_cache:
+          name: Cache Dependencies
+          key: build-v1-{{ checksum "site.cabal" }}-{{ checksum "stack.yaml" }}
+          paths:
+            - "/root/.stack"
+            - ".stack-work"
+      - run: stack exec site -- build
+      - run: stack exec site -- check --internal-links
+
+  deploy:
+    executor: stack-lts
+    steps:
+      - checkout
+      - restore_cache:
+          name: Restore Cached Dependencies
+          keys:
+            - deploy-v1-{{ checksum "site.cabal" }}-{{ checksum "stack.yaml" }}
+      - run: ./bin/setup
+      - save_cache:
+          name: Cache Dependencies
+          key: deploy-v1-{{ checksum "site.cabal" }}-{{ checksum "stack.yaml" }}
+          paths:
+            - "/root/.stack"
+            - ".stack-work"
+      - run: ./bin/ci-deploy
+
+
+workflows:
+  version: 2
+  default:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
