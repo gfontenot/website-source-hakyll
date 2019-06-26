@@ -1,11 +1,13 @@
-# Website Source #
+# [DEPRECATED] Website Source #
 
-[![Circle CI](https://circleci.com/gh/gfontenot/website-source/tree/master.svg?style=svg)](https://circleci.com/gh/gfontenot/website-source/tree/master)
-
-This is the source code for gordonfontenot.com. The site is written in
+~This is the source code for gordonfontenot.com. The site is written in
 [Hakyll], and pushed here. Pushes to `master` are then picked up by [CircleCI]
 where the static site is built, and then the whole thing is deployed to
-[GitHub Pages].
+[GitHub Pages].~
+
+This _used_ to be the source code for gordonfontenot.com, but I recently moved
+the source back to Jekyll for the sake of simplicity. This repo is probably
+still a good sample for Hakyll though, so I'm leaving it up.
 
 [Hakyll]: http://jaspervdj.be/hakyll/
 [CircleCI]: https://circleci.com/gh/gfontenot/website-source
