@@ -9,10 +9,12 @@ import Site.Contexts
 import Site.Configurations
 import Site.URLHelper
 import Site.Compilers
+import Site.Years
 
 main :: IO ()
 main = hakyllWith hakyllConfig $ do
     tags <- buildTags allPosts $ fromCapture "blog/tags/*/index.html"
+    years <- buildYears allPosts $ fromCapture "blog/archive/*/index.html"
 
     match allPosts $ do
         route indexedPostRoute
@@ -25,23 +27,29 @@ main = hakyllWith hakyllConfig $ do
         route idRoute
         compile $ do
             posts <- recentFirst =<< loadAllSnapshots pattern "content"
-
-            let ctx = mconcat
-                    [ listField "posts" (postCtx tags) (return posts)
-                    , constField "title" tag
-                    , defaultContext
-                    ]
+            let ctx = blogCtx posts tags tag
 
             makeItem ""
                 >>= loadAndApplyTemplate "templates/tag.html" ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= replaceIndexLinks
 
+    yearsRules years $ \year pattern -> do
+        route idRoute
+        compile $ do
+            posts <- recentFirst =<< loadAllSnapshots pattern "content"
+            let ctx = blogCtx posts tags year
+
+            makeItem ""
+                >>= loadAndApplyTemplate "templates/blog.html" ctx
+                >>= loadAndApplyTemplate "templates/default.html" ctx
+                >>= replaceIndexLinks
+
     create ["index.html"] $ do
         route idRoute
         compile $ do
-            posts <- recentFirst =<< loadAll allPosts
-            let ctx = blogCtx posts tags
+            posts <- recentFirst =<< loadAllSnapshots allPosts "content"
+            let ctx = blogCtx posts tags siteTitle
 
             makeItem ""
                 >>= loadAndApplyTemplate "templates/blog.html" ctx

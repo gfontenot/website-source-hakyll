@@ -23,6 +23,7 @@ Executable site
                       , hakyll
                       , pandoc
                       , filepath
+                      , containers
 
 Source-Repository head
   Type:                 git

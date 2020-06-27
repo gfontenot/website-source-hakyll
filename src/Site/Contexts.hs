@@ -6,12 +6,10 @@ module Site.Contexts
 
 import Hakyll
 
-import Site.Constants
-
-blogCtx :: [Item String] -> Tags -> Context String
-blogCtx posts tags = mconcat
+blogCtx :: [Item String] -> Tags -> String -> Context String
+blogCtx posts tags title = mconcat
     [ listField "posts" (postCtx tags) (return posts)
-    , constField "title" siteTitle
+    , constField "title" title
     , defaultContext
     ]
 
