@@ -19,6 +19,10 @@ article {
   padding-bottom: 0.5em;
 }
 
+#blog a.draft {
+  color: $main-color;
+}
+
 #blog li.external:after {
   content: "";
   display: inline-block;

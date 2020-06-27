@@ -2,7 +2,7 @@
   $for(posts)$
     <li $if(external)$ class="external" $endif$>
       <h3>
-        <a href="$url$">$title$</a>
+        <a href="$url$" $if(isDraft)$ class="draft" $endif$>$title$</a>
       </h3>
     </li>
   $endfor$
